@@ -232,6 +232,7 @@ nav .logo img {
 .tc-img img {
   width: 50%;
   margin-bottom: 35px;
+  transition: transform 1s;
 }
 
 .tap-card {
@@ -240,6 +241,17 @@ nav .logo img {
   background: #7F4AF0;
   border-radius: 20px;
   padding: 60px 40px;
+}
+.tap-card:hover img {
+  transform: scale(1.1);
+}
+.tap-card:hover .tc-link a {
+  color: black;
+  background-color: #fff;
+  color: black;
+  display: inline-block;
+  padding: 2px 12px 5px 12px;
+  border-radius: 28px;
 }
 
 .tc-heading h6 {
@@ -268,6 +280,8 @@ nav .logo img {
   font-weight: 400;
   font-size: 14px;
   color: #FFFFFF;
+  transition: 1s;
+  display: inline-block;
 }
 
 .tc-link a span {
@@ -282,8 +296,25 @@ nav .logo img {
   padding: 60px 40px;
   position: relative;
   overflow: hidden;
+  transition: transform 1s;
+}
+.track-card:hover img {
+  transform: scale(1.1);
+}
+.track-card:hover .tc-link a {
+  color: black;
+  background-color: #fff;
+  color: black;
+  display: inline-block;
+  padding: 2px 12px 5px 12px;
+  border-radius: 28px;
 }
 
+/*.card-hover:hover {
+  -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1); 
+}*/
 .track-img {
   overflow: hidden;
 }
@@ -293,6 +324,7 @@ nav .logo img {
   height: 80%;
   position: absolute;
   top: 120px;
+  transition: transform 1s;
   right: -10px;
   overflow: hidden;
 }
@@ -388,6 +420,7 @@ nav .logo img {
   display: flex;
   flex-direction: row;
   gap: 20px;
+  overflow-x: auto;
 }
 
 .join {
@@ -396,7 +429,7 @@ nav .logo img {
 }
 
 .join-1 {
-  margin-left: -80px;
+  /*margin-left: -80px;*/
 }
 
 .join-1 img {
@@ -537,6 +570,24 @@ nav .logo img {
   align-items: center;
 }
 
+.mySlides {
+  display: none;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .ts-img {
   width: 35%;
 }

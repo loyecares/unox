@@ -216,6 +216,7 @@ color: #010007;
 .tc-img img{
   width: 50%;
   margin-bottom: 35px;
+  transition: transform 1s;
 }
 .tap-card{
   width: 400px;
@@ -223,6 +224,24 @@ color: #010007;
   background: #7F4AF0;
   border-radius: 20px;
   padding: 60px 40px;
+  &:hover{
+    img{
+      -ms-transform: scale(1.1); 
+      -webkit-transform: scale(1.1); 
+      transform: scale(1.1); 
+    }
+    .tc-link{
+
+      a{
+        color: black;
+        background-color: #fff;
+        color:black;
+        display: inline-block;
+        padding: 2px 12px 5px 12px;
+        border-radius: 28px;
+      }
+    }
+  }
 }
 .tc-heading h6{
   font-family: 'Plus Jakarta Sans';
@@ -241,6 +260,7 @@ color: #FFFFFF;
   color: #FFFFFF;
   margin-bottom: 20px;
 }
+
 .tc-link a{
   font-family: 'SF Pro Display';
   text-decoration: none;
@@ -248,6 +268,9 @@ font-style: normal;
 font-weight: 400;
 font-size: 14px;
 color: #FFFFFF;
+transition:  1s;
+display: inline-block;
+
 
 }
 .tc-link a span{
@@ -262,7 +285,33 @@ color: #FFFFFF;
   padding: 60px 40px;
   position: relative;
   overflow: hidden;
+  transition: transform 1s;
+
+  &:hover{
+    img{
+      -ms-transform: scale(1.1); 
+      -webkit-transform: scale(1.1); 
+      transform: scale(1.1); 
+    }
+    .tc-link{
+
+      a{
+        color: black;
+        background-color: #fff;
+        color:black;
+        display: inline-block;
+        padding: 2px 12px 5px 12px;
+        border-radius: 28px;
+      }
+    }
+  }
 }
+
+/*.card-hover:hover {
+  -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1); 
+}*/
 .track-img{
   overflow: hidden;
 }
@@ -271,6 +320,7 @@ color: #FFFFFF;
   height: 80%;
   position: absolute;
   top: 120px;
+  transition: transform 1s;
   right: -10px;
   overflow: hidden;
 }
@@ -356,13 +406,16 @@ letter-spacing: -0.015em;
   display: flex;
   flex-direction: row;
   gap: 20px;
+  overflow-x: auto;
+
+
 }
 .join{
   width: 25%;
   height: 260px;
 }
 .join-1{
-  margin-left: -80px;
+  /*margin-left: -80px;*/
 }
 .join-1 img{
   border-radius: 21px;
@@ -483,6 +536,18 @@ color: #fff;
   width: 60%;
   margin: auto;
   align-items: center;
+}
+.mySlides {
+  display: none}
+  /* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
 }
 .ts-img{
   width: 35%;
