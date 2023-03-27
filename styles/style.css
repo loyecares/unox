@@ -2199,7 +2199,12 @@ nav img {
   }
 
   .hero-context .email-list {
-    margin-bottom: 0px;
+    margin-bottom: 80px;
+  }
+
+  .unox-prop-grid a {
+    margin-bottom: 60px;
+    display: block;
   }
 
   nav {
@@ -2215,6 +2220,30 @@ nav img {
 
   .unox-prop-grid .unox-prop-guide h4 {
     margin-bottom: 24px;
+  }
+
+  .hero-context-text-display {
+    width: 100%;
+  }
+  .hero-wrapper {
+    height: max-content;
+    max-height: unset;
+  }
+  /* .hero-phone {
+    display: none;
+  } */
+  .unox-prop-guide {
+    position: relative !important;
+  }
+  .hero-phone img {
+    height: 25rem;
+    margin-top: -35%;
+  }
+  .centralize-content {
+    position: relative !important;
+    margin: 0px 2%;
+    margin-right: 2%;
+    display: block;
   }
 }
 
