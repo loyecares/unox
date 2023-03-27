@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Unox</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="styles/style.css">
 
-  </head>
-  <body>
-    <div class="hero">
-      <div class="hero-wrapper">
-        <nav>
-          <div class="logo">
-            <img src="images/logo.png" alt="unox logo"/>
+<head>
+  <meta charset="UTF-8">
+  <title>Unox</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/style.css">
 
-          </div>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<div class="smooth-scroll">
+  <div class="hero">
+    <div class="hero-wrapper">
+      <nav>
+        <div class="mobile-only">
+          <img src="./images/cart-icon.png" alt="cart icon" />
+        </div>
+        <div class="logo">
+          <img src="images/logo.png" alt="unox logo" />
+        </div>
+        <div class="desktop-only">
           <div class="links">
             <ul>
               <li>
@@ -29,48 +37,120 @@
               <li>
                 <a href="#">More</a>
               </li>
-              
+
             </ul>
             <div class="card-button">
               <a href="#">Get a Card</a>
 
             </div>
-
           </div>
-        </nav>
-        <div class="hero-context">
-          <div class="text">
-            <h1>The most unique way to introduce yourself </h1>
-            <p>An NFC Powered personal card + a completely customizable one page microsite to give the right impressions!</p>
-          </div>
-          <div class="email-list">
-              <input type="text" placeholder="unox.me/yourname" />
-              <button>Get your card</button>
-          </div>
-          <div class="hero-phone">
-            <img src="images/iphone.png" alt="iphone slider"/>
-
-          </div>
-
         </div>
-        <div class="hero-img-left-1">
-          <img src="images/hero-img-1.png" alt="unox placard"/>
+        <div class="mobile-only">
+          <img src="./images/menu-icon.png" alt="menu icon" />
         </div>
-        <div class="hero-img-left-2">
-          <img src="images/hero-img-2.png" alt="unox placard"/>
+      </nav>
+      <div class="hero-context">
+        <div class="text">
+          <h1 class="hero-header h-1">The most unique way to introduce yourself </h1>
+          <p>An NFC Powered personal card + a completely customizable one page microsite to give the right impressions!
+          </p>
         </div>
-        <div class="hero-img-right-1">
-          <img src="images/hero-img-3.png" alt="unox placard"/>
+        <div class="email-list">
+          <input type="text" placeholder="unox.me/yourname" />
+          <button>Get your card</button>
         </div>
-        <div class="hero-img-right-2">
-          <img src="images/hero-img-4.png" alt="unox placard"/>
+        <div class="hero-phone desktop-only">
+          <img src="images/iphone.png" alt="iphone slider" />
         </div>
-
       </div>
-
-
+      <div class="hero-img-left-1 left-hero-img hero-img">
+        <img src="images/hero-img-1.png" alt="unox placard" />
+      </div>
+      <div class="hero-img-left-2 left-hero-img hero-img">
+        <img src="images/hero-img-2.png" alt="unox placard" />
+      </div>
+      <div class="hero-img-right-1 right-hero-img hero-img">
+        <img src="images/hero-img-3.png" alt="unox placard" />
+      </div>
+      <div class="hero-img-right-2 right-hero-img hero-img">
+        <img src="images/hero-img-4.png" alt="unox placard" />
+      </div>
     </div>
-    <!--<div>
+  </div>
+  <section class="unox-prop" id="horizontal">
+    <div>
+      <div class="centralize-content">
+        <div class="desktop-only">
+          <h2>The brilliant duo for your physical and online interactions.</h2>
+        </div>
+        <img src="./images/unox-card.png" alt="unox product banner" />
+      </div>
+    </div>
+    <div>
+      <div class="unox-prop-grid">
+        <div class="unox-prop-guide-display">
+          <div class="unox-prop-guide unox-first">
+            <div class="unox-prop-carousel-build">
+              <div class="unox-prop-carousel-control">
+                <div class="unox-prop-carousel-color color-bar-1"></div>
+              </div>
+              <div class="unox-prop-carousel-control">
+                <div class="unox-prop-carousel-color color-bar-2"></div>
+              </div>
+              <div class="unox-prop-carousel-control">
+                <div class="unox-prop-carousel-color color-bar-3"></div>
+              </div>
+              <div class="unox-prop-carousel-control">
+                <div class="unox-prop-carousel-color color-bar-4"></div>
+              </div>
+            </div>
+            <p>Who is unox for?</p>
+            <div class="desktop-only">
+              <h4>For <br /> Creators</h4>
+            </div>
+            <div class="mobile-only">
+              <h4>For Creators</h4>
+            </div>
+          </div>
+        </div>
+        <div class="unox-prop-image-display">
+          <div class="hero-phon">
+            <div class="hero-pho">
+              <div class="horizontal_ite">
+                <div class="fade">
+                  <img src="images/iphone.png" class="unox-prop-image" alt="iphone slider" />
+                </div>
+              </div>
+              <div class="horizontal_ite">
+                <div class="fade">
+                  <img src="images/iphone.png" class="unox-prop-image" alt="iphone slider" />
+                </div>
+              </div>
+              <div class="horizontal_ite">
+                <div class="fade">
+                  <img src="images/iphone.png" class="unox-prop-image" alt="iphone slider" />
+                </div>
+              </div>
+              <div class="horizontal_ite">
+                <div class="fade">
+                  <img src="images/iphone.png" class="unox-prop-image" alt="iphone slider" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="unox-prop-guide-display">
+          <div class="unox-prop-guide">
+            <p class="unox-prop-first">Not just for in-person meetings, but also for online networking and virtual
+              events.</p>
+            <p class="unox-prop-second">Compatible with all modern smartphones, Apple and Android.</p>
+            <a href="">Get unox <img src="./images/arr-down.png" alt="arrow down" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--<div>
       <div>
         <h1>The brilliant duo for your physical and online interactions.</h1>
       </div>
@@ -91,236 +171,273 @@
       </div>
 
     </div>-->
-     
-    <!--card engagement section-->
 
-    <div class="engagement-section">
-      <div class="es-text">
-        <h1>Make the most of your engagements </br> with unox super features</h1>
+  <!--card engagement section-->
+  <div class="engagement-section">
+    <div class="es-text">
+      <h1>Make the most of your engagements </br> with unox super features</h1>
 
+    </div>
+    <div class="tt-card-wrapper">
+      <div class="tap-card ">
+        <div class="tc-img">
+          <img class="card-hover" src="./images/connect.png" alt="connectivity" />
+        </div>
+        <div class="tc-heading">
+          <h6>Tap your card, share your details, no app required - all contactless.</h6>
+        </div>
+        <div class="tc-text">
+          <p>No app needed for sharing and receiving contact information. Works on all smartphones running both Android
+            or iOS</p>
+        </div>
+        <div class="tc-link">
+          <a href="">Get your card <img src="./images/arr-right-sec.png" alt="Get your card" />
+            <!-- <span>-></span> -->
+          </a>
+        </div>
       </div>
-      <div class="tt-card-wrapper">
-        <div class="tap-card ">
-          <div class="tc-img">
-            <img class="card-hover" src="./images/connect.png" alt="connectivity"/>
-          </div>
-          <div class="tc-heading">
-            <h6>Tap your card, share your details, no app required - all contactless.</h6>
-          </div>
-          <div class="tc-text">
-            <p>No app needed for sharing and receiving contact information. Works on all smartphones running both Android or iOS</p>
-          </div>
-          <div class="tc-link">
-            <a href="">Get your card <span>-></span>  </a>
-          </div>
-        </div>
-        <div class="track-card ">
+      <div class="track-card ">
 
-          <div class="tc-heading">
-            <h6>Track networking efforts and engagement  ROI - Personal & Business</h6>
-          </div>
-          <div class="tc-text">
-            <p>Track employee level activities, measure engagement and calculate tangible results from networking efforts. </p>
-          </div>
-          <div class="tc-link">
-            <a href="">Unox for business <span>-></span></a>
-          </div>
-          <div class="track-img">
-            <img class="card-hover" src="./images/track.png" alt="connectivity"/>
-          </div>
+        <div class="tc-heading">
+          <h6>Track networking efforts and engagement ROI - Personal & Business</h6>
         </div>
-       
+        <div class="tc-text">
+          <p>Track employee level activities, measure engagement and calculate tangible results from networking efforts.
+          </p>
+        </div>
+        <div class="tc-link">
+          <a href="">Unox for business <span>-></span></a>
+        </div>
+        <div class="track-img">
+          <img class="card-hover" src="./images/track.png" alt="connectivity" />
+        </div>
       </div>
-
-      <div class="admin-card">
-        <div class="admin-content">
-          <div class="admin-pretext">
-            <p>Business tools</p>
-          </div>
-          <div class="admin-heading">
-            <h3>Admin Controls & CRM Integration</h3>
-          </div>
-          <div class="admin-text">
-            <p>Ensure uniform data, manage field modifications, send leads directly to your CRM, grow your email lists and close deals faster!</p>
-          </div>
-          <div class="admin-link">
-            <a href="">Get unox for business <span>-></span></a>
-          </div>
-        </div>
-        <div class="admin-img">
-          <img src="./images/pc.png" alt="laptop"/>
-        </div>
-
-      </div>
-
-
-
-
 
     </div>
 
-    <div class="join-section">
-      <div class="join-heading">
-        <h3>Join thousands of future centric <span>entrepreneurs</span> using unox</h3>
+    <div class="admin-card">
+      <div class="admin-content">
+        <div class="admin-pretext">
+          <p>Business tools</p>
+        </div>
+        <div class="admin-heading">
+          <h3>Admin Controls & CRM Integration</h3>
+        </div>
+        <div class="admin-text">
+          <p>Ensure uniform data, manage field modifications, send leads directly to your CRM, grow your email lists and
+            close deals faster!</p>
+        </div>
+        <div class="admin-link">
+          <a href="">Get unox for business <span>-></span></a>
+        </div>
       </div>
-      <div class="join-photos" id="flavoursContainer">
-        <div class="join join-1">
-          <img src="./images/p-1.jpg" alt="join entrenuer photo" />
+      <div class="admin-img">
+        <img src="./images/pc.png" alt="laptop" />
+      </div>
+    </div>
+  </div>
+  <div class="join-section">
+    <div class="join-heading">
+      <h3>Join thousands of future centric <span>entrepreneurs</span> using unox</h3>
+    </div>
+    <div class="join-photos" id="flavoursContainer">
+      <div class="join join-1">
+        <!-- <div class="entrepreneur-details"> -->
+        <p>unox.me/DesmondElliot</p>
+        <img src="./images/p-1.jpg" alt="join entrenuer photo" />
+        <!-- </div> -->
+      </div>
+      <div class="join join-2">
+        <!-- <div class="entrepreneur-details"> -->
+        <p>unox.me/DesmondElliot</p>
+        <img src="./images/p-2.jpg" alt="join entrenuer photo" />
+        <!-- </div> -->
+      </div>
+      <div class=" join join-3">
+        <!-- <div class="entrepreneur-details"> -->
+        <p>unox.me/DesmondElliot</p>
+        <img src="./images/p-3.jpg" alt="join entrenuer photo" />
+        <!-- </div> -->
+      </div>
+      <div class=" join join-4">
+        <!-- <div class="entrepreneur-details"> -->
+        <p>unox.me/DesmondElliot</p>
+        <img src="./images/p-4.jpg" alt="join entrenuer photo" />
+        <!-- </div> -->
+      </div>
+      <div class="join join-5">
+        <!-- <div class="entrepreneur-details"> -->
+        <p>unox.me/DesmondElliot</p>
+        <img src="./images/p-5.jpg" alt="join entrenuer photo" />
+        <!-- </div> -->
+      </div>
+      <div class="join join-6">
+        <!-- <div class="entrepreneur-details"> -->
+        <p>unox.me/DesmondElliot</p>
+        <img src="./images/testimony.jpg" alt="join entrenuer photo" />
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+  <div class="get-unox">
+    <div class="unox-content">
+      <div class="unox-left">
+        <div class="ul-heading">
+          <h1>Get your <br>unox,<br> <span>Esay!</span></h1>
         </div>
-        <div class="join join-2">
-          <img src="./images/p-2.jpg" alt="join entrenuer photo" />
-        </div>
-        <div class=" join join-3">
-          <img src="./images/p-3.jpg" alt="join entrenuer photo" />
-        </div>
-        <div class=" join join-4">
-          <img src="./images/p-4.jpg" alt="join entrenuer photo" />
-        </div>
-        <div class="join join-5">
-          <img src="./images/p-5.jpg" alt="join entrenuer photo" />
-        </div>
-        <div class="join join-6">
-          <img src="./images/testimony.jpg" alt="join entrenuer photo" />
-        </div>
+      </div>
+      <div class="unox-right">
+        <img src="./images//trans.png" class="uc-content-carouse" alt="" />
+      </div>
+    </div>
+    <div class="unox-content-2">
+      <div class="uc-content uc-content-carousel-1">
+        <a> Step 01</a>
+        <h6>Place your order</h6>
+        <!-- <p>Select a card and add-ons. Complete the <br />order process and payment.</p> -->
+        <p>Select a card and add-ons. Complete the order process and payment.</p>
+      </div>
+      <div class="uc-content uc-content-carousel-2">
+        <a> Step 02</a>
+        <h6>Make your payment</h6>
+        <!-- <p>Select a card and add-ons. Complete the <br />order process and payment.</p> -->
+        <p>Select a card and add-ons. Complete the order process and payment.</p>
+      </div>
+      <div class="uc-content uc-content-carousel-3">
+        <a> Step 03</a>
+        <h6>Receive your order</h6>
+        <!-- <p>Select a card and add-ons. Complete the <br />order process and payment.</p> -->
+        <p>Select a card and add-ons. Complete the order process and payment.</p>
+      </div>
+
+      <div class="uc-2-button">
+        <a href="#">Get your unox card</a>
 
       </div>
 
     </div>
-    <div class="get-unox">
-      <div class="unox-content">
-        <div class="unox-left">
-          <div class="ul-heading">
-            <h1>Get your <br>unox,<br> <span>Esay!</span></h1>
-          </div>
-
-         
-        </div>
-        <div class="unox-right">
-          <img src="./images//trans.png" alt=""/>
-  
-        </div>
-      </div>
-      <div class="unox-content-2">
-      
-        <div class="uc-content">
-          <a> Step 01</a>
-          <h6>Place your order</h6>
-          <p>Select a card and add-ons. Complete the <br/>order process and payment.</p>
-
-        </div>
-        <div class="uc-2-button">
-          <a href="#">Get your unox card</a>
-          
-        </div>
-
-      </div>
-
-
-
-    </div>
-    <div class="testimony-section">
-      <div class="mySlides">
+  </div>
+  <div class="testimony-section">
+    <div class="mySlides">
       <div class="testimony-wrapper  fade">
-        
         <div class="ts-img">
-          <img src="./images/testimony.jpg" alt="picture of man"/>
+          <img src="./images/testimony.jpg" alt="picture of man" />
         </div>
         <div class="ts-text">
-          <h3>“unox has given me an edge and it serves as a great conversation starter, i absolutely love it!”</h3>
-           
+          <h3>“unox 1 has given me an edge and it serves as a great conversation starter, i absolutely love it!”</h3>
+
           <p>Desmond Elliot</p>
           <p> CEO, EXOPlanet</p>
         </div>
       </div>
-      </div>
-
-      <div class="mySlides">
+    </div>
+    <div class="mySlides">
       <div class="testimony-wrapper  fade">
         <div class="ts-img">
-          <img src="./images/testimony.jpg" alt="picture of man"/>
+          <img src="./images/testimony.jpg" alt="picture of man" />
         </div>
         <div class="ts-text">
-          <h3>“unox has given me an edge and it serves as a great conversation starter, i absolutely love it!”</h3>
-           
+          <h3>“unox 2 has given me an edge and it serves as a great conversation starter, i absolutely love it!”</h3>
+
           <p>Desmond Elliot</p>
           <p> CEO, 2-EXOPlanet</p>
         </div>
       </div>
-      </div>
-      <div class="mySlides">
+    </div>
+    <div class="mySlides">
       <div class="testimony-wrapper  fade">
         <div class="ts-img">
-          <img src="./images/testimony.jpg" alt="picture of man"/>
+          <img src="./images/testimony.jpg" alt="picture of man" />
         </div>
         <div class="ts-text">
-          <h3>“unox has given me an edge and it serves as a great conversation starter, i absolutely love it!”</h3>
-           
+          <h3>“unox 3 has given me an edge and it serves as a great conversation starter, i absolutely love it!”</h3>
+
           <p>Desmond Elliot</p>
           <p> CEO, 3-EXOPlanet</p>
         </div>
       </div>
+    </div>
+    <div class="ts-arrow-1">
+      <img src="./images/arr-left.png" onclick="decreaseSliderIndex()" alt="arrow" />
+    </div>
+    <div class="ts-arrow-2">
+      <img src="./images/arr-right.png" onclick="increaseSliderIndex()" alt="arrow" />
+    </div>
+
+  </div>
+  <div class="recycle-section">
+    <div class="rs-heading">
+      <h3>Do away with recurring printing <br>costs forever!</h3>
+    </div>
+    <div class="rs-card">
+      <div class="rs-text">
+        <h6>Save money & Trees</h6>
+        <p>Move from traditional business card to the latest networking technology and you wont need to print another
+          business card,<br> <b>ever!</b>
+        </p>
+        <p><b> Did we say our cards are recyclable up to 8x?</b></p>
+        <a href="">Get your card -></a>
       </div>
-      <div class="ts-arrow-1">
-        <img src="./images/arr-left.png" onclick="plusSlides(-1)" alt="arrow"/>
-      </div>
-      <div class="ts-arrow-2">
-        <img src="./images/arr-right.png" onclick="plusSlides(1)" alt="arrow"/>
+      <div class="rs-img">
+        <img src="./images/recurring-img.png">
+
       </div>
 
     </div>
 
-    <div class="recycle-section">
-      <div class="rs-heading">
-        <h3>Do away with recurring printing <br>costs forever!</h3>
-      </div>
-      <div class="rs-card">
-        <div class="rs-text">
-          <h6>Save money & Trees</h6>
-          <p>Move from traditional business card to the latest networking technology and you wont need to print another business card,<br> <b>ever!</b> 
-           </p>
-          <p><b> Did we say our cards are recyclable up to 8x?</b></p>
-          <a href="">Get your card -></a>
+  </div>
+  <div class="faq-section">
+    <div class="fs-heading">
+      <h3>Frequently Asked Questions</h3>
+    </div>
+    <div class="faq-wrap">
+      <div class="faq-panel">
+        <button class="accordion">
+          <p>This is a question right here and its totally expandable</p>
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea
+            commodo consequat.</p>
         </div>
-        <div class="rs-img">
-          <img src="./images/recurring-img.png" >
-        
+      </div>
+      <div class="faq-panel">
+        <button class="accordion">
+          <p>This is a question right here and its totally expandable</p>
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea
+            commodo consequat.</p>
         </div>
-
       </div>
 
+      <div class="faq-panel">
+        <button class="accordion">
+          <p>This is a question right here and its totally expandable</p>
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea
+            commodo consequat.</p>
+        </div>
+      </div>
     </div>
 
-
-    <div class="faq-section">
-      <div class="fs-heading">
-        <h3>Frequently Asked Questions</h3>
-      </div>
-      <div class="faq-wrap">
-        <button class="accordion">This is a question right here and its totally expandable</button>
-        <div class="panel">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-
-        <button class="accordion">This is a question right here and its totally expandable</button>
-        <div class="panel">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-
-        <button class="accordion">This is a question right here and its totally expandable</button>
-        <div class="panel">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-      </div>
-
-    </div>
-
-    <footer>
-      <div class="footer-heading">
-        <h3>Claim your unique unox link in 2 minutes</h3>
-      </div><br><br><br>
-      <div class="email-list">
-        <input type="text" placeholder="unox.me/yourname" />
-        <button>Get your card</button>
+  </div>
+  <footer>
+    <div class="footer-heading">
+      <h3>Claim your unique unox link in 2 minutes</h3>
+    </div><br><br><br>
+    <div class="email-list">
+      <input type="text" placeholder="unox.me/yourname" />
+      <button>Get your card</button>
     </div>
 
     <div class="footer-card">
@@ -336,14 +453,14 @@
           <h6>Business</h6>
           <a href="#">For Teams</a>
           <a href="#">Blog</a>
-       
+
         </div>
         <div class="fc-link">
           <h6>Legal</h6>
           <a href="#">Terms & Coditions</a>
           <a href="#">Privacy Policy</a>
           <a href="#">GDPR</a>
-          
+
         </div>
         <div class="fc-link">
           <h6>Support</h6>
@@ -352,76 +469,240 @@
         </div>
         <div class="fc-link">
           <h6>Meet Us</h6>
-          <a  href="#">123, Windton Alley, Victoria Island, Lagos, Nigeria.</a>
+          <a href="#">123, Windton Alley, Victoria Island, Lagos, Nigeria.</a>
           <a href="#">hello@unox.one</a>
           <a href="#">+234 709 123 4567</a>
-          
+
         </div>
       </div>
       <div class="fc-logos">
         <div class="fc-logo">
-          <img src="./images/logo-wh.png" alt="unox logo"/>
+          <img src="./images/logo-wh.png" alt="unox logo" />
         </div>
         <div class="fc-social">
-          <img src="./images/instagram.png" alt="instagram"/>
-          <img src="./images/twitter-logo.png" alt="twitter"/>
-          <img src="./images/linkedin.png" alt="linkedin"/>
+          <img src="./images/instagram.png" alt="instagram" />
+          <img src="./images/twitter-logo.png" alt="twitter" />
+          <img src="./images/linkedin.png" alt="linkedin" />
         </div>
       </div>
     </div>
-    </footer>
+  </footer>
+</div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-    <script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js"
+  integrity="sha512-+LXqbM6YLduaaxq6kNcjMsQgZQUTdZp7FTaArWYFt1nxyFKlQSMdIF/WQ/VgsReERwRD8w/9H9cahFx25UDd+g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+<script>
 
 
 
 
-        //accordion
-      var acc = document.getElementsByClassName("accordion");
-      var i;
-      
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var panel = this.nextElementSibling;
-          if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-          } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-          } 
-        });
+  //accordion
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
       }
-
-     //testimony courasel
-     
-      let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    });
   }
 
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
+  //testimony courasel
+
+  // let slideIndex = 1;
+  // showSlides(slideIndex);
+
+  // function plusSlides(n) {
+  //   showSlides(slideIndex += n);
+  // }
+
+  // function currentSlide(n) {
+  //   showSlides(slideIndex = n);
+  // }
+
+  // function showSlides(n) {
+  //   let i;
+  //   let slides = document.getElementsByClassName("mySlides");
+
+  //   if (n > slides.length) { slideIndex = 1 }
+  //   if (n < 1) { slideIndex = slides.length }
+  //   for (i = 0; i < slides.length; i++) {
+  //     slides[i].style.display = "none";
+  //   }
+
+  //   slides[slideIndex - 1].style.display = "block";
+  //   dots[slideIndex - 1].className += " active";
+  // }
+
+  // rework carousel
+
+  let sliderIndex = 0;
+  let slideArray = document.querySelectorAll('.mySlides');
+  let unoxStepArray = [1, 2, 3];
+
+  // testimonial carousel controller
+  let increaseSliderIndex = () => {
+    if (sliderIndex === (slideArray.length - 1)) {
+      sliderIndex = 0;
+    } else {
+      sliderIndex++;
+    }
+    updateSlide(sliderIndex, slideArray);
+  }
+  let decreaseSliderIndex = () => {
+    if (sliderIndex === 0) {
+      sliderIndex = 2;
+    } else {
+      sliderIndex--;
+    }
+    updateSlide(sliderIndex, slideArray);
+  }
+
+  // get your unox carousel controller
+
+  function updateUNOXSTEPSlide() {
+    let unoxIndex = 1;
+    setInterval(() => {
+      unoxIndex = unoxIndex === unoxStepArray.length ? 1 : unoxIndex + 1;
+      for (let step of unoxStepArray) {
+        if (step === unoxIndex) {
+          document.querySelector('.uc-content-carousel-' + unoxIndex).style.display = "block";
+        } else document.querySelector('.uc-content-carousel-' + step).style.display = "none";
+      }
+    }, 5000)
+  }
+  updateUNOXSTEPSlide();
 
 
 
-      </script>
-  </body>
-</html> 
+  function updateSlide(index, arrayToUse) {
+    let counter = index;
+    let sliderBox = arrayToUse;
+    for (let i = 0; i < sliderBox.length; i++) {
+      sliderBox[i].style.display = "none";
+    }
+    sliderBox[counter].style.display = "block";
+  }
+  updateSlide(sliderIndex, slideArray);
+
+
+  // GSAP
+  // gsap.registerPlugin(ScrollTrigger);
+  // gsap.to(".left-hero-img", {
+  //   x: -800,
+  //   duration: 3,
+  //   scrollTrigger: {
+  //     trigger: ".hero-header.h-1",
+  //     start: 5,
+  //     end: 100,
+  //     toggleActions: "play complete reverse none"
+  //   }
+  // })
+
+  // gsap.to(".right-hero-img", {
+  //   x: 500,
+  //   duration: 3,
+  //   scrollTrigger: {
+  //     trigger: ".hero-header.h-1",
+  //     start: 5,
+  //     end: 100,
+  //     toggleActions: "play complete reverse none"
+  //   }
+  // })
+
+  gsap.registerPlugin(ScrollTrigger);
+  // gsap.from('.centralize-content', {
+  //   y: 350,
+  //   duration: 7,
+  //   scrollTrigger: ".centralize-content",
+  // })
+
+  // gsap.from('.unox-prop-guide', {
+  //   y: 100,
+  //   duration: 4,
+  //   scrollTrigger: ".unox-prop-guide",
+  // })
+  // gsap.from('.hero-phon img', {
+  //   y: 150,
+  //   duration: 4,
+  //   scrollTrigger: ".hero-phon img",
+  // })
+
+  /* start of stagger link */
+
+  let joinButton = document.querySelectorAll('.join img');
+  for (let button of joinButton) {
+    button.addEventListener('mouseover', () => {
+      TweenMax.to(`.join p`, 0.4, { y: -30, ease: Bounce.easeOut });
+      TweenMax.to(`.join p`, 0.2, { y: 1, delay: 0.4 });
+    })
+    button.addEventListener('click', () => {
+      TweenMax.to(`.join p`, 0.4, { y: -30, ease: Bounce.easeOut });
+      TweenMax.to(`.join p`, 0.2, { y: 1, delay: 0.4 });
+    })
+  }
+
+  /* end of stagger link */
+
+  const section_2 = document.querySelector("#horizontal");
+  const box_items = gsap.utils.toArray(".horizontal_item");
+
+  // gsap.to(box_items, {
+  //   xPercent: -100 * (box_items.length - 1),
+  //   ease: "sine.out",
+  //   scrollTigger: {
+  //     trigger: section_2,
+  //     pin: 2,
+  //     scrub: 3,
+  //     snap: 1 / (box_items.length - 1),
+  //     end: "+=" + section_2.offsetWidth
+  //   }
+  // })
+
+  // hero-context
+  // document.querySelector('.hero-context').addEventListener('scroll', () => {
+
+  //   hero-context
+  // })
+
+  // unox-prop-carousel-control
+
+  let unoxSliderIndex = 0;
+  let unoxSlideArray = document.querySelectorAll('.horizontal_ite');
+
+  let increaseUnoxSliderIndex = () => {
+    if (unoxSliderIndex === (unoxSlideArray.length - 1)) {
+      unoxSliderIndex = 0;
+    } else {
+      unoxSliderIndex++;
+    }
+    unoxSlider(unoxSliderIndex, unoxSlideArray);
+  }
+
+  const unoxSlider = (index, arrayToUse) => {
+    let counter = index;
+    let sliderBox = arrayToUse;
+    for (let i = 0; i < sliderBox.length; i++) {
+      document.querySelector(`.color-bar-${i + 1}`).style.display = "none";
+      sliderBox[i].style.display = "none";
+    }
+    sliderBox[counter].style.display = "block";
+    document.querySelector(`.color-bar-${counter + 1}`).style.display = "block";
+  }
+  unoxSlider(unoxSliderIndex, unoxSlideArray);
+
+</script>
+</body>
+
+</html>
