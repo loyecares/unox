@@ -136,8 +136,34 @@
             </div>
           </div>
           <div>
-            <div class="hero-phone desktop-only">
+            <!-- <div class="hero-phone desktop-only">
               <img src="images/iphone.png" class="iphone-slider" alt="iphone slider" />
+            </div> -->
+            <div class="unox-prop-image-display">
+              <div class="hero-phon">
+                <div class="hero-phone">
+                  <div class="horizontal_ite">
+                    <div class="fade">
+                      <img src="images/iphone.png" class="unox-prop-image iphone-slider" alt="iphone slider" />
+                    </div>
+                  </div>
+                  <div class="horizontal_ite">
+                    <div class="fade">
+                      <img src="images/iphone.png" class="unox-prop-image iphone-slider" alt="iphone slider" />
+                    </div>
+                  </div>
+                  <div class="horizontal_ite">
+                    <div class="fade">
+                      <img src="images/iphone.png" class="unox-prop-image iphone-slider" alt="iphone slider" />
+                    </div>
+                  </div>
+                  <div class="horizontal_ite">
+                    <div class="fade">
+                      <img src="images/iphone.png" class="unox-prop-image iphone-slider" alt="iphone slider" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="unox-prop-guide-display">
@@ -307,9 +333,9 @@
     <div class="unox-content-2">
       <div class="uc-content uc-content-carousel-1">
         <div class="link-cover">
-          <div class="link-sec-styling">
+          <!-- <div class="link-sec-styling">
 
-          </div>
+          </div> -->
           <a> Step 01</a>
         </div>
         <h6>Place your order</h6>
@@ -675,13 +701,11 @@
     // .hero-context-text-display
     gsap.to(document.querySelector('.hero-context'), {
       y: -500,
-      duration: 6,
-      onComplete: () => {
-      }
+      duration: 1.5
     });
-    gsap.to(document.querySelector('.iphone-slider'), {
+    gsap.to(document.querySelectorAll('.iphone-slider'), {
       y: '-30%',
-      duration: 3
+      duration: 1.5
     });
     gsap.to(".left-hero-img", {
       x: -800,
@@ -692,19 +716,19 @@
       duration: 3,
     });
     gsap.to(document.querySelector('.centralize-content'), {
-      y: '-80%',
+      y: '-105%',
       position: 'relative',
-      duration: 3
+      duration: 2
     });
     gsap.to(document.querySelector('.unox-prop-grid'), {
       height: 'unset',
-      y: -300,
-      duration: 3
+      y: -350,
+      duration: 1.5
     });
     gsap.to(document.querySelectorAll('.unox-prop-guide-display'), {
       height: 'unset',
-      y: -300,
-      duration: 3
+      y: -200,
+      duration: 1.5
     });
   })
 
@@ -731,7 +755,7 @@
     }
     sliderBox[counter].style.display = "block";
   }
-  unoxSlider(unoxSliderIndex, unoxSlideArray);
+  // unoxSlider(unoxSliderIndex, unoxSlideArray);
 
   let newIndex = 1;
   function runFirstUnoxDisplay() {

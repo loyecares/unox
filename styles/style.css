@@ -44,6 +44,8 @@ nav {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-radius: 66px;
+  z-index: 10000;
+  position: relative;
 }
 
 nav .logo img {
@@ -93,6 +95,7 @@ nav .logo img {
   /*  */
   margin-top: 0px;
   width: 100%;
+  z-index: 10;
 }
 
 .text h1 {
@@ -124,7 +127,7 @@ nav .logo img {
   width: 416px;
   height: 60px;
   margin: auto;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
 
 .email-list input {
@@ -171,7 +174,7 @@ nav .logo img {
 
 .hero-phone img {
   height: 35rem;
-  width: 60%;
+  width: 100%;
   /* width: 100%; */
   overflow: hidden;
   object-fit: cover;
@@ -565,7 +568,7 @@ nav .logo img {
 }
 
 .uc-content div.link-cover {
-  background: red;
+  /* background: red; */
   position: relative;
   height: 3rem;
 }
@@ -2058,7 +2061,7 @@ img {
   font-weight: 800;
 }
 
-.unox-prop-grid .unox-prop-image {
+/* .unox-prop-grid .unox-prop-image {
   height: 25rem;
   overflow: hidden;
   object-fit: cover;
@@ -2067,7 +2070,7 @@ img {
   display: block;
   margin-top: -35%;
   position: relative;
-}
+} */
 
 .absolute-box {
   position: absolute;
@@ -2095,10 +2098,10 @@ img {
 }
 
 .centralize-content h2 {
-  width: 60%;
+  width: 80%;
   display: block;
   margin: 0% auto;
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 800;
   letter-spacing: .05px;
   margin-bottom: 40px;
@@ -2110,11 +2113,21 @@ img {
   display: block;
 }
 
+.unox-prop-guide.unox-first {
+  width: 100%;
+}
+
 .engagement-section {
   z-index: 15;
   position: relative;
 }
 
+.hero-context-text-display {
+  width: 60%;
+  margin: 0px auto;
+  display: block;
+  padding-top: 5%;
+}
 
 
 /* .hero-pho {
