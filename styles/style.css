@@ -2142,6 +2142,14 @@ img {
   flex: 0 0 auto;
 } */
 
+.horizontal_ite {
+  display: none;
+}
+
+.horizontal_ite.show-first {
+  display: block;
+}
+
 .desktop-only {
   display: block;
 }
@@ -2241,9 +2249,13 @@ nav img {
   }
   .centralize-content {
     position: relative !important;
-    margin: 0px 2%;
-    margin-right: 2%;
+    /* margin: 0; */
+    /* margin-right: 2%; */
     display: block;
+    bottom: unset;
+  }
+  .style-mobile {
+    padding: 0px 2%;
   }
 }
 
