@@ -977,14 +977,14 @@
   }
   function runSecondUnoxDisplay() {
     if (newIndex === 2) {
-      // for (let i = 0; i < unoxSlideArray.length; i++) {
-      //   unoxSlideArray[i].style.display = "none";
-      // }
-      // unoxSlideArray[1].style.display = "block";
+      for (let i = 0; i < unoxSlideArray.length; i++) {
+        unoxSlideArray[i].style.display = "none";
+      }
+      unoxSlideArray[1].style.display = "block";
 
-      // for (let i = 0; i < unoxSlideTextArray.length; i++) {
-      //   unoxSlideTextArray[i].style.display = "none";
-      // }
+      for (let i = 0; i < unoxSlideTextArray.length; i++) {
+        unoxSlideTextArray[i].style.display = "none";
+      }
       unoxSlideTextArray[1].style.display = "block";
       gsap.to(document.querySelector(`.color-bar-2`), {
         width: '100%',
@@ -1046,9 +1046,9 @@
   let carouselColorArray = document.querySelector(`.color-bar-1`);
   let unoxSliderGsap = gsap.timeline({
     onComplete: () => {
-    // console.log('heyy')
-    //   newIndex = 2;
-    //   runSecondUnoxDisplay();
+      console.log('heyy')
+      newIndex = 2;
+      runSecondUnoxDisplay();
     }
   });
 
