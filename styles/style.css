@@ -2162,6 +2162,10 @@ nav img {
   border-radius: unset;
 }
 
+.arr-footer-cover img {
+  display: none;
+}
+
 @media screen and (max-width: 720px) {
   .desktop-only {
     display: none;
@@ -2256,6 +2260,24 @@ nav img {
   }
   .style-mobile {
     padding: 0px 2%;
+  }
+
+  .arr-footer-cover {
+    display: flex;
+    align-items: center;
+  }
+
+  .fc-link h6 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .arr-footer-cover img {
+    margin-left: 25px;
+    display: block;
+  }
+  .footer-menu {
+    display: none;
   }
 }
 

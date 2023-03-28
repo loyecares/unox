@@ -344,15 +344,15 @@
       </div>
       <div class="uc-content uc-content-carousel-2">
         <a> Step 02</a>
-        <h6>Make your payment</h6>
+        <h6>Customize, Design & Review</h6>
         <!-- <p>Select a card and add-ons. Complete the <br />order process and payment.</p> -->
-        <p>Select a card and add-ons. Complete the order process and payment.</p>
+        <p>Provide design input and upload your logo through the design portal.</p>
       </div>
       <div class="uc-content uc-content-carousel-3">
         <a> Step 03</a>
-        <h6>Receive your order</h6>
+        <h6>Get your unox Card</h6>
         <!-- <p>Select a card and add-ons. Complete the <br />order process and payment.</p> -->
-        <p>Select a card and add-ons. Complete the order process and payment.</p>
+        <p>After approval we will program, produce and ship your card.</p>
       </div>
 
       <div class="uc-2-button">
@@ -488,50 +488,68 @@
     <div class="footer-card">
       <div class="fc-links-wrapper">
         <div class="fc-link">
-          <h6>Solutions</h6>
-          <a href="#">Get Unox Card</a>
-          <a href="#">Unox Profile</a>
-          <a href="#">Pricing</a>
-          <a href="#">About Us</a>
+          <div class="arr-footer-cover-1 arr-footer-cover" onclick="footerDisplayController(1)">
+            <h6>Solutions</h6>
+            <img src="./images/arr-down-sec.png" class="arr-footer-controller" alt="arrow pointing downwards" />
+          </div>
+          <div class="footer-menu footer-menu-1">
+            <a href="#">Get Unox Card</a>
+            <a href="#">Unox Profile</a>
+            <a href="#">Pricing</a>
+            <a href="#">About Us</a>
+          </div>
         </div>
         <div class="fc-link">
-          <h6>Business</h6>
-          <a href="#">For Teams</a>
-          <a href="#">Blog</a>
-
+          <div class="arr-footer-cover-2 arr-footer-cover" onclick="footerDisplayController(2)">
+            <h6>Business</h6>
+            <img src="./images/arr-down-sec.png" class="arr-footer-controller" alt="arrow pointing downwards" />
+          </div>
+          <div class="footer-menu footer-menu-2">
+            <a href="#">For Teams</a>
+            <a href="#">Blog</a>
+          </div>
         </div>
         <div class="fc-link">
-          <h6>Legal</h6>
-          <a href="#">Terms & Coditions</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">GDPR</a>
-
+          <div class="arr-footer-cover-3 arr-footer-cover" onclick="footerDisplayController(3)">
+            <h6>Legal</h6>
+            <img src="./images/arr-down-sec.png" class="arr-footer-controller" alt="arrow pointing downwards" />
+          </div>
+          <div class="footer-menu footer-menu-3">
+            <a href="#">Terms & Coditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">GDPR</a>
+          </div>
         </div>
         <div class="fc-link">
-          <h6>Support</h6>
-          <a href="#">Contact Us</a>
-          <a href="#">FAQs & Help</a>
+          <div class="arr-footer-cover-4 arr-footer-cover" onclick="footerDisplayController(4)">
+            <h6>Support</h6>
+            <img src="./images/arr-down-sec.png" class="arr-footer-controller" alt="arrow pointing downwards" />
+          </div>
+          <div class="footer-menu footer-menu-4">
+            <a href="#">Contact Us</a>
+            <a href="#">FAQs & Help</a>
+          </div>
         </div>
         <div class="fc-link">
           <h6>Meet Us</h6>
           <a href="#">123, Windton Alley, Victoria Island, Lagos, Nigeria.</a>
           <a href="#">hello@unox.one</a>
           <a href="#">+234 709 123 4567</a>
-
-        </div>
-      </div>
-      <div class="fc-logos">
-        <div class="fc-logo">
-          <img src="./images/logo-wh.png" alt="unox logo" />
-        </div>
-        <div class="fc-social">
-          <img src="./images/instagram.png" alt="instagram" />
-          <img src="./images/twitter-logo.png" alt="twitter" />
-          <img src="./images/linkedin.png" alt="linkedin" />
         </div>
       </div>
     </div>
-  </footer>
+    <div class="fc-logos">
+      <div class="fc-logo">
+        <img src="./images/logo-wh.png" alt="unox logo" />
+      </div>
+      <div class="fc-social">
+        <img src="./images/instagram.png" alt="instagram" />
+        <img src="./images/twitter-logo.png" alt="twitter" />
+        <img src="./images/linkedin.png" alt="linkedin" />
+      </div>
+    </div>
+</div>
+</footer>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
@@ -860,6 +878,19 @@
   })
 
   /* end of unox-prop-carousel-control */
+
+  // footerDisplayController
+  const footerDisplayController = (e) => {
+    let target = document.querySelector(`.footer-menu-${e}`);
+    let targetImg = document.querySelector(`.arr-footer-cover-${e} .arr-footer-controller`);
+    if (target.style.display === "block") {
+      target.style.display = "none";
+      targetImg.setAttribute('src', './images/arr-down-sec.png');
+    } else {
+      target.style.display = "block";
+      targetImg.setAttribute('src', './images/arr-up-sec.png');
+    }
+  }
 
 </script>
 </body>
