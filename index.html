@@ -126,10 +126,10 @@
                   <div class="horizontal_text_block">
                     <div class="fade">
                       <div class="desktop-only">
-                        <h4>For <br /> Creators</h4>
+                        <h4>For <br /> Businesses</h4>
                       </div>
                       <div class="mobile-only">
-                        <h4>For Creators</h4>
+                        <h4>For Businesses</h4>
                       </div>
                     </div>
                   </div>
@@ -952,20 +952,21 @@
     }
     sliderBox[counter].style.display = "block";
   }
-  // unoxSlider(unoxSliderIndex, unoxSlideArray);
 
   let newIndex = 1;
+
   function runFirstUnoxDisplay() {
     if (newIndex === 1) {
       for (let i = 0; i < unoxSlideArray.length; i++) {
         unoxSlideArray[i].style.display = "none";
       }
       unoxSlideArray[0].style.display = "block";
+      unoxSlideArray[4].style.display = "block";
       for (let i = 0; i < unoxSlideTextArray.length; i++) {
         unoxSlideTextArray[i].style.display = "none";
       }
       unoxSlideTextArray[0].style.display = "block";
-      gsap.to(document.querySelector(`.color-bar-1`), {
+      gsap.to(document.querySelectorAll(`.color-bar-1`), {
         width: '100%',
         duration: 8,
         onComplete: () => {
@@ -981,12 +982,13 @@
         unoxSlideArray[i].style.display = "none";
       }
       unoxSlideArray[1].style.display = "block";
+      unoxSlideArray[5].style.display = "block";
 
       for (let i = 0; i < unoxSlideTextArray.length; i++) {
         unoxSlideTextArray[i].style.display = "none";
       }
       unoxSlideTextArray[1].style.display = "block";
-      gsap.to(document.querySelector(`.color-bar-2`), {
+      gsap.to(document.querySelectorAll(`.color-bar-2`), {
         width: '100%',
         duration: 8,
         onComplete: () => {
@@ -1002,12 +1004,13 @@
         unoxSlideArray[i].style.display = "none";
       }
       unoxSlideArray[2].style.display = "block";
+      unoxSlideArray[6].style.display = "block";
 
       for (let i = 0; i < unoxSlideTextArray.length; i++) {
         unoxSlideTextArray[i].style.display = "none";
       }
       unoxSlideTextArray[2].style.display = "block";
-      gsap.to(document.querySelector(`.color-bar-3`), {
+      gsap.to(document.querySelectorAll(`.color-bar-3`), {
         width: '100%',
         duration: 8,
         onComplete: () => {
@@ -1023,12 +1026,13 @@
         unoxSlideArray[i].style.display = "none";
       }
       unoxSlideArray[3].style.display = "block";
+      unoxSlideArray[7].style.display = "block";
 
       for (let i = 0; i < unoxSlideTextArray.length; i++) {
         unoxSlideTextArray[i].style.display = "none";
       }
       unoxSlideTextArray[3].style.display = "block";
-      gsap.to(document.querySelector(`.color-bar-4`), {
+      gsap.to(document.querySelectorAll(`.color-bar-4`), {
         width: '100%',
         duration: 8,
         onComplete: () => {
@@ -1043,15 +1047,15 @@
     }
   }
 
-  let carouselColorArray = document.querySelector(`.color-bar-1`);
+  let carouselColorArray = document.querySelectorAll(`.color-bar-1`);
   let unoxSliderGsap = gsap.timeline({
     onComplete: () => {
-      console.log('heyy')
       newIndex = 2;
       runSecondUnoxDisplay();
     }
   });
 
+  // unox-prop-carousel-color color-bar color-bar-1
   unoxSliderGsap.to(carouselColorArray, {
     width: '100%',
     duration: 8,
