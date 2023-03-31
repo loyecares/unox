@@ -2237,20 +2237,24 @@ nav img {
   .hero-context-text-display {
     width: 100%;
   }
+
   .hero-wrapper {
     height: max-content;
     max-height: unset;
   }
+
   /* .hero-phone {
     display: none;
   } */
   .unox-prop-guide {
     position: relative !important;
   }
+
   .hero-phone img {
     height: 25rem;
     margin-top: -35%;
   }
+
   .centralize-content {
     position: relative !important;
     /* margin: 0; */
@@ -2258,6 +2262,7 @@ nav img {
     display: block;
     bottom: unset;
   }
+
   .style-mobile {
     padding: 0px 2%;
   }
@@ -2276,6 +2281,7 @@ nav img {
     margin-left: 25px;
     display: block;
   }
+
   .footer-menu {
     display: none;
   }
@@ -2289,4 +2295,131 @@ nav img {
 
 .horizontal_ite.cont {
   display: none;
+}
+
+
+
+/* teams */
+@media screen and (max-width: 720px) {
+  .team-hero {
+    padding: 0px 20px;
+    height: max-content;
+  }
+
+  .team-text {
+    width: 100%;
+  }
+
+  .team-monitor-wrap {
+    padding: 80px 20px;
+  }
+
+  .team-context .team-text h1 {
+    font-size: 45px;
+    line-height: 1.3;
+  }
+
+  .team-context .team-text p {
+    font-size: 18px;
+    width: 100%;
+    line-height: 1.8;
+  }
+
+  .team-images {
+    flex-direction: column-reverse;
+  }
+
+  .team-images .ti-content {
+    width: 100%;
+  }
+
+  .team-images .ti-content .ti-text h3 {
+    width: 100%;
+    font-size: 30px;
+  }
+
+  .team-images .ti-content .ti-text p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .team-images .ti-image .unox-card {
+    position: relative;
+    width: 100%;
+  }
+
+  .team-images .ti-image {
+    width: 100%;
+  }
+
+  .team-images .ti-image .unox-phone {
+    width: 85%;
+    right: unset;
+    position: relative;
+    top: unset;
+    margin: 0% auto;
+    height: 23rem;
+    display: block;
+    margin-top: -35%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .team-email-list {
+    width: 100%;
+  }
+
+  .team-email-list input {
+    width: 100%;
+  }
+
+  .team-images .ti-content .ti-text {
+    margin-top: 0px;
+  }
+
+  .team-context {
+    margin-bottom: 75px;
+  }
+
+  .team-monitor-wrap h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    padding-left: 0px;
+  }
+
+  .team-monitor-wrap .team-monitor {
+    height: 255px;
+    border-radius: 13px;
+  }
+
+  .team-monitor-wrap .team-monitor img {
+    display: none;
+  }
+
+  .team-monitor-wrap .tm-highlights {
+    flex-direction: column;
+    padding-left: 0px;
+    row-gap: 20px;
+  }
+
+  .team-monitor-wrap .tm-highlights .tm-highlight .tmh-text h6 {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+
+  .team-monitor-wrap .tm-highlights .tm-highlight .tmh-text p {
+    font-size: 16px;
+  }
+
+  .team-monitor-wrap .tm-highlights .tm-highlight .tmh-box {
+    width: 100%;
+    height: 44px;
+  }
+
+  .team-monitor-wrap .tm-highlights .tm-highlight {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+  }
 }
