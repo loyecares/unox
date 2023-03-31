@@ -47,9 +47,14 @@
             </div>
           </div>
           <div class="mobile-only">
-            <img src="./images/menu-icon.png" alt="menu icon" />
+            <img
+            onclick="displayMobileMenu()"
+            src="./images/menu-icon.png" alt="menu icon" />
           </div>
         </nav>
+        <div class="mobile-menu">
+
+        </div>
         <div class="hero-context">
           <div class="hero-context-text-display">
             <div class="text">
@@ -1081,6 +1086,10 @@
       target.style.display = "block";
       targetImg.setAttribute('src', './images/arr-up-sec.png');
     }
+  }
+
+  const displayMobileMenu = () => {
+
   }
 
 </script>

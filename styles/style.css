@@ -2459,6 +2459,114 @@ nav img {
 }
 
 
+/*unox article*/
+.unox-article {
+  padding: 15px 120px 120px 120px;
+  background-color: #EEF0F1;
+  width: 100%;
+}
+
+.unox-article-wrapper {
+  position: relative;
+}
+
+.unox-article-hero {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 60px;
+}
+
+.unox-article-hero .breadcrumb {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.015em;
+  color: #010007;
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
+
+.article-hero-card {
+  display: flex;
+  gap: 45px;
+  width: 100%;
+  height: 250px;
+  margin: auto;
+  align-items: center;
+  padding: 0px 60px;
+  background: #491860;
+  position: relative;
+  border-radius: 20px;
+  color: #fff;
+  overflow: hidden;
+}
+
+.ahc-text {
+  width: 60%;
+}
+
+.ahc-text h6 {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+}
+
+.ahc-img img {
+  position: absolute;
+  bottom: 0px;
+  right: 60px;
+  width: 25%;
+}
+
+/*# sourceMappingURL=style.css.map */
+.unox-story-block {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.unox-story-block .unox-story-block-links {
+  border-right: 1px solid #DFDBE7;
+}
+
+.unox-story-block .unox-story-block-details {
+  margin-left: 50px;
+}
+
+.unox-story-block .unox-story-block-details p {
+  margin-bottom: 45px;
+  line-height: 1.8;
+}
+
+.unox-story-block a {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 32px;
+  color: #7D7C7D;
+}
+
+.unox-story-block .grey-bg {
+  background: #D9D9D9;
+  height: 455.8px;
+  border-radius: 21px;
+  margin-bottom: 32px;
+}
+
+.unox-story-block-details h2 {
+  font-size: 35px;
+  margin-bottom: 37px;
+  margin-top: 40px;
+}
+
+.unox-article-wrapper {
+  margin-bottom: 80px;
+}
+
+.unox-story-block-links h4 {
+  font-size: 22px;
+  margin-bottom: 35px;
+}
 
 /* teams */
 @media screen and (max-width: 720px) {
@@ -2958,6 +3066,7 @@ nav img {
     height: 54px;
     border-radius: 8px;
   }
+
   .contact-content .contact-content-flex .contact-content-form .input-wrap {
     margin-bottom: 12px;
   }
@@ -2967,6 +3076,7 @@ nav img {
     padding-right: 0px;
     padding-left: 0px;
   }
+
   .contact-page.privacy-hero {
     padding-bottom: 0px;
   }
