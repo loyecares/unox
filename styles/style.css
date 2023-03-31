@@ -1408,13 +1408,12 @@ footer {
   width: 25%;
   border-radius: 20px;
 }
+.article-card img {
+  border-radius: 20px 20px 0 0;
+}
 
 .article-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-img {
-  border-radius: 20px 20px 0 0;
 }
 
 .ac-container {
@@ -1471,4 +1470,421 @@ img {
 
 .show {
   display: block;
+}
+
+/*privacy page*/
+.privacy-hero {
+  padding: 15px 120px 120px 120px;
+  background-color: #EEF0F1;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.privacy-hero-wrapper {
+  position: relative;
+}
+
+.privacy-content {
+  margin-top: 50px;
+}
+.privacy-content .pc-heading h1 {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  letter-spacing: -0.04em;
+  color: #010007;
+  margin-top: 60px;
+}
+.privacy-content .pr-text {
+  margin-top: 50px;
+}
+.privacy-content .pr-text h6 {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #020007;
+  margin-bottom: 20px;
+}
+.privacy-content .pr-text p {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.015em;
+  color: #7D7C7D;
+}
+.privacy-content .pr-text ul {
+  padding-left: 30px;
+  margin-top: 30px;
+}
+.privacy-content .pr-text ul li {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.015em;
+  color: #7D7C7D;
+}
+
+/* contact us*/
+.contact-content {
+  margin-top: 120px;
+}
+.contact-content .contact-content-flex {
+  display: flex;
+  gap: 100px;
+}
+.contact-content .contact-content-flex .contact-content-text {
+  width: 60%;
+  max-width: 670px;
+}
+.contact-content .contact-content-flex .contact-content-text h1 {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 75px;
+  letter-spacing: -0.04em;
+  color: #010007;
+  line-height: 90px;
+}
+.contact-content .contact-content-flex .contact-content-text p {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #020007;
+  margin-top: 30px;
+  width: 80%;
+}
+.contact-content .contact-content-flex .contact-content-form {
+  width: 40%;
+  height: 550px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 50px 30px;
+}
+.contact-content .contact-content-flex .contact-content-form .input-wrap {
+  margin-bottom: 10px;
+  width: 100%;
+}
+.contact-content .contact-content-flex .contact-content-form .input-wrap input, .contact-content .contact-content-flex .contact-content-form .input-wrap select {
+  padding: 10px 8px 10px 14px;
+  width: inherit;
+  height: 47px;
+  background: #FFFFFF;
+  border: 1px solid rgba(39, 38, 37, 0.1);
+  border-radius: 10px;
+  color: rgba(18, 4, 60, 0.8);
+}
+.contact-content .contact-content-flex .contact-content-form .input-wrap textarea {
+  padding: 10px 8px 10px 14px;
+  width: 100%;
+  height: 100px;
+  border: 1px solid rgba(39, 38, 37, 0.1);
+  border-radius: 10px;
+  color: rgba(18, 4, 60, 0.8);
+}
+.contact-content .contact-content-flex .contact-content-form .cta-btn {
+  width: 100%;
+  margin-top: 25px;
+}
+.contact-content .contact-content-flex .contact-content-form .cta-btn button {
+  padding: 10px 26px;
+  width: inherit;
+  height: 47px;
+  border: 1px solid #6D31ED;
+  background: #6D31ED;
+  color: #fff;
+  border-radius: 44px;
+}
+.contact-content .contact-content-company {
+  width: 60%;
+  margin-top: -150px;
+}
+.contact-content .contact-content-company .ccc-flex-wrap {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.contact-content .contact-content-company .ccc-flex-wrap img {
+  padding: 10px 10px;
+  background-color: #fff;
+}
+
+/*myunox page*/
+.myunox {
+  padding: 15px 120px 120px 120px;
+  background-color: #EEF0F1;
+  width: 100%;
+}
+
+.myunox-wrapper {
+  position: relative;
+}
+
+.myunox-hero {
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-top: 60px;
+}
+.myunox-hero .myunox-hero-content {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+.myunox-hero .myunox-hero-content h3 {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 90px;
+  text-align: center;
+  line-height: 100px;
+  letter-spacing: -0.04em;
+  color: #010007;
+}
+.myunox-hero .myunox-hero-content h3 .myunox-text-img {
+  width: 5%;
+}
+.myunox-hero .myunox-hero-content p {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  max-width: 672.53px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #020007;
+}
+
+.myunox-tools {
+  margin-top: 120px;
+}
+
+.tt-card-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 70px;
+}
+
+.tc-img img {
+  width: 50%;
+  margin-bottom: 35px;
+  transition: transform 400ms;
+}
+
+.unox-tap-card {
+  width: 30%;
+  max-width: 400px;
+  height: 469px;
+  background: #7F4AF0;
+  border-radius: 20px;
+  padding: 60px 40px;
+}
+.unox-tap-card:hover img {
+  transform: scale(1.1);
+}
+.unox-tap-card:hover .tc-link a {
+  color: black;
+  background-color: #fff;
+  color: black;
+  display: inline-block;
+  padding: 2px 12px 5px 12px;
+  border-radius: 28px;
+}
+
+.tc-heading h6 {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+}
+
+.tc-text p {
+  margin-top: 20px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.tc-link a {
+  font-family: "SF Pro Display";
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+  transition: 1s;
+  display: inline-block;
+}
+
+.tc-link a span {
+  letter-spacing: -3px;
+}
+
+.unox-track-card {
+  width: 70%;
+  max-width: 700px;
+  height: 469px;
+  background: #405477;
+  border-radius: 20px;
+  padding: 60px 40px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 400ms;
+}
+.unox-track-card:hover img {
+  transform: scale(1.1);
+}
+.unox-track-card:hover .tc-link a {
+  color: black;
+  background-color: #fff;
+  color: black;
+  display: inline-block;
+  padding: 2px 12px 5px 12px;
+  border-radius: 28px;
+}
+
+.track-img {
+  overflow: hidden;
+}
+
+.track-img img {
+  width: 70%;
+  height: 80%;
+  position: absolute;
+  top: 120px;
+  transition: transform 1s;
+  right: -10px;
+  overflow: hidden;
+}
+
+.admin-card {
+  width: 830px;
+  margin: auto;
+  margin-top: 20px;
+  padding-left: 35px;
+  height: 369px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: #EFF0F9;
+  border-radius: 20px;
+}
+
+.admin-pretext p {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 30px;
+  letter-spacing: 0.615em;
+  text-transform: uppercase;
+  color: #020007;
+  margin-top: 80px;
+}
+
+.admin-content {
+  width: 50%;
+}
+
+.admin-heading h3 {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  width: 80%;
+  letter-spacing: -0.015em;
+  color: #020007;
+}
+
+.admin-text p {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.015em;
+  color: #020007;
+}
+
+.admin-img {
+  width: 50%;
+  height: inherit;
+}
+
+.admin-img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: inherit;
+}
+
+/*unox article*/
+.unox-article {
+  padding: 15px 120px 120px 120px;
+  background-color: #EEF0F1;
+  width: 100%;
+}
+
+.unox-article-wrapper {
+  position: relative;
+}
+
+.unox-article-hero {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 60px;
+}
+.unox-article-hero .breadcrumb {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.015em;
+  color: #010007;
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
+.article-hero-card {
+  display: flex;
+  gap: 45px;
+  width: 100%;
+  height: 250px;
+  margin: auto;
+  align-items: center;
+  padding: 0px 60px;
+  background: #491860;
+  position: relative;
+  border-radius: 20px;
+  color: #fff;
+  overflow: hidden;
+}
+
+.ahc-text {
+  width: 60%;
+}
+
+.ahc-text h6 {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+}
+
+.ahc-img img {
+  position: absolute;
+  bottom: 0px;
+  right: 60px;
+  width: 25%;
 }/*# sourceMappingURL=style.css.map */
