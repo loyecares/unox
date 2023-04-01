@@ -1,5 +1,6 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;1,700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;1,700&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
 
 * {
   margin: 0px;
@@ -306,7 +307,7 @@ nav .logo img {
 }
 
 .tc-link a {
-  font-family: "SF Pro Display";
+  /* font-family: "SF Pro Display"; */
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
@@ -838,6 +839,234 @@ footer {
 
 .fc-social img {
   width: 25%;
+}
+
+/*myunox page*/
+.myunox {
+  padding: 15px 120px 120px 120px;
+  background-color: #EEF0F1;
+  width: 100%;
+}
+
+.myunox-wrapper {
+  position: relative;
+}
+
+.myunox-hero {
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-top: 60px;
+}
+
+.myunox-hero .myunox-hero-content {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.myunox-hero .myunox-hero-content h3 {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 90px;
+  text-align: center;
+  line-height: 100px;
+  letter-spacing: -0.04em;
+  color: #010007;
+}
+
+.myunox-hero .myunox-hero-content h3 .myunox-text-img {
+  width: 5%;
+}
+
+.myunox-hero .myunox-hero-content p {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  max-width: 672.53px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #020007;
+}
+
+.myunox-tools {
+  margin-top: 120px;
+}
+
+.tt-card-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 70px;
+}
+
+.tc-img img {
+  width: 50%;
+  margin-bottom: 35px;
+  transition: transform 400ms;
+}
+
+.unox-tap-card {
+  width: 30%;
+  max-width: 400px;
+  height: 469px;
+  background: #7F4AF0;
+  border-radius: 20px;
+  padding: 60px 40px;
+}
+
+.unox-tap-card:hover img {
+  transform: scale(1.1);
+}
+
+.unox-tap-card:hover .tc-link a {
+  color: black;
+  background-color: #fff;
+  color: black;
+  display: inline-block;
+  padding: 2px 12px 5px 12px;
+  border-radius: 28px;
+}
+
+.tc-heading h6 {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+}
+
+.tc-text p {
+  margin-top: 20px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.tc-link a {
+  /* font-family: "SF Pro Display"; */
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+  transition: 1s;
+  display: inline-block;
+}
+
+.tc-link a span {
+  letter-spacing: -3px;
+}
+
+.unox-track-card {
+  width: 70%;
+  max-width: 700px;
+  height: 469px;
+  background: #405477;
+  border-radius: 20px;
+  padding: 60px 40px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 400ms;
+}
+
+.unox-track-card:hover img {
+  transform: scale(1.1);
+}
+
+.unox-track-card:hover .tc-link a {
+  color: black;
+  background-color: #fff;
+  color: black;
+  display: inline-block;
+  padding: 2px 12px 5px 12px;
+  border-radius: 28px;
+}
+
+.track-img {
+  overflow: hidden;
+}
+
+.track-img img {
+  width: 70%;
+  height: 80%;
+  position: absolute;
+  top: 120px;
+  transition: transform 1s;
+  right: -10px;
+  overflow: hidden;
+}
+
+.admin-card {
+  width: 830px;
+  margin: auto;
+  margin-top: 20px;
+  padding-left: 35px;
+  height: 369px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: #EFF0F9;
+  border-radius: 20px;
+}
+
+.admin-pretext p {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 30px;
+  letter-spacing: 0.615em;
+  text-transform: uppercase;
+  color: #020007;
+  margin-top: 80px;
+}
+
+.admin-content {
+  width: 50%;
+}
+
+.admin-heading h3 {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  width: 80%;
+  letter-spacing: -0.015em;
+  color: #020007;
+}
+
+.admin-text p {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.015em;
+  color: #020007;
+}
+
+.admin-img {
+  width: 50%;
+  height: inherit;
+}
+
+.admin-img img {
+  -o-object-fit: contain;
+  object-fit: contain;
+  height: inherit;
 }
 
 /*FAQ*/
@@ -2568,8 +2797,114 @@ nav img {
   margin-bottom: 35px;
 }
 
+.smooth-scroll {
+  position: relative;
+}
+
+.mobile-menu {
+  background: #7F4AF0;
+  width: 100%;
+  height: 100%;
+  /* height: 0px; */
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  top: 0px;
+  z-index: 100000;
+  display: none;
+}
+
+.mobile-menu .mobile-menu-data {
+  padding: 39px 15px;
+  padding-top: 95px;
+  width: max-content;
+}
+
+.mobile-menu-data-flex {
+  display: flex;
+  grid-gap: 75px;
+  justify-content: space-between;
+}
+
+.mobile-menu-data-flex p {
+  color: #E1D8F6;
+  font-size: 1rem;
+  margin-bottom: 24px;
+}
+
+.mobile-menu-data-flex h2 {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 68px;
+}
+
+.mobile-menu-data-flex ul li {
+  list-style: none;
+  display: block;
+  margin-bottom: 22px;
+}
+
+.mobile-menu-data-flex ul li a {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.mobile-menu img {
+  background: #fff;
+}
+
+.cancel-img {
+  background: #E1D8F6;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 30px;
+  top: 39px;
+}
+
+.cancel-img ion-icon {
+  color: #000;
+  font-size: 2rem;
+}
+
+.mobile-menu button {
+  padding: 20px 35px;
+  border-radius: 50px;
+  display: block;
+  background: #fff;
+  border: 1px solid #fff;
+  min-height: 67px;
+  font-size: 18px;
+  color: #020007;
+}
+
+.mobile-menu .button-cover {
+  position: absolute;
+  display: block;
+  bottom: 42px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 /* teams */
 @media screen and (max-width: 720px) {
+
+  .mobile-nav-spacing {
+    padding-top: 22px;
+  }
+
+  .mobile-nav-spacing nav {
+    margin: 0px;
+  }
+
   .team-hero {
     padding: 0px 20px;
     height: max-content;
@@ -3083,5 +3418,101 @@ nav img {
 
   .colorize .testimony-section {
     background: #EEF0F1;
+  }
+
+  /* .myunox */
+  .myunox {
+    padding: 0px 20px;
+  }
+
+  .myunox-hero .myunox-hero-content {
+    width: 100%;
+  }
+
+  .myunox-hero .myunox-hero-content h3 {
+    font-size: 32px;
+    line-height: 38px;
+    display: inline;
+  }
+
+  .myunox-hero .myunox-hero-content h3 img {
+    width: 69px;
+    height: 17px;
+  }
+
+  .myunox-hero .myunox-hero-content p {
+    width: 100%;
+    margin-top: 32px;
+    line-height: 25px;
+  }
+
+  .myunox-hero .myunox-hero-content h3 img.myunox-text-img {
+    width: 10%;
+    height: auto;
+  }
+
+  .unox-track-card,
+  .unox-tap-card {
+    width: 100%;
+  }
+
+  .myunox-tools {
+    margin-top: 80px;
+  }
+
+  .myunox-tools .tt-card-wrapper {
+    margin-top: 0px;
+  }
+
+  .email-list {
+    margin-bottom: 0px;
+  }
+
+  .unox-track-card,
+  .unox-tap-card {
+    padding: 61px 20px;
+  }
+
+  .admin-pretext p {
+    margin-top: 0px;
+  }
+
+  .track-img img {
+    top: unset;
+    bottom: -25%;
+    right: 0px;
+  }
+
+  .admin-text p {
+    width: 80% !important;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400 !important;
+  }
+
+  .admin-heading h3 {
+    width: 80% !important;
+    font-size: 22px;
+  }
+
+  .myunox-tools .unox-track-card .admin-pretext {
+    display: none;
+  }
+  .myunox-tools .unox-tap-card .tc-text p {
+    display: none;
+  }
+
+  .myunox-tools .tc-heading h6 {
+    font-size: 22px;
+    line-height: 26.62px;
+    margin-bottom: 57px;
+  }
+
+  .myunox-tools .unox-tap-card {
+    height: max-content;
+  }
+
+  .tc-link a {
+    font-size: 16px;
   }
 }

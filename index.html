@@ -13,13 +13,71 @@
 </head>
 
 <div class="smooth-scroll">
+  <div class="mobile-menu">
+    <div onclick="closeMobileMenu()" class="cancel-img">
+      <!-- <img src="./images/cancel-ash.svg" alt="cancel icon" /> -->
+      <ion-icon name="close-outline"></ion-icon>
+    </div>
+    <div class="mobile-menu-data">
+      <div>
+      </div>
+      <div class="mobile-menu-data-flex">
+        <div class="">
+          <div class="">
+            <p>unox Core</p>
+            <h2>For Teams</h2>
+          </div>
+          <div>
+            <p>Products</p>
+            <ul>
+              <li>
+                <a href="">unox Card</a>
+              </li>
+              <li>
+                <a href="">unox Profile</a>
+              </li>
+              <li>
+                <a href="">Ambassadors</a>
+              </li>
+              <li>
+                <a href="">unox App</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="">
+          <div class="">
+            <p style="visibility: hidden;">unox Core</p>
+            <h2>unox Profile</h2>
+          </div>
+          <div>
+            <p>Products</p>
+            <ul>
+              <li>
+                <a href="/about.html">About Us</a>
+              </li>
+              <li>
+                <a href="/pricing.html">Pricing</a>
+              </li>
+              <li>
+                <a href="/">Learn</a>
+              </li>
+              <li>
+                <a href="/contact.html">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="button-cover">
+      <button>Get your unox card</button>
+    </div>
+  </div>
   <div class="hero">
     <div class="desktop-only hero-cover">
       <div class="hero-wrapper">
         <nav>
-          <div class="mobile-only">
-            <img src="./images/cart-icon.png" alt="cart icon" />
-          </div>
           <div class="logo">
             <img src="images/logo.png" alt="unox logo" />
           </div>
@@ -46,15 +104,7 @@
               </div>
             </div>
           </div>
-          <div class="mobile-only">
-            <img
-            onclick="displayMobileMenu()"
-            src="./images/menu-icon.png" alt="menu icon" />
-          </div>
         </nav>
-        <div class="mobile-menu">
-
-        </div>
         <div class="hero-context">
           <div class="hero-context-text-display">
             <div class="text">
@@ -205,30 +255,7 @@
           <div class="logo">
             <img src="images/logo.png" alt="unox logo" />
           </div>
-          <div class="desktop-only">
-            <div class="links">
-              <ul>
-                <li>
-                  <a href="#">Products</a>
-                </li>
-                <li>
-                  <a href="teams.html">ForTeams</a>
-                </li>
-                <li>
-                  <a href="#">My unox</a>
-                </li>
-                <li>
-                  <a href="#">More</a>
-                </li>
-
-              </ul>
-              <div class="card-button">
-                <a href="#">Get a Card</a>
-
-              </div>
-            </div>
-          </div>
-          <div class="mobile-only">
+          <div onclick="displayMobileMenu()" class="mobile-only">
             <img src="./images/menu-icon.png" alt="menu icon" />
           </div>
         </nav>
@@ -744,6 +771,7 @@
 <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+<script src="./js/common.js"></script>
 <script>
 
   //accordion
@@ -1086,10 +1114,6 @@
       target.style.display = "block";
       targetImg.setAttribute('src', './images/arr-up-sec.png');
     }
-  }
-
-  const displayMobileMenu = () => {
-
   }
 
 </script>

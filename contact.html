@@ -10,42 +10,105 @@
 </head>
 
 <div class="colorize">
-    <div class="privacy-hero contact-page">
-        <div class="privacy-hero-wrapper">
-            <nav>
-                <div class="mobile-only">
-                    <img src="./images/cart-icon.png" alt="cart icon" />
-                </div>
-                <div class="logo">
-                    <img src="images/logo.png" alt="unox logo" />
-                </div>
-                <div class="desktop-only">
-                    <div class="links">
+    <div class="mobile-menu">
+        <div onclick="closeMobileMenu()" class="cancel-img">
+            <!-- <img src="./images/cancel-ash.svg" alt="cancel icon" /> -->
+            <ion-icon name="close-outline"></ion-icon>
+        </div>
+        <div class="mobile-menu-data">
+            <div>
+            </div>
+            <div class="mobile-menu-data-flex">
+                <div class="">
+                    <div class="">
+                        <p>unox Core</p>
+                        <h2>For Teams</h2>
+                    </div>
+                    <div>
+                        <p>Products</p>
                         <ul>
                             <li>
-                                <a href="#">Products</a>
+                                <a href="">unox Card</a>
                             </li>
                             <li>
-                                <a href="teams.html">ForTeams</a>
+                                <a href="">unox Profile</a>
                             </li>
                             <li>
-                                <a href="#">My unox</a>
+                                <a href="">Ambassadors</a>
                             </li>
                             <li>
-                                <a href="#">More</a>
+                                <a href="">unox App</a>
                             </li>
-
                         </ul>
-                        <div class="card-button">
-                            <a href="#">Get a Card</a>
-
-                        </div>
                     </div>
                 </div>
-                <div class="mobile-only">
-                    <img src="./images/menu-icon.png" alt="menu icon" />
+                <div class="">
+                    <div class="">
+                        <p style="visibility: hidden;">unox Core</p>
+                        <h2>unox Profile</h2>
+                    </div>
+                    <div>
+                        <p>Products</p>
+                        <ul>
+                            <li>
+                                <a href="/about.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="/pricing.html">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="/">Learn</a>
+                            </li>
+                            <li>
+                                <a href="/contact.html">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </nav>
+            </div>
+        </div>
+        <div class="button-cover">
+            <button>Get your unox card</button>
+        </div>
+    </div>
+    <div class="privacy-hero contact-page">
+        <div class="privacy-hero-wrapper">
+            <div class="mobile-nav-spacing">
+                <nav>
+                    <div class="mobile-only">
+                        <img src="./images/cart-icon.png" alt="cart icon" />
+                    </div>
+                    <div class="logo">
+                        <img src="images/logo.png" alt="unox logo" />
+                    </div>
+                    <div class="desktop-only">
+                        <div class="links">
+                            <ul>
+                                <li>
+                                    <a href="#">Products</a>
+                                </li>
+                                <li>
+                                    <a href="teams.html">ForTeams</a>
+                                </li>
+                                <li>
+                                    <a href="#">My unox</a>
+                                </li>
+                                <li>
+                                    <a href="#">More</a>
+                                </li>
+
+                            </ul>
+                            <div class="card-button">
+                                <a href="#">Get a Card</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="displayMobileMenu()" class="mobile-only">
+                        <img src="./images/menu-icon.png" alt="menu icon" />
+                    </div>
+                </nav>
+            </div>
             <div class="contact-content">
                 <div class="contact-content-flex">
                     <div class="contact-content-text">
@@ -181,14 +244,8 @@
         </div>
     </footer>
 </div>
+<script src="./js/common.js"></script>
 <script>
-
-
-
-
-
-
-
 </script>
 </body>
 
