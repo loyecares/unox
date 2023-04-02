@@ -233,7 +233,8 @@ nav .logo img {
 /* engagement section*/
 .engagement-section {
   background-color: #E4E2E9;
-  padding: 8% 16%;
+  /* padding: 8% 16%; */
+  padding-top: 8%;
 }
 
 .es-text {
@@ -244,7 +245,7 @@ nav .logo img {
 .es-text h1 {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 30px;
   text-align: center;
   letter-spacing: -0.015em;
@@ -268,7 +269,7 @@ nav .logo img {
 
 .tap-card {
   width: 400px;
-  height: 469px;
+  height: 440px;
   background: #7F4AF0;
   border-radius: 20px;
   padding: 60px 40px;
@@ -287,11 +288,36 @@ nav .logo img {
   border-radius: 28px;
 }
 
+.company-logo-showcase {
+  display: flex;
+  grid-gap: 13px;
+  position: absolute;
+  bottom: 15%;
+  left: 28%;
+}
+
+.company-logo-showcase div.logo-showcase-cover {
+  background: #F5F6F7;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-logo-showcase img {
+  width: 55%;
+  height: auto;
+}
+
 .tc-heading h6 {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
+  width: 90%;
   letter-spacing: -0.015em;
   color: #FFFFFF;
 }
@@ -301,6 +327,7 @@ nav .logo img {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-size: 14px;
+  width: 90%;
   letter-spacing: -0.015em;
   color: #FFFFFF;
   margin-bottom: 20px;
@@ -323,7 +350,7 @@ nav .logo img {
 
 .track-card {
   width: 400px;
-  height: 469px;
+  height: 440px;
   background: #405477;
   border-radius: 20px;
   padding: 60px 40px;
@@ -441,7 +468,7 @@ nav .logo img {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 800;
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
   letter-spacing: -0.015em;
 }
@@ -452,16 +479,35 @@ nav .logo img {
 
 .join-photos {
   width: 100%;
-  display: flex;
+  /* display: flex; */
   flex-direction: row;
   gap: 20px;
   overflow-x: auto;
 }
 
+.owl-controls {
+  display: none !important;
+}
+
+.carousel-item {
+  margin-left: 10px;
+}
+.carousel-item:first-child {
+  margin-left: 0;
+}
+
+.owl-item {
+  margin-right: 20px;
+}
+
+.owl-item .join-image img {
+  height: 300px;
+}
+
 .join {
-  width: 25%;
+  /* width: 25%;
   height: 260px;
-  height: max-content;
+  height: max-content; */
 }
 
 .join-1 {
@@ -908,7 +954,7 @@ footer {
 }
 
 .tc-img img {
-  width: 50%;
+  width: 40%;
   margin-bottom: 35px;
   transition: transform 400ms;
 }
@@ -1202,7 +1248,7 @@ footer {
 .team-images .ti-content .ti-text h3 {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 40px;
   letter-spacing: -0.015em;
   color: #2F293D;
@@ -1269,7 +1315,7 @@ footer {
 .team-monitor-wrap h3 {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 40px;
   letter-spacing: -0.015em;
   color: #020007;
@@ -2131,10 +2177,10 @@ img {
     width: 100%;
   }
 
-  .join {
+  /* .join {
     width: 290.5px;
     height: 325.74px;
-  }
+  } */
 
   /* .get-unox */
   .get-unox {
@@ -2677,11 +2723,26 @@ nav img {
   }
 }
 
-.join-photos img {
-  width: 290.5px;
-  height: 325.74px;
+.join-photos {
+  overflow-y: hidden;
 }
 
+/* .join-photos img {
+  width: 290.5px;
+  height: 325.74px;
+} */
+
+.join-photos .join-image {
+  width: 290.5px;
+  height: 250px;
+}
+
+.join-photos .join-image img {
+  /* width: 290.5px;
+  height: 325.74px; */
+  object-fit: cover;
+  object-position: top;
+}
 
 .horizontal_ite.cont {
   display: none;
