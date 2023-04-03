@@ -30,3 +30,19 @@ document.querySelector('.nav-products').addEventListener('mouseout', () => {
 document.querySelector('.nav-more').addEventListener('mouseout', () => {
     document.querySelector('.hover-tab.more-tab').style.display = "none"
 })
+
+// footerDisplayController
+const footerDisplayController = (e) => {
+    let target = document.querySelector(`.footer-menu-${e}`);
+    let targetImg = document.querySelector(`.arr-footer-cover-${e} .arr-footer-controller`);
+    if (target.style.display === "block") {
+        // gsap.to(targetImg, {
+
+        // });
+        target.style.display = "none";
+        targetImg.setAttribute('src', './images/arr-down-sec.png');
+    } else {
+        target.style.display = "block";
+        targetImg.setAttribute('src', './images/arr-up-sec.png');
+    }
+}

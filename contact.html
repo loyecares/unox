@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/style.css">
 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </head>
 
 <div class="colorize">
     <div class="mobile-menu">
         <div onclick="closeMobileMenu()" class="cancel-img">
-            <!-- <img src="./images/cancel-ash.svg" alt="cancel icon" /> -->
             <ion-icon name="close-outline"></ion-icon>
         </div>
         <div class="mobile-menu-data">
@@ -22,7 +24,7 @@
                 <div class="">
                     <div class="">
                         <p>unox Core</p>
-                        <h2>For Teams</h2>
+                        <h2><a href="./teams.html">For Teams</a></h2>
                     </div>
                     <div>
                         <p>Products</p>
@@ -45,22 +47,22 @@
                 <div class="">
                     <div class="">
                         <p style="visibility: hidden;">unox Core</p>
-                        <h2>unox Profile</h2>
+                        <h2><a href="#">unox Profile</a></h2>
                     </div>
                     <div>
                         <p>Products</p>
                         <ul>
                             <li>
-                                <a href="/about.html">About Us</a>
+                                <a href="./about.html">About Us</a>
                             </li>
                             <li>
-                                <a href="/pricing.html">Pricing</a>
+                                <a href="./pricing.html">Pricing</a>
                             </li>
                             <li>
-                                <a href="/">Learn</a>
+                                <a href="./faqs.html">Learn</a>
                             </li>
                             <li>
-                                <a href="/contact.html">Contact us</a>
+                                <a href="./contact.html">Contact us</a>
                             </li>
                         </ul>
                     </div>
@@ -86,19 +88,91 @@
                     <div class="desktop-only">
                         <div class="links">
                             <ul>
-                                <li>
+                                <li class="main-nav-links nav-products">
                                     <a href="#">Products</a>
+                                    <div class="hover-tab products-tab">
+                                        <div class="products-hover-content hover-content">
+                                            <div>
+                                                <div class="hover-img-content">
+                                                    <img src="./images/card-4.png" class="main-img-content"
+                                                        alt="man smiling" />
+                                                    <div class="black-bg">
+                                                        <div class="bg-flex">
+                                                            <p>Customize your unox card to reflect your uniqueness</p>
+                                                            <a href="">
+                                                                <img src="./images/arr-up-right.svg" alt="visit page" />
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">unox Card</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="teams.html">Unox Profile</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Ambassadors</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">unox App <span>Coming soon</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
-                                <li>
-                                    <a href="teams.html">ForTeams</a>
+                                <li class="main-nav-links">
+                                    <a href="./teams.html">For Teams</a>
                                 </li>
-                                <li>
-                                    <a href="#">My unox</a>
+                                <li class="main-nav-links">
+                                    <a href="./myunox.html">My unox</a>
                                 </li>
-                                <li>
+                                <li class="main-nav-links nav-hover-button nav-more">
                                     <a href="#">More</a>
+                                    <div class="hover-tab more-tab">
+                                        <div class="hover-content">
+                                            <div>
+                                                <div class="hover-img-content">
+                                                    <img src="./images/p-2.jpg" alt="man smiling" />
+                                                    <div class="black-bg">
+                                                        <div class="bg-flex">
+                                                            <p>From the blog</p>
+                                                            <a href="">
+                                                                <img src="./images/arr-up-right.svg" alt="visit page" />
+                                                            </a>
+                                                        </div>
+                                                        <h4 class="black-bg-text">Benefits of getting the unox card as a
+                                                            creator</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="./about.html">About Us</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="./pricing.html">Pricing</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="./faqs.html">Learn</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="./contact.html">Contact Us</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
-
                             </ul>
                             <div class="card-button">
                                 <a href="#">Get a Card</a>
@@ -197,51 +271,71 @@
             <input type="text" placeholder="unox.me/yourname" />
             <button>Get your card</button>
         </div>
-
         <div class="footer-card">
             <div class="fc-links-wrapper">
                 <div class="fc-link">
-                    <h6>Solutions</h6>
-                    <a href="#">Get Unox Card</a>
-                    <a href="#">Unox Profile</a>
-                    <a href="#">Pricing</a>
-                    <a href="#">About Us</a>
+                    <div class="arr-footer-cover-1 arr-footer-cover" onclick="footerDisplayController(1)">
+                        <h6>Solutions</h6>
+                        <img src="./images/arr-down-sec.png" class="arr-footer-controller"
+                            alt="arrow pointing downwards" />
+                    </div>
+                    <div class="footer-menu footer-menu-1">
+                        <a href="#">Get Unox Card</a>
+                        <a href="#">Unox Profile</a>
+                        <a href="./pricing.html">Pricing</a>
+                        <a href="./about.html">About Us</a>
+                    </div>
                 </div>
                 <div class="fc-link">
-                    <h6>Business</h6>
-                    <a href="#">For Teams</a>
-                    <a href="#">Blog</a>
-
+                    <div class="arr-footer-cover-2 arr-footer-cover" onclick="footerDisplayController(2)">
+                        <h6>Business</h6>
+                        <img src="./images/arr-down-sec.png" class="arr-footer-controller"
+                            alt="arrow pointing downwards" />
+                    </div>
+                    <div class="footer-menu footer-menu-2">
+                        <a href="#">For Teams</a>
+                        <a href="#">Blog</a>
+                    </div>
                 </div>
                 <div class="fc-link">
-                    <h6>Legal</h6>
-                    <a href="#">Terms & Coditions</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">GDPR</a>
-
+                    <div class="arr-footer-cover-3 arr-footer-cover" onclick="footerDisplayController(3)">
+                        <h6>Legal</h6>
+                        <img src="./images/arr-down-sec.png" class="arr-footer-controller"
+                            alt="arrow pointing downwards" />
+                    </div>
+                    <div class="footer-menu footer-menu-3">
+                        <a href="#">Terms & Coditions</a>
+                        <a href="./privacy.html">Privacy Policy</a>
+                        <a href="#">GDPR</a>
+                    </div>
                 </div>
                 <div class="fc-link">
-                    <h6>Support</h6>
-                    <a href="#">Contact Us</a>
-                    <a href="#">FAQs & Help</a>
+                    <div class="arr-footer-cover-4 arr-footer-cover" onclick="footerDisplayController(4)">
+                        <h6>Support</h6>
+                        <img src="./images/arr-down-sec.png" class="arr-footer-controller"
+                            alt="arrow pointing downwards" />
+                    </div>
+                    <div class="footer-menu footer-menu-4">
+                        <a href="#">Contact Us</a>
+                        <a href="#">FAQs & Help</a>
+                    </div>
                 </div>
                 <div class="fc-link">
                     <h6>Meet Us</h6>
                     <a href="#">123, Windton Alley, Victoria Island, Lagos, Nigeria.</a>
                     <a href="#">hello@unox.one</a>
                     <a href="#">+234 709 123 4567</a>
-
                 </div>
             </div>
-            <div class="fc-logos">
-                <div class="fc-logo">
-                    <img src="./images/logo-wh.png" alt="unox logo" />
-                </div>
-                <div class="fc-social">
-                    <img src="./images/instagram.png" alt="instagram" />
-                    <img src="./images/twitter-logo.png" alt="twitter" />
-                    <img src="./images/linkedin.png" alt="linkedin" />
-                </div>
+        </div>
+        <div class="fc-logos">
+            <div class="fc-logo">
+                <img src="./images/logo-wh.png" alt="unox logo" />
+            </div>
+            <div class="fc-social">
+                <img src="./images/instagram.png" alt="instagram" />
+                <img src="./images/twitter-logo.png" alt="twitter" />
+                <img src="./images/linkedin.png" alt="linkedin" />
             </div>
         </div>
     </footer>
