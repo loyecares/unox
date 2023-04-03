@@ -909,7 +909,7 @@ footer {
 /*myunox page*/
 .myunox {
   padding: 15px 120px 120px 120px;
-  background-color: #EEF0F1;
+  background-color: #F5F6F7;
   width: 100%;
 }
 
@@ -1037,7 +1037,7 @@ footer {
 .unox-track-card {
   width: 70%;
   max-width: 700px;
-  height: 469px;
+  height: 430px;
   background: #405477;
   border-radius: 20px;
   padding: 60px 40px;
@@ -1063,14 +1063,146 @@ footer {
   overflow: hidden;
 }
 
+.myunox-tools .track-img {
+  position: absolute;
+  top: 0%;
+  right: 0px;
+}
+
+.myunox-tools .tt-card-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 31px;
+}
+
+.myunox-tools .unox-track-card {
+  position: relative;
+  width: 100%;
+  max-width: unset;
+}
+
+.myunox-tools .unox-tap-card {
+  width: 100%;
+  height: 430px;
+  max-width: unset;
+}
+
+.myunox-tools .track-img img {
+  position: relative;
+  top: unset;
+  left: unset;
+  right: unset;
+  width: 100%;
+  padding-top: 20%;
+}
+
+.myunox-tools .admin-card {
+  width: 100%;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.myunox-tools .admin-content {
+  width: unset;
+}
+
+.myunox-tools .admin-card .admin-img {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.myunox-tools .admin-card img {
+  position: absolute;
+  height: 40rem;
+  width: auto;
+  top: 35%;
+}
+
+.myunox-tools .admin-card .admin-heading h3 {
+  font-size: 35px;
+  padding-top: 40px;
+}
+
+.myunox-tools .admin-card .admin-text p {
+  font-size: 20px;
+  width: 80%;
+}
+
+.myunox-tools .tt-card-wrapper .admin-heading h3 {
+  font-size: 30px;
+}
+
+.myunox-features .grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 16px;
+}
+
+.myunox-features .grid-4 .bg-white {
+  background: #fff;
+  border-radius: 10px;
+  padding: 51px 25px;
+  padding-bottom: 40px;
+  box-shadow: 0px 0px .5px .5px rgba(0, 0, 0, 0.1);
+}
+
+.myunox-features .grid-4 .bg-white p {
+  color: #7D7C7D;
+  font-size: 14px;
+  line-height: 16.94px;
+}
+
+.myunox-features .grid-4 .bg-white h4 {
+  color: #020007;
+  padding-bottom: 12px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.myunox-features .grid-4 .bg-white img {
+  border-radius: unset;
+  padding-bottom: 25px;
+}
+
+.myunox-features .center-text h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.myunox-features .center-text h2 span {
+  color: #7F4AF0;
+}
+
+.myunox-features .center-text p {
+  font-size: 20px;
+  width: 80%;
+  margin: 0px auto;
+  display: block;
+}
+
+.myunox-features .center-text {
+  width: 55%;
+  margin: 0px auto;
+  display: block;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 100px;
+}
+
 .track-img img {
-  width: 70%;
-  height: 80%;
+  width: 60%;
+  height: 100%;
   position: absolute;
   top: 120px;
   transition: transform 1s;
   right: -10px;
   overflow: hidden;
+  object-fit: cover;
+  object-position: center;
 }
 
 .admin-card {
