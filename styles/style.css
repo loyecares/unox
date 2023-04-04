@@ -468,7 +468,7 @@ nav .logo img {
 }
 
 .join-section {
-  padding: 130px 0px;
+  padding: 100px 0px;
   background-color: #f5f5f7;
 }
 
@@ -761,7 +761,7 @@ nav .logo img {
 
 .recycle-section {
   background-color: #f3f0f5;
-  padding: 120px 50px;
+  padding: 100px 50px;
 }
 
 .rs-heading h3 {
@@ -908,7 +908,8 @@ footer {
 
 /*myunox page*/
 .myunox {
-  padding: 15px 120px 120px 120px;
+  padding: 15px 120px 100px 120px;
+  padding-bottom: 0px;
   background-color: #F5F6F7;
   width: 100%;
 }
@@ -1264,6 +1265,99 @@ footer {
   -o-object-fit: contain;
   object-fit: contain;
   height: inherit;
+}
+
+.myunox-page {
+  background: #f5f5f7;
+}
+
+.theme-showcase {
+  padding: 100px 120px 100px 120px;
+}
+
+.theme-showcase .theme-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  grid-gap: 80px;
+}
+
+.theme-img-cover {
+  background: #21262D;
+  border-radius: 45px;
+  padding: 50px 60px 0px 60px;
+  max-height: 500px;
+  width: 90%;
+  height: 100%;
+  margin: 0px auto;
+  display: block;
+}
+
+.theme-text-cover {
+  width: 90%;
+}
+
+.theme-img-cover img {
+  height: 100%;
+  width: 100%;
+}
+
+.theme-showcase .theme-wrapper button {
+  background: #020007;
+  padding: 15px 26px;
+  color: #fff;
+  border-radius: 44px;
+  font-size: 14px;
+  border: 1px solid #020007;
+}
+
+.theme-showcase .theme-wrapper h3 {
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 32px;
+}
+
+.theme-showcase .theme-wrapper span {
+  color: #7F4AF0;
+}
+
+.theme-showcase .theme-wrapper p {
+  margin-bottom: 40px;
+  width: 70%;
+}
+
+.resources-showcase {
+  padding: 100px 120px 100px 120px;
+}
+
+.resources-showcase .resources-center-text {
+  text-align: center;
+  width: 80%;
+  margin: 0px auto;
+  display: block;
+}
+
+.resources-showcase .resources-center-text h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.resources-showcase .resources-center-text h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  font-weight: 800;
+}
+
+.resources-showcase .resources-center-text p {
+  font-size: 16px;
+  width: 50%;
+  margin: 0px auto;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.article-card-wrap {
+  padding-top: 0px;
 }
 
 /*FAQ*/
@@ -3835,6 +3929,124 @@ nav img {
     background: #EEF0F1;
     border: 1px solid #EEF0F1;
     padding-bottom: 30px;
+  }
+
+  .myunox-tools .tt-card-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .myunox-tools .unox-track-card {
+    height: max-content;
+  }
+
+  .myunox-tools .track-img {
+    position: absolute;
+    right: 0px;
+    bottom: -20%;
+  }
+
+  .admin-text p {
+    width: 75% !important;
+  }
+
+  .myunox-tools .tt-card-wrapper .admin-heading h3 {
+    font-size: 22px;
+  }
+
+  .myunox-tools .track-img img {
+    /* position: absolute; */
+    width: auto;
+    height: 20rem;
+    float: right;
+  }
+
+  .myunox-features .center-text {
+    width: 100%;
+  }
+
+  .myunox-tools .admin-card {
+    display: block;
+    max-height: 450px;
+    overflow: hidden;
+  }
+
+  .myunox-tools .admin-card img {
+    top: unset;
+    height: 32rem;
+  }
+
+  .admin-link a {
+    margin-bottom: 50px;
+  }
+
+  .myunox-tools .admin-card img {
+    position: relative;
+  }
+
+  .myunox-tools .admin-card .admin-heading h3 {
+    font-size: 22px;
+    width: 100% !important;
+  }
+
+  .myunox-tools .admin-card .admin-text p {
+    font-size: 16px;
+    width: 100% !important;
+  }
+
+  .myunox-features .grid-4 {
+    display: none;
+  }
+
+  .theme-showcase {
+    padding: 0px 20px;
+  }
+
+  .theme-showcase .theme-wrapper {
+    display: block;
+  }
+
+  .theme-showcase .theme-wrapper h3 {
+    font-size: 35px;
+  }
+  .theme-img-cover {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 22px;
+  }
+
+  .theme-text-cover {
+    width: 100%;
+  }
+
+  .theme-showcase .theme-wrapper p {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .resources-showcase {
+    padding: 70px 20px;
+  }
+
+  .myunox-features .center-text h2 {
+    font-size: 32px;
+  }
+
+  .myunox-features .center-text p {
+    width: 100%;
+  }
+
+  .resources-showcase .resources-center-text {
+    width: 100%;
+  }
+
+  .resources-showcase .resources-center-text h2 {
+    font-size: 32px;
+  }
+
+  .resources-showcase .resources-center-text p {
+    width: 100%;
+    font-size: 18px;
   }
 }
 
