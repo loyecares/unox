@@ -26,7 +26,7 @@
   </head>
 
   <body>
-    <div class="smooth-scroll">
+    <div class="smooth-scroll content-page">
       <div class="mobile-menu">
         <div onclick="closeMobileMenu()" class="cancel-img">
           <!-- <img src="./images/cancel-ash.svg" alt="cancel icon" /> -->
@@ -625,7 +625,9 @@
             </div>
           </div>
           <div class="unox-right">
-            <img src="./images//trans.png" class="uc-content-carouse" alt="" />
+            <div class="unox-image-cover">
+              <img src="./images//trans.png" class="uc-content-carouse" alt="" />
+            </div>
           </div>
         </div>
         <div class="unox-content-2">
@@ -1023,7 +1025,7 @@
       // document.querySelector('.hero-cover').addEventListener('click', () => {
       gsap.to(document.querySelector('.desktop-only .hero-context'), {
         y: -500,
-        duration: 5,
+        duration: 3,
         scrollTrigger: {
           start: 20,
           end: 100,
@@ -1034,7 +1036,7 @@
       // .hero-context-text-display
       gsap.to(document.querySelectorAll('.desktop-only .iphone-slider'), {
         y: '-30%',
-        duration: 5,
+        duration: 3,
         scrollTrigger: {
           start: 20,
           end: 100,
@@ -1044,7 +1046,7 @@
       });
       gsap.to(".desktop-only .left-hero-img", {
         x: -800,
-        duration: 5,
+        duration: 3,
         scrollTrigger: {
           start: 20,
           end: 100,
@@ -1054,7 +1056,7 @@
       });
       gsap.to(".desktop-only .right-hero-img", {
         x: 500,
-        duration: 5,
+        duration: 3,
         scrollTrigger: {
           start: 20,
           end: 100,
@@ -1065,7 +1067,7 @@
       gsap.to(document.querySelector('.desktop-only .centralize-content'), {
         y: '-105%',
         position: 'relative',
-        duration: 5,
+        duration: 3,
         scrollTrigger: {
           start: 20,
           end: 100,
@@ -1075,8 +1077,9 @@
       });
       gsap.to(document.querySelector('.desktop-only .unox-prop-grid'), {
         height: 'unset',
-        y: -350,
-        duration: 5,
+        y: -450,
+        duration: 3,
+        opacity: 1,
         scrollTrigger: {
           start: 20,
           end: 100,
@@ -1087,7 +1090,17 @@
       gsap.to(document.querySelectorAll('.desktop-only .unox-prop-guide-display'), {
         height: 'unset',
         y: -200,
-        duration: 5,
+        duration: 3,
+        opacity: 1,
+        scrollTrigger: {
+          start: 20,
+          end: 100,
+          // scrub: true,
+          toggleAction: "play complete reset reset"
+        }
+      });
+      gsap.to(document.querySelectorAll('.desktop-only .unox-prop-guide'), {
+        opacity: 1,
         scrollTrigger: {
           start: 20,
           end: 100,

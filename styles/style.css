@@ -19,6 +19,10 @@ a {
   text-decoration: none;
 }
 
+.content-page {
+  overflow-x: hidden;
+}
+
 .hero {
   padding: 15px 120px 0px 120px;
   background-color: #EEF0F1;
@@ -115,10 +119,12 @@ nav .logo img {
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
+  font-size: 90px;
   text-align: center;
   letter-spacing: -0.01em;
   color: #020007;
   line-height: 70px;
+  line-height: 1;
 }
 
 .text p {
@@ -127,7 +133,7 @@ nav .logo img {
   font-style: normal;
   margin: auto;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 20px;
   text-align: center;
   color: rgba(2, 0, 7, 0.7);
   margin-top: 25px;
@@ -159,6 +165,7 @@ nav .logo img {
   height: 50px;
   color: #EEF0F1;
   background: #020007;
+  border: 1px solid #020007;
   border-radius: 44px;
   top: 5px;
   right: 5px;
@@ -261,7 +268,7 @@ nav .logo img {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 800;
-  font-size: 30px;
+  font-size: 50px;
   text-align: center;
   letter-spacing: -0.015em;
   color: #010007;
@@ -331,7 +338,7 @@ nav .logo img {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 800;
-  font-size: 20px;
+  font-size: 22px;
   width: 90%;
   letter-spacing: -0.015em;
   color: #FFFFFF;
@@ -635,7 +642,7 @@ nav .logo img {
 .uc-content div.link-cover {
   /* background: red; */
   position: relative;
-  height: 3rem;
+  /* height: 3rem; */
 }
 
 .uc-content div.link-cover .link-sec-styling {
@@ -652,7 +659,7 @@ nav .logo img {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 32px;
   letter-spacing: -0.015em;
   color: #7F4AF0;
   margin-top: 20px;
@@ -662,7 +669,7 @@ nav .logo img {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 24px;
   letter-spacing: -0.015em;
   margin-top: 10px;
   color: #FFFFFF;
@@ -772,7 +779,7 @@ nav .logo img {
   margin: auto;
   margin-bottom: 30px;
   font-weight: 1000;
-  font-size: 30px;
+  font-size: 32px;
   text-align: center;
   letter-spacing: -0.015em;
   color: #491860;
@@ -801,7 +808,7 @@ nav .logo img {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 550;
-  font-size: 20px;
+  font-size: 22px;
   letter-spacing: -0.015em;
   color: #FFFFFF;
   margin-bottom: 20px;
@@ -895,6 +902,7 @@ footer {
 
 .fc-logo img {
   width: 80%;
+  border-radius: unset;
 }
 
 .fc-social {
@@ -904,6 +912,7 @@ footer {
 
 .fc-social img {
   width: 25%;
+  border-radius: unset;
 }
 
 /*myunox page*/
@@ -1005,7 +1014,7 @@ footer {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 800;
-  font-size: 20px;
+  font-size: 22px;
   letter-spacing: -0.015em;
   color: #FFFFFF;
 }
@@ -1383,6 +1392,11 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  grid-gap: 57px;
+}
+
+.faq-panel button.accordion ion-icon {
+  font-size: 2rem;
 }
 
 .faq-panel {
@@ -1391,8 +1405,12 @@ footer {
 }
 
 .faq-panel button p {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
+}
+
+.faq-panel .panel p {
+  font-size: 16px;
 }
 
 /* .faq-panel .panel {
@@ -1439,7 +1457,7 @@ footer {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 800;
-  font-size: 30px;
+  font-size: 32px;
   margin-bottom: 40px;
   text-align: center;
   letter-spacing: -0.015em;
@@ -2391,8 +2409,8 @@ img {
   }
 
   .text h1 {
-    font-size: 44px;
-    line-height: 1.4;
+    font-size: 48px;
+    line-height: 61.2px;
   }
 
   .text p {
@@ -2417,7 +2435,7 @@ img {
   }
 
   .join-heading h3 {
-    font-size: 30px;
+    font-size: 32px;
   }
 
   .owl-item .join-image img,
@@ -2436,6 +2454,29 @@ img {
   .tc-text p {
     line-height: 1.8;
     font-size: 16px;
+    margin-bottom: 57px;
+  }
+
+  .tt-card-wrapper .tap-card {
+    padding-bottom: 45px;
+  }
+
+  .tt-card-wrapper .track-card {
+    min-height: 512px;
+  }
+
+  .tt-card-wrapper .track-img {
+    position: absolute;
+    right: 0px;
+    bottom: -27%;
+    height: 100%;
+  }
+
+  .tt-card-wrapper .track-img img {
+    position: relative;
+    width: auto;
+    height: 20rem;
+    float: right;
   }
 
   .tc-img img {
@@ -2475,11 +2516,22 @@ img {
 
   /* .get-unox */
   .get-unox {
-    padding: 50px 2%;
+    padding: 80px 2%;
+  }
+
+  .get-unox .unox-image-cover {
+    /* height: 100px; */
+    height: 358.64px;
+    height: unset;
+  }
+
+  .get-unox .unox-image-cover img {
+    height: 100%;
+    width: 100%;
   }
 
   .ul-heading h1 {
-    font-size: 64px;
+    font-size: 60px;
     line-height: 62.4px;
     letter-spacing: -1.5%;
     margin-bottom: 32px;
@@ -2531,6 +2583,7 @@ img {
 
   .unox-content {
     flex-direction: column;
+    grid-gap: unset;
   }
 
   /* .testimony-section */
@@ -2590,9 +2643,12 @@ img {
   }
 
   .rs-card,
-  .rs-heading h3,
   .rs-text {
     width: 100%;
+  }
+
+  .rs-heading h3 {
+    width: 80%;
   }
 
   .rs-img img {
@@ -2669,7 +2725,7 @@ img {
   }
 
   .footer-heading h3 {
-    font-size: 45px;
+    font-size: 48px;
     line-height: 58.08px;
   }
 
@@ -2756,7 +2812,7 @@ img {
 
 .unox-prop-grid p {
   width: 100%;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
 }
 
@@ -2796,7 +2852,7 @@ img {
 }
 
 .unox-prop-grid a {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 800;
   color: #020007;
 }
@@ -2808,7 +2864,7 @@ img {
 }
 
 .unox-prop-grid .unox-prop-guide h4 {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 800;
 }
 
@@ -2838,10 +2894,14 @@ img {
   bottom: -30%;
 }
 
+.desktop-only .unox-prop-guide {
+  opacity: 0;
+}
+
 .centralize-content {
   margin: 0px auto;
   display: block;
-  width: 60%;
+  width: 100%;
   text-align: center;
   z-index: 5;
   position: absolute;
@@ -2849,17 +2909,17 @@ img {
 }
 
 .centralize-content h2 {
-  width: 80%;
+  width: 70%;
   display: block;
   margin: 0% auto;
-  font-size: 32px;
+  font-size: 45px;
   font-weight: 800;
   letter-spacing: .05px;
   margin-bottom: 40px;
 }
 
 .centralize-content img {
-  width: 60%;
+  width: 40%;
   margin: 0px auto;
   display: block;
 }
@@ -2875,6 +2935,7 @@ img {
 
 .hero-context-text-display {
   width: 60%;
+  width: 100%;
   margin: 0px auto;
   display: block;
   padding-top: 5%;
@@ -3046,6 +3107,13 @@ nav img {
   .footer-menu {
     display: none;
   }
+
+
+  /* .es-text */
+  .es-text h1 {
+    font-size: 32px;
+  }
+  
 }
 
 .join-photos {
@@ -3947,7 +4015,7 @@ nav img {
   }
 
   .admin-text p {
-    width: 75% !important;
+    width: 90% !important;
   }
 
   .myunox-tools .tt-card-wrapper .admin-heading h3 {
@@ -4009,6 +4077,7 @@ nav img {
   .theme-showcase .theme-wrapper h3 {
     font-size: 35px;
   }
+
   .theme-img-cover {
     width: 100%;
     overflow: hidden;
