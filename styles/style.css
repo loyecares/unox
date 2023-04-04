@@ -256,11 +256,12 @@ nav .logo img {
 }
 
 .engagement-section.story-sect {
+  padding: 8% 180px;
   padding-bottom: 100px;
 }
 
 .es-text {
-  width: 80%;
+  /* width: 80%; */
   margin: auto;
 }
 
@@ -284,14 +285,14 @@ nav .logo img {
 }
 
 .tc-img img {
-  width: 50%;
+  width: 30%;
   margin-bottom: 35px;
   transition: transform 1s;
 }
 
 .tap-card {
-  width: 400px;
-  height: 440px;
+  /* width: 480px;
+  height: 500px; */
   background: #7F4AF0;
   border-radius: 20px;
   padding: 60px 40px;
@@ -338,7 +339,7 @@ nav .logo img {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 800;
-  font-size: 22px;
+  font-size: 30px;
   width: 90%;
   letter-spacing: -0.015em;
   color: #FFFFFF;
@@ -371,8 +372,10 @@ nav .logo img {
 }
 
 .track-card {
-  width: 400px;
+  /* width: 400px;
   height: 440px;
+  width: 480px;
+  height: 500px; */
   background: #405477;
   border-radius: 20px;
   padding: 60px 40px;
@@ -413,19 +416,6 @@ nav .logo img {
   overflow: hidden;
 }
 
-.admin-card {
-  width: 830px;
-  margin: auto;
-  margin-top: 20px;
-  padding-left: 35px;
-  height: 369px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background: #EFF0F9;
-  border-radius: 20px;
-}
-
 .admin-pretext p {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
@@ -439,14 +429,14 @@ nav .logo img {
 }
 
 .admin-content {
-  width: 50%;
+  width: 100%;
 }
 
 .admin-heading h3 {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 800;
-  font-size: 22px;
+  font-size: 30px;
   width: 80%;
   letter-spacing: -0.015em;
   color: #020007;
@@ -458,13 +448,14 @@ nav .logo img {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
   letter-spacing: -0.015em;
+  line-height: 1.5;
   color: #020007;
 }
 
 .admin-img {
-  width: 50%;
+  width: 100%;
   height: inherit;
 }
 
@@ -472,6 +463,10 @@ nav .logo img {
   -o-object-fit: contain;
   object-fit: contain;
   height: inherit;
+  float: right;
+  border: none;
+  outline: none;
+  width: 100%;
 }
 
 .join-section {
@@ -481,7 +476,7 @@ nav .logo img {
 
 .join-heading {
   text-align: center;
-  width: 50%;
+  width: 70%;
   margin: auto;
   margin-bottom: 70px;
 }
@@ -490,7 +485,7 @@ nav .logo img {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 800;
-  font-size: 35px;
+  font-size: 50px;
   text-align: center;
   letter-spacing: -0.015em;
 }
@@ -687,6 +682,7 @@ nav .logo img {
 .testimony-section {
   background-color: #f5f5f7;
   padding: 120px 50px;
+  padding: 120px 180px;
   position: relative;
 }
 
@@ -694,6 +690,7 @@ nav .logo img {
   display: flex;
   gap: 45px;
   width: 60%;
+  width: 100%;
   margin: auto;
   align-items: center;
 }
@@ -725,13 +722,15 @@ nav .logo img {
 .ts-img img {
   width: 280px;
   height: 300px;
+  width: 100%;
+  /* height: auto; */
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 40px;
 }
 
 .ts-text {
-  width: 50%;
+  width: 100%;
 }
 
 .ts-text h3 {
@@ -739,6 +738,7 @@ nav .logo img {
   font-style: normal;
   font-weight: 800;
   font-size: 32px;
+  font-size: 42px;
   letter-spacing: -0.015em;
   margin-bottom: 20px;
 }
@@ -746,40 +746,47 @@ nav .logo img {
 .ts-text p {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
-  font-weight: 550;
-  font-size: 15px;
+  font-weight: 700;
+  font-size: 20px;
   letter-spacing: -0.005em;
   color: #815CF3;
 }
 
+.ts-text p.testimonial-author {
+  color: #282726;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+}
+
 .ts-arrow-1 img {
   position: absolute;
-  left: 10%;
+  left: 5%;
   top: 46%;
   width: 40px;
 }
 
 .ts-arrow-2 img {
   position: absolute;
-  right: 15%;
+  right: 5%;
   top: 46%;
   width: 40px;
 }
 
 .recycle-section {
   background-color: #f3f0f5;
-  padding: 100px 50px;
+  padding: 100px 180px;
 }
 
 .rs-heading h3 {
   text-align: center;
   font-family: "Plus Jakarta Sans";
   font-style: normal;
-  width: 50%;
+  /* width: 70%; */
   margin: auto;
   margin-bottom: 30px;
   font-weight: 1000;
-  font-size: 32px;
+  font-size: 50px;
   text-align: center;
   letter-spacing: -0.015em;
   color: #491860;
@@ -788,11 +795,11 @@ nav .logo img {
 .rs-card {
   display: flex;
   gap: 45px;
-  width: 60%;
-  height: 350px;
+  /* width: 60%; */
+  /* height: 350px; */
   margin: auto;
   align-items: flex-end;
-  padding: 20px;
+  padding: 104px 0px 0px 60px;
   background: #491860;
   position: relative;
   border-radius: 40px;
@@ -807,27 +814,27 @@ nav .logo img {
 .rs-text h6 {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
-  font-weight: 550;
-  font-size: 22px;
+  font-weight: 800;
+  font-size: 30px;
   letter-spacing: -0.015em;
   color: #FFFFFF;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 
 .rs-text p {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
-  font-size: 14px;
+  font-size: 20px;
   letter-spacing: -0.025em;
   color: #FFFFFF;
 }
 
 .rs-text a {
   display: inline-block;
-  margin-top: 50px;
+  margin-top: 32px;
   color: white;
-  margin-bottom: 25px;
-  font-size: 14px;
+  margin-bottom: 59px;
+  font-size: 20px;
 }
 
 .rs-img img {
@@ -973,17 +980,26 @@ footer {
   margin-top: 120px;
 }
 
-.tt-card-wrapper {
+/* .tt-card-wrapper {
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 30px;
   margin-top: 70px;
+} */
+.tt-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* justify-content: center; */
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  gap: 30px;
+  margin-top: 70px;
 }
 
 .tc-img img {
-  width: 40%;
+  width: 30%;
   margin-bottom: 35px;
   transition: transform 400ms;
 }
@@ -1014,7 +1030,7 @@ footer {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 800;
-  font-size: 22px;
+  font-size: 30px;
   letter-spacing: -0.015em;
   color: #FFFFFF;
 }
@@ -1216,14 +1232,15 @@ footer {
 }
 
 .admin-card {
-  width: 830px;
+  width: 100%;
   margin: auto;
   margin-top: 20px;
   padding-left: 35px;
-  height: 369px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  /* height: 369px; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
   background: #EFF0F9;
   border-radius: 20px;
 }
@@ -1238,42 +1255,6 @@ footer {
   text-transform: uppercase;
   color: #020007;
   margin-top: 80px;
-}
-
-.admin-content {
-  width: 50%;
-}
-
-.admin-heading h3 {
-  font-family: "Plus Jakarta Sans";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 22px;
-  width: 80%;
-  letter-spacing: -0.015em;
-  color: #020007;
-}
-
-.admin-text p {
-  margin-top: 20px;
-  margin-bottom: 25px;
-  font-family: "Plus Jakarta Sans";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: -0.015em;
-  color: #020007;
-}
-
-.admin-img {
-  width: 50%;
-  height: inherit;
-}
-
-.admin-img img {
-  -o-object-fit: contain;
-  object-fit: contain;
-  height: inherit;
 }
 
 .myunox-page {
@@ -1448,7 +1429,7 @@ footer {
 }
 
 .faq-section {
-  padding: 100px 50px;
+  padding: 100px 180px;
   background-color: #f5f5f7;
 }
 
@@ -1457,14 +1438,14 @@ footer {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 800;
-  font-size: 32px;
+  font-size: 50px;
   margin-bottom: 40px;
   text-align: center;
   letter-spacing: -0.015em;
 }
 
 .faq-wrap {
-  width: 60%;
+  width: 100%;
   margin: auto;
 }
 
@@ -2455,6 +2436,7 @@ img {
     line-height: 1.8;
     font-size: 16px;
     margin-bottom: 57px;
+    width: 100%;
   }
 
   .tt-card-wrapper .tap-card {
@@ -2489,11 +2471,10 @@ img {
     width: 100%;
     height: max-content;
     position: relative;
-    /* display: block; */
+    display: block;
   }
 
   .admin-img img {
-    /* position: absolute; */
     width: 100%;
     height: 100%;
     border-radius: 0px;
@@ -2648,7 +2629,8 @@ img {
   }
 
   .rs-heading h3 {
-    width: 80%;
+    width: 100%;
+    font-size: 32px;
   }
 
   .rs-img img {
@@ -2667,6 +2649,7 @@ img {
     padding-bottom: 0px;
     padding-top: 38px;
     gap: 34px;
+    padding-left: 20px;
   }
 
   .rs-text p {
@@ -2754,6 +2737,20 @@ img {
 
   .tt-card-wrapper {
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .engagement-section.story-sect {
+    padding: 63px 20px;    
+  }
+
+  .admin-img img {
+    float: unset;
+  }
+
+  .admin-content a {
+    display: none !important;
   }
 
   .founder-author p {
@@ -3113,7 +3110,7 @@ nav img {
   .es-text h1 {
     font-size: 32px;
   }
-  
+
 }
 
 .join-photos {
@@ -3974,10 +3971,10 @@ nav img {
     display: none;
   }
 
-  .myunox-tools .tc-heading h6 {
+  .tc-heading h6 {
     font-size: 22px;
     line-height: 26.62px;
-    margin-bottom: 57px;
+    margin-bottom: 25px;
   }
 
   .myunox-tools .unox-tap-card {
@@ -4045,14 +4042,15 @@ nav img {
   }
 
   .admin-link a {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
 
   .myunox-tools .admin-card img {
     position: relative;
   }
 
-  .myunox-tools .admin-card .admin-heading h3 {
+  .myunox-tools .admin-card .admin-heading h3,
+  .admin-heading h3 {
     font-size: 22px;
     width: 100% !important;
   }
@@ -4116,6 +4114,10 @@ nav img {
   .resources-showcase .resources-center-text p {
     width: 100%;
     font-size: 18px;
+  }
+
+  .faq-section h3 {
+    font-size: 32px;
   }
 }
 
