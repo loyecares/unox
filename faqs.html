@@ -10,6 +10,9 @@
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
 </head>
 
 <body>
@@ -195,45 +198,45 @@
 
           </div>
         </div>
-        <div class="article-card-wrap">
-          <div class="article-card">
+        <!-- <div class="article-card-wrap"> -->
+        <div class="owlslider owl-carousel data-owlcarousel owl-theme about-slide">
+          <div class="article-card item">
             <img src="images/card-1.png" alt="Avatar" style="width:100%">
             <div class="ac-container">
-              <h4><b>What benefits does your cards offer?</b></h4>
+              <h4>What benefits does your cards offer?</h4>
               <p>Helping you to get started with unox</p>
               <p class="article-no"> 7 Article</p>
             </div>
           </div>
-          <div class="article-card">
+          <div class="article-card item">
             <img src="images/card-2.png" alt="Avatar" style="width:100%">
             <div class="ac-container">
-              <h4><b>What benefits does your cards offer?</b></h4>
+              <h4>What benefits does your cards offer?</h4>
               <p>Helping you to get started with unox</p>
               <p class="article-no"> 7 Article</p>
             </div>
           </div>
-          <div class="article-card">
+          <div class="article-card item">
             <img src="images/card-3.png" alt="Avatar" style="width:100%">
             <div class="ac-container">
-              <h4><b>What benefits does your cards offer?</b></h4>
+              <h4>What benefits does your cards offer?</h4>
               <p>Helping you to get started with unox</p>
               <p class="article-no"> 7 Article</p>
             </div>
           </div>
-          <div class="article-card">
+          <div class="article-card item">
             <img src="images/card-4.png" alt="Avatar" style="width:100%">
             <div class="ac-container">
-              <h4><b>What benefits does your cards offer?</b></h4>
+              <h4>What benefits does your cards offer?</h4>
               <p>Helping you to get started with unox</p>
               <p class="article-no"> 7 Article</p>
             </div>
           </div>
-
-
         </div>
+        <!-- </div> -->
       </div>
     </div>
-    <div class="faq-filter-wrap">
+    <div class="faq-filter-wrap faq-page">
       <div class="faq-section">
         <div class="faq-filter-button" id="faq-filter-button">
           <div class="faq-tag active-2" onclick="filterSelection('faq-filter-one')">
@@ -251,72 +254,120 @@
         </div>
 
         <div class="faq-wrap-2  faq-filter-one">
-          <button class="accordion">This is a question right here and its totally expandable</button>
-          <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
+          <div class="faq-panel">
+            <button class="accordion">
+              <p>This is a question right here and its totally expandable</p>
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex
+                ea commodo consequat.</p>
+            </div>
           </div>
 
-          <button class="accordion">This is a question right here and its totally expandable</button>
-          <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
+          <div class="faq-panel">
+            <button class="accordion">
+              <p>This is a question right here and its totally expandable</p>
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex
+                ea commodo consequat.</p>
+            </div>
           </div>
 
-          <button class="accordion">This is a question right here and its totally expandable</button>
-          <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
+          <div class="faq-panel">
+            <button class="accordion">
+              <p>This is a question right here and its totally expandable</p>
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex
+                ea commodo consequat.</p>
+            </div>
           </div>
         </div>
 
         <div class="faq-wrap-2 faq-filter-two">
-          <button class="accordion">This is a question right here and its totally expandable</button>
-          <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
+          <div class="faq-panel">
+            <button class="accordion">
+              <p>This is a question right here and its totally expandable</p>
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex
+                ea commodo consequat.</p>
+            </div>
           </div>
 
-          <button class="accordion">This is a question right here and its totally expandable</button>
-          <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
+          <div class="faq-panel">
+            <button class="accordion">
+              <p>This is a question right here and its totally expandable</p>
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex
+                ea commodo consequat.</p>
+            </div>
           </div>
 
 
         </div>
         <div class="faq-wrap-2  faq-filter-three">
-          <button class="accordion">This is a question right here and its totally expandable</button>
-          <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
+          <div class="faq-panel">
+            <button class="accordion">
+              <p>This is a question right here and its totally expandable</p>
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex
+                ea commodo consequat.</p>
+            </div>
           </div>
 
-          <button class="accordion">This is a question right here and its totally expandable</button>
-          <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
+          <div class="faq-panel">
+            <button class="accordion">
+              <p>This is a question right here and its totally expandable</p>
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex
+                ea commodo consequat.</p>
+            </div>
           </div>
 
-          <button class="accordion">This is a question right here and its totally expandable</button>
-          <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
+          <div class="faq-panel">
+            <button class="accordion">
+              <p>This is a question right here and its totally expandable</p>
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex
+                ea commodo consequat.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="recycle-section">
       <div class="rs-heading">
-        <h3>Do away with recurring printing <br>costs forever!</h3>
+        <h3>Do away with recurring printing costs forever!</h3>
       </div>
       <div class="rs-card">
         <div class="rs-text">
@@ -325,7 +376,7 @@
             business card,<br> <b>ever!</b>
           </p>
           <p><b> Did we say our cards are recyclable up to 8x?</b></p>
-          <a href="">Get your card -></a>
+          <a href="">Get your card <ion-icon name="arrow-forward-outline"></ion-icon></a>
         </div>
         <div class="rs-img">
           <img src="./images/recurring-img.png">
@@ -408,6 +459,10 @@
       </div>
     </footer>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="./js/common.js"></script>
   <script>
     var acc = document.getElementsByClassName("accordion");
@@ -471,6 +526,24 @@
         this.className += " active-2";
       });
     }
+
+    $(document).ready(function () {
+      $('.data-owlcarousel').owlCarousel({
+        // loop: true,
+        margin: 27,
+        // autoplay: true,
+        nav: false,
+        stagePadding: 40,
+        responsive: {
+          0: {
+            items: 1
+          },
+          1000: {
+            items: 4
+          }
+        }
+      });
+    });
   </script>
 </body>
 
