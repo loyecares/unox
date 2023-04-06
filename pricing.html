@@ -202,20 +202,25 @@
         <div>
           <div class="faq-selection-detail-box mobile-only">
             <div class="mobile-faq-selection">
-              <div class="faq-selection active-selection">
-                <h3>Free</h3>
+              <div onclick="changePricingItemDisplay('first-faq-pricing',0,'first-faq-selection')"
+                class="faq-selection first-faq-selection active-selection">
+                <h3>Personal</h3>
               </div>
-              <div class="faq-selection">
-                <h3>Premium</h3>
+              <div onclick="changePricingItemDisplay('first-faq-pricing',1,'first-faq-selection')"
+                class="faq-selection first-faq-selection">
+                <h3>Teams</h3>
               </div>
             </div>
-            <div class="mobile-faq-data">
+            <div class="mobile-faq-data first-faq-pricing">
               <div>
-                <h3>Free</h3>
-                <button>Get Started <ion-icon name="arrow-forward-outline"></ion-icon></button>
+                <h3>Personal</h3>
+                <button>Get card now <ion-icon name="arrow-forward-outline"></ion-icon></button>
               </div>
+            </div>
+            <div style="display: none;" class="mobile-faq-data first-faq-pricing">
               <div>
-                <h2>$0<span>/yr</span></h2>
+                <h3>Teams</h3>
+                <button>Register Business <ion-icon name="arrow-forward-outline"></ion-icon></button>
               </div>
             </div>
           </div>
@@ -350,20 +355,31 @@
         <div>
           <div class="faq-selection-detail-box mobile-only">
             <div class="mobile-faq-selection">
-              <div class="faq-selection active-selection">
+              <div onclick="changePricingItemDisplay('second-faq-pricing',0,'second-faq-selection')"
+                class="faq-selection active-selection second-faq-selection">
                 <h3>Free</h3>
               </div>
-              <div class="faq-selection">
+              <div onclick="changePricingItemDisplay('second-faq-pricing',1,'second-faq-selection')"
+                class="faq-selection second-faq-selection">
                 <h3>Premium</h3>
               </div>
             </div>
-            <div class="mobile-faq-data">
+            <div class="mobile-faq-data second-faq-pricing">
               <div>
                 <h3>Free</h3>
                 <button>Get Started <ion-icon name="arrow-forward-outline"></ion-icon></button>
               </div>
               <div>
                 <h2>$0<span>/yr</span></h2>
+              </div>
+            </div>
+            <div style="display: none;" class="mobile-faq-data second-faq-pricing">
+              <div>
+                <h3>Premium</h3>
+                <button>Get Started <ion-icon name="arrow-forward-outline"></ion-icon></button>
+              </div>
+              <div>
+                <h2>$1<span>/month</span></h2>
               </div>
             </div>
           </div>
@@ -422,7 +438,7 @@
     </div>
     <div class="recycle-section">
       <div class="rs-heading">
-        <h3>Do away with recurring printing <br>costs forever!</h3>
+        <h3>Do away with recurring printing costs forever!</h3>
       </div>
       <div class="rs-card">
         <div class="rs-text">
@@ -450,7 +466,7 @@
           <h3>“unox has given me an edge and it serves as a great conversation starter, i absolutely love it!”</h3>
 
           <p>Desmond Elliot</p>
-          <p> CEO, EXOPlanet</p>
+          <p class="testimonial-author"> CEO, EXOPlanet</p>
         </div>
       </div>
       <div class="ts-arrow-1">
@@ -595,6 +611,20 @@
           panel.style.maxHeight = panel.scrollHeight + "px";
         }
       });
+    }
+
+    const changePricingItemDisplay = (arrayToUse, key, arrayToStyle) => {
+      let targetArray = document.querySelectorAll(`.${arrayToUse}`);
+      let styleArray = document.querySelectorAll(`.${arrayToStyle}`);
+
+      targetArray.forEach((pricingContainer, index) => {
+        pricingContainer.style.display = key === index ? "flex" : "none";
+      })
+      styleArray.forEach((stylingContainer, index) => {
+        if (index === key) {
+          stylingContainer.classList.add('active-selection');
+        } else stylingContainer.classList.remove('active-selection');
+      })
     }
   </script>
 </body>

@@ -42,7 +42,8 @@ a {
   max-height: 100vh;
 }
 
-.about-hero .hero-wrapper {
+.about-hero .hero-wrapper,
+.faqs-page .hero-wrapper {
   height: unset;
 }
 
@@ -263,7 +264,19 @@ nav .logo img {
 
 .engagement-section.story-sect {
   padding: 8% 180px;
-  padding-bottom: 100px;
+  padding-bottom: 120px;
+}
+
+.engagement-section.story-sect.team-engagement {
+  padding-bottom: 60px;
+}
+
+.admin-data-display .admin-pretext p {
+  display: none;
+}
+
+.admin-data-display .admin-heading h3 {
+  margin-top: 80px;
 }
 
 .es-text {
@@ -322,7 +335,7 @@ nav .logo img {
   grid-gap: 13px;
   position: absolute;
   bottom: 15%;
-  left: 28%;
+  right: -7%;
 }
 
 .company-logo-showcase div.logo-showcase-cover {
@@ -346,7 +359,7 @@ nav .logo img {
   font-style: normal;
   font-weight: 800;
   font-size: 30px;
-  width: 90%;
+  width: 100%;
   letter-spacing: -0.015em;
   color: #FFFFFF;
 }
@@ -527,6 +540,10 @@ nav .logo img {
 .owl-item .join-image img,
 .join img {
   height: 350px !important;
+}
+
+.about-data-display .join img {
+  height: 300px !important;
 }
 
 .join {
@@ -788,7 +805,7 @@ nav .logo img {
   text-align: center;
   font-family: "Plus Jakarta Sans";
   font-style: normal;
-  /* width: 70%; */
+  width: 80%;
   margin: auto;
   margin-bottom: 30px;
   font-weight: 1000;
@@ -1069,7 +1086,8 @@ footer {
 .unox-track-card {
   width: 70%;
   max-width: 700px;
-  height: 430px;
+  /* height: 430px; */
+  height: 100%;
   background: #405477;
   border-radius: 20px;
   padding: 60px 40px;
@@ -1115,7 +1133,8 @@ footer {
 
 .myunox-tools .unox-tap-card {
   width: 100%;
-  height: 430px;
+  /* height: 430px; */
+  height: 100%;
   max-width: unset;
 }
 
@@ -1249,6 +1268,10 @@ footer {
   /* flex-wrap: wrap; */
   background: #EFF0F9;
   border-radius: 20px;
+}
+
+.my-unox-admin-card .admin-link {
+  padding-bottom: 40px;
 }
 
 .admin-pretext p {
@@ -1882,7 +1905,7 @@ footer {
 
 /* about page*/
 .about-hero {
-  padding: 15px 120px 30px 120px;
+  padding: 15px 100px 30px 100px;
   background-color: #EEF0F1;
   width: 100%;
   height: -moz-fit-content;
@@ -1895,11 +1918,11 @@ footer {
 }
 
 .about-context .about-text h1 {
-  width: 92%;
+  width: 100%;
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 75px;
+  font-size: 90px;
   letter-spacing: -0.04em;
   color: #010007;
 }
@@ -1910,7 +1933,7 @@ footer {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   color: #020007;
 }
 
@@ -1926,10 +1949,10 @@ footer {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
-  width: 50%;
+  font-size: 50px;
+  width: 80%;
   letter-spacing: -0.015em;
-  margin-bottom: 40px;
+  margin-bottom: 52px;
   color: #020007;
 }
 
@@ -1937,23 +1960,24 @@ footer {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 24px;
   color: #020007;
-  width: 90%;
+  width: 100%;
+  margin-bottom: 0px;
 }
 
 .story-text-2 {
-  margin-top: 40px;
+  margin-top: 67px;
 }
 
 .story-text-2 h6 {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 32px;
   width: 50%;
   letter-spacing: -0.015em;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   color: #020007;
 }
 
@@ -1961,13 +1985,14 @@ footer {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 24px;
   color: #020007;
-  width: 90%;
+  width: 100%;
+  margin-bottom: 0px;
 }
 
 .unox-founder-wrap {
-  margin-top: 40px;
+  margin-top: 143px;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -1976,8 +2001,8 @@ footer {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
-  width: 50%;
+  font-size: 50px;
+  width: 70%;
   letter-spacing: -0.015em;
   margin-bottom: 40px;
   color: #020007;
@@ -2030,7 +2055,7 @@ footer {
 }
 
 .faq-hero-context .fhc-text {
-  width: 60%;
+  width: 80%;
   margin: auto;
 }
 
@@ -2038,7 +2063,7 @@ footer {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 70px;
   letter-spacing: -0.04em;
   text-align: center;
   margin-bottom: 30px;
@@ -2078,8 +2103,9 @@ footer {
 
 .article-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: #fff;
   transition: 0.3s;
-  width: 25%;
+  /* width: 25%; */
   border-radius: 20px;
 }
 
@@ -2096,6 +2122,7 @@ img {
 }
 
 .ac-container h4 {
+  font-size: 16px;
   margin-bottom: 10px;
 }
 
@@ -2146,6 +2173,10 @@ img {
   width: 60%;
   margin: auto;
   display: none;
+}
+
+.faq-page .faq-wrap-2 {
+  width: 100%;
 }
 
 .show {
@@ -2239,11 +2270,16 @@ img {
   line-height: 90px;
 }
 
+.contact-content .contact-content-company h6 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .contact-content .contact-content-flex .contact-content-text p {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   color: #020007;
   margin-top: 30px;
   width: 80%;
@@ -2346,7 +2382,7 @@ img {
   margin-bottom: 5px;
 }
 
-.join:hover p {
+/* .join:hover p {
   display: block;
   position: absolute;
   bottom: 50px;
@@ -2356,7 +2392,7 @@ img {
   border-radius: 50px;
   padding: 6px 20px;
   font-size: 13px;
-}
+} */
 
 .uc-content-carousel-2,
 .uc-content-carousel-3 {
@@ -2478,6 +2514,10 @@ img {
     height: max-content;
     position: relative;
     display: block;
+  }
+
+  .my-unox-admin-card .admin-link {
+    padding-bottom: 0px;
   }
 
   .admin-img img {
@@ -2627,6 +2667,7 @@ img {
   .rs-text a {
     margin-bottom: 0px;
     margin-top: 25px;
+    font-size: 16px;
   }
 
   .rs-card,
@@ -2660,7 +2701,7 @@ img {
 
   .rs-text p {
     font-size: 16px;
-    line-height: 22.56px;
+    line-height: 25.56px;
   }
 
   .rs-text p b {
@@ -2668,9 +2709,6 @@ img {
   }
 
   /* .faq-section */
-  .faq-section {
-    padding: 50px 24px;
-  }
 
   .faq-wrap {
     width: 100%;
@@ -2756,7 +2794,7 @@ img {
   }
 
   .admin-content a {
-    display: none !important;
+    margin-bottom: 22px;
   }
 
   .founder-author p {
@@ -2775,7 +2813,7 @@ img {
 
   .founder-author h4 {
     display: block;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 700;
     margin-bottom: 5px;
   }
@@ -2784,6 +2822,13 @@ img {
     margin-bottom: 22px;
   }
 
+  .faq-panel button.accordion {
+    grid-gap: 30px;
+  }
+
+  footer .email-list {
+    margin-bottom: 83px;
+  }
 }
 
 
@@ -3443,7 +3488,8 @@ nav img {
   }
 
   .team-context {
-    margin-bottom: 75px;
+    margin-bottom: 65px;
+    margin-top: 50px;
   }
 
   .team-monitor-wrap h3 {
@@ -3501,8 +3547,27 @@ nav img {
     font-size: 38px;
   }
 
+  .faq-hero-context .fhc-text .fhc-input,
+  .faq-hero-context .fhc-text input {
+    height: 60px;
+  }
+
+  .faq-hero-context .fhc-text input {
+    padding-top: 20px;
+  }
+
+  .faq-hero-context .fhc-text img {
+    top: 25px;
+  }
+
   .faq-hero-context {
     padding: 70px 20px;
+    padding-bottom: 60px;
+  }
+
+  .rs-text h6 {
+    font-size: 22px;
+    margin-bottom: 20px;
   }
 
   .article-card {
@@ -3516,7 +3581,7 @@ nav img {
   }
 
   .faq-section {
-    padding: 50px 20px;
+    padding: 70px 20px;
   }
 
   .faq-title h3 {
@@ -3598,7 +3663,7 @@ nav img {
 
   .faq-selection h3 {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .faq-selection-detail-box {
@@ -3648,6 +3713,7 @@ nav img {
   .mobile-faq-selection {
     display: flex;
     margin-bottom: 22px;
+    grid-gap: 18px;
   }
 
   .price-card-section .pcs-wrap .psc-card-5.pcs.pcs-pricing-table img {
@@ -3769,7 +3835,7 @@ nav img {
   }
 
   .about-context .about-text p {
-    font-size: 16px;
+    font-size: 18px;
     width: 100%;
     line-height: 1.8;
   }
@@ -3780,14 +3846,33 @@ nav img {
 
   .story-text-1 h3 {
     width: 100%;
+    font-size: 32px;
+    margin-bottom: 32px;
   }
 
   .story-text-1 p {
     width: 100%;
+    font-size: 18px;
+  }
+
+  .story-text-2 h6 {
+    font-size: 24px;
+    width: 100%;
+    font-weight: 800;
+  }
+
+  .story-text-2 p {
+    font-size: 18px;
+  }
+
+  .unox-founder-wrap {
+    margin-top: 80px;
   }
 
   .unox-founder-wrap .uf-heading h3 {
     width: 100%;
+    font-size: 32px;
+    font-weight: 800;
   }
 
   /* privacy */
@@ -3825,8 +3910,9 @@ nav img {
 
   .contact-content .contact-content-flex .contact-content-text p {
     width: 100%;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 25px;
+    font-weight: 400;
   }
 
   .contact-content .contact-content-flex .contact-content-form {
@@ -3847,7 +3933,7 @@ nav img {
 
   .contact-content .contact-content-company h6 {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
   }
 
   .contact-content .contact-content-flex .contact-content-form .cta-btn button {
@@ -4047,9 +4133,9 @@ nav img {
     height: 32rem;
   }
 
-  .admin-link a {
+  /* .admin-link a {
     margin-bottom: 0px;
-  }
+  } */
 
   .myunox-tools .admin-card img {
     position: relative;
@@ -4125,8 +4211,24 @@ nav img {
   .faq-section h3 {
     font-size: 32px;
   }
+
   .faq-panel button.accordion ion-icon {
     font-size: 2rem;
+  }
+
+  .contact-content .contact-content-company h6 {
+    font-size: 14px;
+  }
+  .ac-container {
+    padding: 24px 24px 32px;
+  }
+
+  .ac-container h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 13px;
+    line-height: 1.6;
+    width: 90%;
   }
 }
 
@@ -4304,4 +4406,12 @@ nav img {
 
 .item.join.join-6 {
   margin-right: 1px;
+}
+
+.owlslider.founder-owlcarousel .owl-stage {
+  padding-left: 0px !important;
+}
+
+.owlslider.founder-owlcarousel .owl-stage .join-image {
+  margin-bottom: 20px;
 }
