@@ -587,31 +587,37 @@
           <div class="item join join-1">
             <div class="join-image">
               <img src="./images/join/_1.jpg" alt="join entrenuer photo" />
+              <p>unox.me/DesmondElliot</p>
             </div>
           </div>
           <div class="item join join-2">
             <div class="join-image">
               <img src="./images/join/_2.png" alt="join entrenuer photo" />
+              <p>unox.me/DesmondElliot</p>
             </div>
           </div>
           <div class="item join join-3">
             <div class="join-image">
               <img src="./images/join/_3.png" alt="join entrenuer photo" />
+              <p>unox.me/DesmondElliot</p>
             </div>
           </div>
           <div class="item join join-4">
             <div class="join-image">
               <img src="./images/join/_4.png" alt="join entrenuer photo" />
+              <p>unox.me/DesmondElliot</p>
             </div>
           </div>
           <div class="item join join-5">
             <div class="join-image">
               <img src="./images/join/_5.png" alt="join entrenuer photo" />
+              <p>unox.me/DesmondElliot</p>
             </div>
           </div>
           <div class="item join join-6">
             <div class="join-image">
               <img src="./images/join/_6.jpg" alt="join entrenuer photo" />
+              <p>unox.me/DesmondElliot</p>
             </div>
           </div>
         </div>
@@ -975,34 +981,18 @@
       // })
 
       gsap.registerPlugin(ScrollTrigger);
-      // gsap.from('.centralize-content', {
-      //   y: 350,
-      //   duration: 7,
-      //   scrollTrigger: ".centralize-content",
-      // })
-
-      // gsap.from('.unox-prop-guide', {
-      //   y: 100,
-      //   duration: 4,
-      //   scrollTrigger: ".unox-prop-guide",
-      // })
-      // gsap.from('.hero-phon img', {
-      //   y: 150,
-      //   duration: 4,
-      //   scrollTrigger: ".hero-phon img",
-      // })
 
       /* start of stagger link */
 
-      let joinButton = document.querySelectorAll('.join img');
-      for (let button of joinButton) {
-        button.addEventListener('mouseover', () => {
-          TweenMax.to(`.join p`, 0.4, { y: -30, ease: Bounce.easeOut });
-          TweenMax.to(`.join p`, 0.2, { y: 1, delay: 0.4 });
+      let arr = [1, 2, 3, 4, 5, 6];
+      for (let arrValue of arr) {
+        let joinButton = document.querySelector(`.owl-theme .join-${arrValue}`);
+        let targetElement = document.querySelector(`.owl-theme .join-${arrValue} p`);
+        joinButton.addEventListener('mouseover', () => {
+          TweenMax.to(targetElement, 0.8, { y: -100, duration: 3, ease: Bounce.easeOut });
         })
-        button.addEventListener('click', () => {
-          TweenMax.to(`.join p`, 0.4, { y: -30, ease: Bounce.easeOut });
-          TweenMax.to(`.join p`, 0.2, { y: 1, delay: 0.4 });
+        joinButton.addEventListener('mouseout', () => {
+          TweenMax.to(targetElement, 0.8, { y: 10, duration: 3 });
         })
       }
 
