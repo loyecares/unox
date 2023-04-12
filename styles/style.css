@@ -21,7 +21,7 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .content-page {
@@ -42,6 +42,25 @@ a {
   max-height: 100vh;
 }
 
+.desktop-only .hero-wrapper .image-iphone-box {
+  position: absolute;
+  bottom: -80%;
+  width: 100%;
+  margin: 0px auto;
+  display: block;
+  /* height: 20rem; */
+  z-index: 10000;
+}
+
+.desktop-only .hero-wrapper .image-iphone-box img {
+  width: 30%;
+  margin: 0px auto;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
 .about-hero .hero-wrapper,
 .faqs-page .hero-wrapper {
   height: unset;
@@ -56,7 +75,7 @@ a {
 nav {
   box-sizing: border-box;
   /* Auto layout */
-  display: flex !important;
+  display: flex;
   flex-direction: row;
   align-items: center;
   padding: 10px 10px 10px 59px;
@@ -68,6 +87,15 @@ nav {
   border-radius: 66px;
   z-index: 10000;
   position: relative;
+}
+
+nav.fix-me {
+  position: fixed;
+  /* top: 3%; */
+  bottom: 0px;
+  width: 1100px;
+  margin: 0px auto;
+  display: flex;
 }
 
 nav .logo img {
@@ -124,8 +152,8 @@ nav .logo img {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 60px;
-  font-size: 90px;
+  /* font-size: 60px; */
+  font-size: 80px;
   text-align: center;
   letter-spacing: -0.01em;
   color: #020007;
@@ -157,7 +185,7 @@ nav .logo img {
 .email-list input {
   position: relative;
   width: 416px;
-  height: 60px;
+  height: 80px;
   padding: 15px 30px;
   background: #FFFFFF;
   border: 1px solid rgba(39, 38, 37, 0.05);
@@ -168,7 +196,7 @@ nav .logo img {
   position: absolute;
   padding: 11px 16px;
   width: 134px;
-  height: 50px;
+  height: 70px;
   color: #EEF0F1;
   background: #020007;
   border: 1px solid #020007;
@@ -287,7 +315,7 @@ nav .logo img {
 .es-text h1 {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 50px;
   text-align: center;
   letter-spacing: -0.015em;
@@ -357,7 +385,7 @@ nav .logo img {
 .tc-heading h6 {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 30px;
   width: 100%;
   letter-spacing: -0.015em;
@@ -454,7 +482,7 @@ nav .logo img {
 .admin-heading h3 {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 30px;
   width: 80%;
   letter-spacing: -0.015em;
@@ -503,7 +531,7 @@ nav .logo img {
 .join-heading h3 {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 50px;
   text-align: center;
   letter-spacing: -0.015em;
@@ -759,7 +787,7 @@ nav .logo img {
 .ts-text h3 {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 32px;
   font-size: 42px;
   letter-spacing: -0.015em;
@@ -837,7 +865,7 @@ nav .logo img {
 .rs-text h6 {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 30px;
   letter-spacing: -0.015em;
   color: #FFFFFF;
@@ -974,7 +1002,7 @@ footer {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 90px;
+  font-size: 80px;
   text-align: center;
   line-height: 100px;
   letter-spacing: -0.04em;
@@ -1052,7 +1080,7 @@ footer {
 .tc-heading h6 {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 30px;
   letter-spacing: -0.015em;
   color: #FFFFFF;
@@ -1195,10 +1223,10 @@ footer {
 
 .myunox-features .grid-4 .bg-white {
   background: #fff;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 51px 25px;
   padding-bottom: 40px;
-  box-shadow: 0px 0px .5px .5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
 }
 
 .myunox-features .grid-4 .bg-white p {
@@ -1332,7 +1360,7 @@ footer {
 
 .theme-showcase .theme-wrapper h3 {
   font-size: 50px;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 32px;
 }
 
@@ -1364,7 +1392,7 @@ footer {
 .resources-showcase .resources-center-text h2 {
   font-size: 40px;
   margin-bottom: 40px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .resources-showcase .resources-center-text p {
@@ -1403,6 +1431,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   grid-gap: 57px;
+  outline: none;
 }
 
 .faq-panel button.accordion ion-icon {
@@ -1466,7 +1495,7 @@ footer {
   text-align: center;
   font-family: "Plus Jakarta Sans";
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 50px;
   margin-bottom: 40px;
   text-align: center;
@@ -1533,7 +1562,7 @@ footer {
 .team-images .ti-content .ti-text h3 {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 40px;
   letter-spacing: -0.015em;
   color: #2F293D;
@@ -1601,7 +1630,7 @@ footer {
 .team-monitor-wrap h3 {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 40px;
   letter-spacing: -0.015em;
   color: #020007;
@@ -2064,7 +2093,7 @@ footer {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 70px;
+  font-size: 80px;
   letter-spacing: -0.04em;
   text-align: center;
   margin-bottom: 30px;
@@ -2373,6 +2402,12 @@ img {
   font-size: 14px;
   color: #020007;
   line-height: 21.84px;
+  position: relative;
+  bottom: unset;
+  left: unset;
+  background: unset;
+  padding: unset;
+  border-radius: unset;
 }
 
 .founder-author p.founder-role {
@@ -2872,7 +2907,7 @@ img {
 }
 
 .unox-prop-grid .unox-first p {
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 1em;
 }
 
@@ -2908,7 +2943,7 @@ img {
 
 .unox-prop-grid a {
   font-size: 24px;
-  font-weight: 800;
+  font-weight: 700;
   color: #020007;
 }
 
@@ -2920,7 +2955,7 @@ img {
 
 .unox-prop-grid .unox-prop-guide h4 {
   font-size: 32px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 /* .unox-prop-grid .unox-prop-image {
@@ -2960,7 +2995,8 @@ img {
   text-align: center;
   z-index: 5;
   position: absolute;
-  bottom: -200%;
+  bottom: -300%;
+  opacity: 0;
 }
 
 .centralize-content h2 {
@@ -2968,7 +3004,7 @@ img {
   display: block;
   margin: 0% auto;
   font-size: 45px;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: .05px;
   margin-bottom: 40px;
 }
@@ -3245,7 +3281,7 @@ nav img {
 .ahc-text h6 {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 60px;
   letter-spacing: -0.015em;
   color: #FFFFFF;
@@ -3865,7 +3901,7 @@ nav img {
   .story-text-2 h6 {
     font-size: 24px;
     width: 100%;
-    font-weight: 800;
+    font-weight: 700;
   }
 
   .story-text-2 p {
@@ -3879,7 +3915,7 @@ nav img {
   .unox-founder-wrap .uf-heading h3 {
     width: 100%;
     font-size: 32px;
-    font-weight: 800;
+    font-weight: 700;
   }
 
   /* privacy */
@@ -4226,6 +4262,7 @@ nav img {
   .contact-content .contact-content-company h6 {
     font-size: 14px;
   }
+
   .ac-container {
     padding: 24px 24px 32px;
   }
@@ -4245,8 +4282,19 @@ nav img {
   width: max-content;
   left: -100px;
   height: 10rem;
-  top: 35px;
+  top: 50px;
   display: none;
+  animation: animateHover .5s ease-in-out;
+}
+
+@keyframes animateHover {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .links ul li.main-nav-links {
@@ -4318,17 +4366,58 @@ nav img {
 .hover-tab .hover-content ul {
   display: flex;
   flex-direction: column;
-  grid-gap: 20px;
+  grid-gap: 5px;
   height: 100%;
   margin-top: 20px;
 }
 
-.hover-tab .hover-content ul a:hover {
+/* .hover-tab .hover-content ul a:hover {
   background: #f5f5f7;
   padding: 8px 10px;
   border-radius: 4px;
   border: 1px solid #f5f5f7;
   font-size: 15px;
+} */
+
+.hover-tab .hover-content ul li {
+  position: relative;
+  min-height: 45px;
+}
+
+.hover-tab .hover-content ul li a {
+  z-index: 100;
+  display: block;
+  position: relative;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.hover-content-bg {
+  background: #f5f5f7;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #f5f5f7;
+  font-size: 15px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  left: -5%;
+  display: none;
+  animation: animateBg 1s ease-in-out;
+}
+
+@keyframes animateBg {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .black-bg {
