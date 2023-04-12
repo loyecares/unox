@@ -1,18 +1,44 @@
 const displayMobileMenu = () => {
     document.querySelector('.mobile-menu').style.display = "block";
-    // gsap.to(document.querySelector('.mobile-menu'), {
-    //   display: 'block',
-    //   // height: '100%',
-    //   duration: 8
-    // })
 }
 
 const closeMobileMenu = () => {
     document.querySelector('.mobile-menu').style.display = "none";
-    // gsap.to(document.querySelector('.mobile-menu'), {
-    //   display: 'none',
-    //   duration: 0
-    // })
+}
+
+// window.addEventListener('scroll', () => {
+//     const offset = window.scrollY;
+//     if (offset > 200) {
+//         document.querySelector('nav').classList.add('fix-me');
+//         document.querySelector('hero').style.position = "unset";
+//         document.querySelector('hero-wrapper').style.position = "unset";
+//     }
+//     else {
+//         document.querySelector('nav').classList.remove('fix-me');
+//         document.querySelector('hero').style.position = "relative";
+//         document.querySelector('hero-wrapper').style.position = "relative";
+//     }
+// })
+
+let navItems = document.querySelectorAll('nav ul li.hover-cover ul li');
+for (let items of navItems) {
+    // console.log(items.innerHTML)
+    items.addEventListener('mouseover', () => {
+        items.querySelector(`ul li .hover-content-bg`).style.display = "block";
+        // gsap.to(items.querySelector(`ul li .hover-content-bg`), {
+        //     display: 'block',
+        //     duration: 20,
+        //     ease: "sine.out",
+        // })
+    })
+    items.addEventListener('mouseout', () => {
+        items.querySelector(`ul li .hover-content-bg`).style.display = "none";
+        // gsap.to(items.querySelector(`ul li .hover-content-bg`), {
+        //     display: 'block',
+        //     duration: 20,
+        //     ease: "sine.out",
+        // })
+    })
 }
 
 document.querySelector('.nav-products').addEventListener('mouseover', () => {
