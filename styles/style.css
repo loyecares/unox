@@ -4539,3 +4539,12 @@ nav img {
 .owlslider.founder-owlcarousel .owl-stage .join-image {
   margin-bottom: 20px;
 }
+
+@media screen and (min-width: 720px) {
+  .max-width-cover {
+    max-width: 1408px;
+    margin: 0px auto;
+    display: block;
+    position: relative;
+  }
+}
