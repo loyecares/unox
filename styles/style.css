@@ -90,7 +90,7 @@ nav {
   border-radius: 66px;
   z-index: 10000;
   position: relative;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2); */
 }
 
 .square {
@@ -102,27 +102,29 @@ nav {
 }
 
 .nav-box {
+  max-width: 1408px;
+  margin: 0% auto;
+  display: block;
   width: 100%;
   position: relative;
-  padding: 15px 120px;
-  background: #eef0f1;
+  padding: 30px 0px;
   background: transparent;
-  top: 0%;
+  top: 5%;
 }
 
 .nav-box.fix-me {
   position: fixed;
   top: 3%;
   left: 0px;
-  width: 1100px;
+  max-width: 1408px;
   width: 100%;
   margin: 0px auto;
   display: flex;
-  z-index: 100000;
-  padding: 15px 160px;
+  z-index: 1000;
+  padding: 0px 160px;
 }
 
-.nav-box.fix-me nav {
+.nav-box nav {
   width: 100%;
 }
 
@@ -527,6 +529,7 @@ nav .logo img {
   letter-spacing: -0.015em;
   line-height: 1.5;
   color: #020007;
+  width: 75%;
 }
 
 .admin-img {
@@ -1004,7 +1007,7 @@ footer {
 
 /*myunox page*/
 .myunox {
-  padding: 15px 120px 100px 120px;
+  padding: 15px 160px 100px 160px;
   padding-bottom: 0px;
   background-color: #F5F6F7;
   width: 100%;
@@ -1349,7 +1352,7 @@ footer {
 }
 
 .theme-showcase {
-  padding: 100px 120px 100px 120px;
+  padding: 100px 160px 100px 160px;
 }
 
 .theme-showcase .theme-wrapper {
@@ -1404,7 +1407,7 @@ footer {
 }
 
 .resources-showcase {
-  padding: 100px 120px 100px 120px;
+  padding: 100px 160px 100px 160px;
 }
 
 .resources-showcase .resources-center-text {
@@ -1965,7 +1968,7 @@ footer {
 
 /* about page*/
 .about-hero {
-  padding: 15px 100px 30px 100px;
+  padding: 15px 160px 30px 160px;
   background-color: #EEF0F1;
   width: 100%;
   height: -moz-fit-content;
@@ -1973,7 +1976,7 @@ footer {
 }
 
 .about-context {
-  margin-top: 70px;
+  margin-top: 40px;
   margin-bottom: 50px;
 }
 
@@ -1982,7 +1985,7 @@ footer {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 90px;
+  font-size: 80px;
   letter-spacing: -0.04em;
   color: #010007;
 }
@@ -1998,7 +2001,7 @@ footer {
 }
 
 .team-story-wrap {
-  padding: 50px 120px 50px 120px;
+  padding: 50px 180px 50px 180px;
   background-color: #EEF0F1;
   width: 100%;
   height: -moz-fit-content;
@@ -4283,6 +4286,7 @@ nav img {
 
   .faq-section h3 {
     font-size: 32px;
+    margin-bottom: 33px;
   }
 
   .faq-panel button.accordion ion-icon {
@@ -4303,6 +4307,18 @@ nav img {
     margin-bottom: 13px;
     line-height: 1.6;
     width: 90%;
+  }
+
+  .nav-box.fix-me {
+    position: fixed;
+    top: 3%;
+    left: 0px;
+    max-width: 1408px;
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    z-index: 1000;
+    padding: 0px 15px;
   }
 }
 
