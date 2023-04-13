@@ -216,13 +216,12 @@ nav .logo img {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 700;
-  /* font-size: 60px; */
   font-size: 80px;
   text-align: center;
   letter-spacing: -0.01em;
   color: #020007;
-  line-height: 70px;
-  line-height: 1;
+  line-height: 90px;
+  letter-spacing: -2.8px;
 }
 
 .text p {
@@ -2555,6 +2554,8 @@ img {
     width: 100%;
     font-size: 18px;
     color: #020007;
+    margin-bottom: 46px;
+    line-height: 1.6;
   }
 
   .engagement-section {
@@ -4360,6 +4361,67 @@ nav img {
     display: flex;
     z-index: 1000;
     padding: 0px 15px;
+  }
+  
+  .mobile-hero {
+    padding: 0px 20px;
+  }
+
+  .mobile-hero .image-iphone-box {
+    position: relative;
+    z-index: 1000;
+    margin-top: -30%;
+  }
+
+  .mobile-hero .horizontal_ite img {
+    height: 25rem;
+    overflow: hidden;
+  }
+
+  .mobile-hero .image-iphone-box img {
+    width: 90%;
+    display: block;
+    margin: 0% auto;
+    /* z-index: 10000; */
+    position: relative;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .unox-prop-guide-display p {
+    color: #020007;
+    font-size: 16px;
+  }
+
+  .mobile-only .hero-context {
+    padding: 0%;
+  }
+
+  .unox-prop-guide-display p.unox-prop-first {
+    margin-bottom: 20px;
+  }
+  .unox-prop-guide-display p.unox-prop-second {
+    margin-bottom: 40px;
+  }
+
+  .unox-prop-guide-display a {
+    margin-bottom: 82px;
+    font-size: 24px;
+    display: block;
+    font-weight: 700;
+    color: #020007;
+  }
+
+  .horizontal_text_block h4 {
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  p.hero-unox-prop {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 700;    
   }
 }
 
