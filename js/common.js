@@ -8,7 +8,7 @@ const closeMobileMenu = () => {
 
 window.addEventListener('scroll', () => {
     const offset = window.scrollY;
-    if (offset > 3000) {
+    if (offset > 500) {
         document.querySelector('.nav-box').classList.add('fix-me');
     }
     else {
