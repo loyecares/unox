@@ -2985,14 +2985,16 @@ img {
   margin-bottom: 1em;
 }
 
-.unox-prop-grid .unox-prop-carousel-control {
+.unox-prop-grid .unox-prop-carousel-control,
+.unox-prop-carousel-build .unox-prop-carousel-control {
   height: 2px;
   width: 100%;
   background: #e4e2e9;
   position: relative;
 }
 
-.unox-prop-grid .unox-prop-carousel-control .unox-prop-carousel-color {
+.unox-prop-grid .unox-prop-carousel-control .unox-prop-carousel-color,
+.unox-prop-carousel-build .unox-prop-carousel-control .unox-prop-carousel-color {
   position: absolute;
   height: 2px;
   width: 100%;
@@ -4410,6 +4412,10 @@ nav img {
     display: block;
     font-weight: 700;
     color: #020007;
+  }
+
+  .unox-prop-carousel-build {
+    margin-top: 10%;
   }
 
   .horizontal_text_block h4 {
