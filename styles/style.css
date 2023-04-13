@@ -7,8 +7,10 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: "Plus Jakarta Sans", sans-serif;
-  box-sizing: border-box;
-  /* overflow-x: hidden; */
+}
+
+html {
+  position: relative;
 }
 
 ul {
@@ -18,6 +20,7 @@ ul {
 
 body {
   overflow-x: hidden;
+  position: relative;
 }
 
 a {
@@ -28,7 +31,7 @@ a {
   overflow-x: hidden;
 }
 
-.hero {
+.hero-section {
   padding: 15px 120px 0px 120px;
   background-color: #EEF0F1;
   width: 100%;
@@ -44,7 +47,7 @@ a {
 
 .desktop-only .hero-wrapper .image-iphone-box {
   position: absolute;
-  bottom: -80%;
+  bottom: -65%;
   width: 100%;
   margin: 0px auto;
   display: block;
@@ -87,15 +90,40 @@ nav {
   border-radius: 66px;
   z-index: 10000;
   position: relative;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
 }
 
-nav.fix-me {
+.square {
+  width: 400px;
+  height: 400px;
+  background: darkblue;
   position: fixed;
-  /* top: 3%; */
   bottom: 0px;
+}
+
+.nav-box {
+  width: 100%;
+  position: relative;
+  padding: 15px 120px;
+  background: #eef0f1;
+  background: transparent;
+  top: 0%;
+}
+
+.nav-box.fix-me {
+  position: fixed;
+  top: 3%;
+  left: 0px;
   width: 1100px;
+  width: 100%;
   margin: 0px auto;
   display: flex;
+  z-index: 100000;
+  padding: 15px 160px;
+}
+
+.nav-box.fix-me nav {
+  width: 100%;
 }
 
 nav .logo img {
@@ -241,7 +269,7 @@ nav .logo img {
 
 .hero-img-left-1 {
   position: absolute;
-  top: 23%;
+  top: 0%;
   left: -120px;
 }
 
@@ -253,7 +281,7 @@ nav .logo img {
 .hero-img-left-2 {
   position: absolute;
   left: -120px;
-  top: 65%;
+  top: 45%;
 }
 
 .hero-img-left-2 img {
@@ -264,7 +292,7 @@ nav .logo img {
 .hero-img-right-1 {
   position: absolute;
   right: -115px;
-  top: 20%;
+  top: -5%;
 }
 
 .hero-img-right-1 img {
@@ -275,7 +303,7 @@ nav .logo img {
 .hero-img-right-2 {
   position: absolute;
   right: -165px;
-  top: 50%;
+  top: 35%;
 }
 
 .hero-img-right-2 img {
@@ -812,21 +840,21 @@ nav .logo img {
 
 .ts-arrow-1 img {
   position: absolute;
-  left: 5%;
+  left: -10%;
   top: 46%;
   width: 40px;
 }
 
 .ts-arrow-2 img {
   position: absolute;
-  right: 5%;
+  right: -10%;
   top: 46%;
   width: 40px;
 }
 
 .recycle-section {
   background-color: #f3f0f5;
-  padding: 100px 180px;
+  padding: 179px 180px;
 }
 
 .rs-heading h3 {
@@ -836,6 +864,7 @@ nav .logo img {
   width: 80%;
   margin: auto;
   margin-bottom: 30px;
+  margin-bottom: 93px;
   font-weight: 1000;
   font-size: 50px;
   text-align: center;
@@ -1226,7 +1255,7 @@ footer {
   border-radius: 20px;
   padding: 51px 25px;
   padding-bottom: 40px;
-  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1); */
 }
 
 .myunox-features .grid-4 .bg-white p {
@@ -1250,6 +1279,7 @@ footer {
 .myunox-features .center-text h2 {
   font-size: 50px;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .myunox-features .center-text h2 span {
@@ -1487,7 +1517,7 @@ footer {
 }
 
 .faq-section {
-  padding: 100px 180px;
+  padding: 159px 180px;
   background-color: #f5f5f7;
 }
 
@@ -1497,7 +1527,7 @@ footer {
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 90px;
   text-align: center;
   letter-spacing: -0.015em;
 }
@@ -2467,7 +2497,7 @@ img {
     display: none;
   }
 
-  .hero {
+  .hero-section {
     padding: unset;
     height: max-content;
     background-color: #f5f5f7;
@@ -3029,7 +3059,7 @@ img {
   width: 100%;
   margin: 0px auto;
   display: block;
-  padding-top: 5%;
+  /* padding-top: 5%; */
 }
 
 
@@ -4510,4 +4540,25 @@ nav img {
 
 .owlslider.founder-owlcarousel .owl-stage .join-image {
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 720px) {
+  .max-width-cover {
+    max-width: 1128px;
+    margin: 0px auto;
+    display: block;
+    position: relative;
+  }
+  .max-nav-width-cover {
+    max-width: 1408px;
+    margin: 0px auto;
+    display: block;
+    position: relative;
+  }
+  .max-sec-width-cover {
+    max-width: 1328px;
+    margin: 0px auto;
+    display: block;
+    position: relative;
+  }
 }

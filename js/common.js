@@ -6,19 +6,15 @@ const closeMobileMenu = () => {
     document.querySelector('.mobile-menu').style.display = "none";
 }
 
-// window.addEventListener('scroll', () => {
-//     const offset = window.scrollY;
-//     if (offset > 200) {
-//         document.querySelector('nav').classList.add('fix-me');
-//         document.querySelector('hero').style.position = "unset";
-//         document.querySelector('hero-wrapper').style.position = "unset";
-//     }
-//     else {
-//         document.querySelector('nav').classList.remove('fix-me');
-//         document.querySelector('hero').style.position = "relative";
-//         document.querySelector('hero-wrapper').style.position = "relative";
-//     }
-// })
+window.addEventListener('scroll', () => {
+    const offset = window.scrollY;
+    if (offset > 500) {
+        document.querySelector('.nav-box').classList.add('fix-me');
+    }
+    else {
+        document.querySelector('.nav-box').classList.remove('fix-me');
+    }
+})
 
 let navItems = document.querySelectorAll('nav ul li.hover-cover ul li');
 for (let items of navItems) {
