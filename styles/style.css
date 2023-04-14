@@ -468,7 +468,6 @@ nav .logo img {
 }
 
 .tc-link a {
-  /* font-family: "SF Pro Display"; */
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
@@ -483,10 +482,6 @@ nav .logo img {
 }
 
 .track-card {
-  /* width: 400px;
-  height: 440px;
-  width: 480px;
-  height: 500px; */
   background: #405477;
   border-radius: 20px;
   padding: 60px 40px;
@@ -548,7 +543,7 @@ nav .logo img {
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
-  width: 80%;
+  width: 90%;
   letter-spacing: -0.015em;
   color: #020007;
 }
@@ -563,7 +558,7 @@ nav .logo img {
   letter-spacing: -0.015em;
   line-height: 1.5;
   color: #020007;
-  width: 75%;
+  width: 100%;
 }
 
 .admin-img {
@@ -1180,7 +1175,6 @@ footer {
 .unox-track-card {
   width: 70%;
   max-width: 700px;
-  /* height: 430px; */
   height: 100%;
   background: #405477;
   border-radius: 20px;
@@ -1201,6 +1195,33 @@ footer {
   display: inline-block;
   padding: 2px 12px 5px 12px;
   border-radius: 28px;
+}
+
+.recycle-section .rs-card {
+  transition: transform 1s;
+}
+
+.recycle-section img {
+  transition: 1s;
+}
+
+.recycle-section .rs-card a {
+  transition: 1s;
+}
+
+.recycle-section .rs-card:hover img {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.recycle-section .rs-card:hover a {
+  color: black;
+  background-color: #fff;
+  color: black;
+  display: inline-block;
+  padding: 2px 12px 5px 12px;
+  border-radius: 28px;
+  transition: 1s;
 }
 
 .track-img {
@@ -1579,7 +1600,7 @@ footer {
   padding: 15px 120px 0px 120px;
   background-color: #EEF0F1;
   width: 100%;
-  height: 140vh;
+  /* height: 140vh; */
   overflow-y: hidden;
 }
 
@@ -1630,11 +1651,18 @@ footer {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 50px;
   letter-spacing: -0.015em;
   color: #2F293D;
-  width: 70%;
+  width: 90%;
   margin-bottom: 30px;
+}
+
+.team-images .ti-content .ti-text p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  /* padding-bottom: 113px; */
+  line-height: 1.6;
 }
 
 .team-images .ti-image {
@@ -1651,9 +1679,13 @@ footer {
 
 .team-images .ti-image .unox-phone {
   position: absolute;
-  width: 50%;
-  top: 120px;
-  right: 50px;
+  width: 60%;
+  margin: 0px auto;
+  display: block;
+  right: 30px;
+  top: 20%;
+  /* top: 120px;
+  right: 50px; */
 }
 
 .team-email-list {
@@ -2202,7 +2234,6 @@ footer {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background: #fff;
   transition: 0.3s;
-  /* width: 25%; */
   border-radius: 20px;
 }
 
@@ -2490,18 +2521,6 @@ img {
   font-weight: 700;
   margin-bottom: 5px;
 }
-
-/* .join:hover p {
-  display: block;
-  position: absolute;
-  bottom: 50px;
-  left: 10px;
-  z-index: 10;
-  background: #fff;
-  border-radius: 50px;
-  padding: 6px 20px;
-  font-size: 13px;
-} */
 
 .uc-content-carousel-2,
 .uc-content-carousel-3 {
@@ -4525,14 +4544,6 @@ nav img {
   height: 100%;
   margin-top: 20px;
 }
-
-/* .hover-tab .hover-content ul a:hover {
-  background: #f5f5f7;
-  padding: 8px 10px;
-  border-radius: 4px;
-  border: 1px solid #f5f5f7;
-  font-size: 15px;
-} */
 
 .hover-tab .hover-content ul li {
   position: relative;
