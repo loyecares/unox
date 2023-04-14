@@ -6,15 +6,15 @@ const closeMobileMenu = () => {
     document.querySelector('.mobile-menu').style.display = "none";
 }
 
-window.addEventListener('scroll', () => {
-    const offset = window.scrollY;
-    if (offset > 500) {
-        document.querySelector('.nav-box').classList.add('fix-me');
-    }
-    else {
-        document.querySelector('.nav-box').classList.remove('fix-me');
-    }
-})
+// window.addEventListener('scroll', () => {
+//     const offset = window.scrollY;
+//     if (offset > 500) {
+//         document.querySelector('.nav-box').classList.add('fix-me');
+//     }
+//     else {
+//         document.querySelector('.nav-box').classList.remove('fix-me');
+//     }
+// })
 
 let navItems = document.querySelectorAll('nav ul li.hover-cover ul li');
 for (let items of navItems) {
