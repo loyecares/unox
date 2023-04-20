@@ -21,7 +21,7 @@ ul {
 body {
   overflow-x: hidden;
   position: relative;
-  max-width: 1408px;
+  /* max-width: 1408px; */
   margin: 0px auto;
   display: block;
   background: #F5F5F7;
@@ -355,8 +355,8 @@ nav .logo img {
 }
 
 .engagement-section.story-sect {
-  padding: 8% 180px;
-  padding-bottom: 120px;
+  padding: 160px 180px;
+  /* padding-bottom: 120px; */
 }
 
 .engagement-section.story-sect.team-engagement {
@@ -1510,7 +1510,8 @@ footer {
   border-radius: 20px;
 }
 
-.active, .accordion:hover {
+.active,
+.accordion:hover {
   background-color: #fff;
 }
 
@@ -2426,7 +2427,8 @@ img {
   width: 100%;
 }
 
-.contact-content .contact-content-flex .contact-content-form .input-wrap input, .contact-content .contact-content-flex .contact-content-form .input-wrap select {
+.contact-content .contact-content-flex .contact-content-form .input-wrap input,
+.contact-content .contact-content-flex .contact-content-form .input-wrap select {
   padding: 10px 8px 10px 14px;
   width: inherit;
   height: 47px;
@@ -2583,7 +2585,8 @@ img {
     padding-bottom: 0px;
   }
 
-  .tap-card, .track-card {
+  .tap-card,
+  .track-card {
     padding: 60px 15px;
     height: auto;
   }
@@ -4383,7 +4386,7 @@ nav img {
     z-index: 1000;
     padding: 0px 15px;
   }
-  
+
   .mobile-hero {
     padding: 0px 20px;
   }
@@ -4421,6 +4424,7 @@ nav img {
   .unox-prop-guide-display p.unox-prop-first {
     margin-bottom: 20px;
   }
+
   .unox-prop-guide-display p.unox-prop-second {
     margin-bottom: 40px;
   }
@@ -4446,7 +4450,7 @@ nav img {
   p.hero-unox-prop {
     font-size: 16px;
     margin-bottom: 5px;
-    font-weight: 700;    
+    font-weight: 700;
   }
 }
 
@@ -4698,5 +4702,98 @@ nav img {
     margin: 0px auto;
     display: block;
     position: relative;
+  }
+}
+
+svg.get-unox-indicator text {
+  text-anchor: middle;
+  dominant-baseline: middle;
+  stroke: #fff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 200;
+}
+
+svg.get-unox-indicator {
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -.5%;
+}
+
+svg.get-unox-indicator rect {
+  transition: ease-in-out;
+  animation: dash 5s ease forwards infinite;
+  stroke: rgba(0, 0, 0, 0.6);
+}
+
+@keyframes dash {
+  from {
+    stroke: rgba(0, 0, 0, 0.6);
+    stroke-dasharray: 0 1000;
+    stroke-dashoffset: 600;
+  }
+
+  to {
+    stroke: #fff;
+    stroke-dasharray: 1000 0;
+    stroke-dashoffset: 600;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+
+  .alt-fix-cover .hero-context,
+  .alt-fix-cover .hero-section,
+  .alt-fix-cover .desktop-only,
+  .alt-fix-cover .hero-context-text- {
+    position: unset;
+  }
+  .hero-img-left-1.left-hero-img {
+    top: 5%;
+    left: unset;
+    z-index: 100;
+  }
+
+  .hero-img-left-2.left-hero-img {
+    top: 35%;
+    left: -2%;
+    z-index: 100;
+  }
+
+  .hero-img-right-1.right-hero-img {
+    top: 5%;
+    right: 5%;
+    z-index: 100;
+  }
+
+  .hero-img-right-2.right-hero-img {
+    top: 30%;
+    right: 5%;
+    z-index: 100;
+  }
+
+  .right-hero-img img,
+  .left-hero-img img {
+    width: 100%;
+    height: 600px;
+  }
+  
+  .hero-img-right-1 img {
+    width: 100%;
+    height: 800px;
+  }
+  .hero-img-right-2 img {
+    width: 100%;
+    height: 1000px;
+  }
+
+  .hero-section {
+    padding: 0px;
+  }
+
+  .hero-context {
+    max-width: unset;
+    height: unset;
   }
 }
