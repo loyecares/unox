@@ -769,6 +769,7 @@ nav .logo img {
   letter-spacing: -0.015em;
   color: #7F4AF0;
   margin-top: 20px;
+  margin-top: 32px;
 }
 
 .uc-content p {
@@ -2723,7 +2724,7 @@ img {
   }
 
   .uc-content h6 {
-    margin-top: 0px;
+    /* margin-top: 0px; */
     margin-bottom: 12px;
   }
 
