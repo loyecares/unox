@@ -1,0 +1,7 @@
+@media screen and (min-width: 3500px) {
+    .join-heading h3 {
+        width: 50%;
+        margin: 0px auto;
+        display: block;
+    }
+}

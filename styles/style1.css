@@ -1,0 +1,11 @@
+@media screen and (min-width: 2500px) {
+    .join-heading h3 {
+        width: 60%;
+        margin: 0px auto;
+        display: block;
+    }
+
+    .myunox-features .center-text h2 {
+        width: 85%;
+    }
+}

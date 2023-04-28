@@ -8,6 +8,9 @@
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -77,7 +80,7 @@
         <button>Get your unox card</button>
       </div>
     </div>
-    <div class="faq-hero" style="background-color: #f5f6f8;">
+    <div class="faq-hero" style="background-color: #F5F6F7;">
       <div class="hero-wrapper">
         <div class="mobile-nav-spacing">
           <div class="nav-box">
@@ -214,41 +217,42 @@
                 <input placeholder="Search help articles and FAQs" type="text" />
                 <img src="/images/search-icon.svg" />
               </div>
-
             </div>
           </div>
           <!-- <div class="article-card-wrap"> -->
-          <div class="owlslider owl-carousel data-owlcarousel owl-theme">
-            <div class="article-card item">
-              <img src="images/card-1.png" alt="Avatar" style="width:100%">
-              <div class="ac-container">
-                <h4>What benefits does your cards offer?</h4>
-                <p>Helping you to get started with unox</p>
-                <p class="article-no"> 7 Article</p>
+          <div>
+            <div class="owlslider owl-carousel data-owlcarousel owl-theme">
+              <div class="article-card item">
+                <img src="images/card-1.png" alt="Avatar" style="width:100%">
+                <div class="ac-container">
+                  <h4>What benefits does your cards offer?</h4>
+                  <p>Helping you to get started with unox</p>
+                  <p class="article-no"> 7 Article</p>
+                </div>
               </div>
-            </div>
-            <div class="article-card item">
-              <img src="images/card-2.png" alt="Avatar" style="width:100%">
-              <div class="ac-container">
-                <h4>What benefits does your cards offer?</h4>
-                <p>Helping you to get started with unox</p>
-                <p class="article-no"> 7 Article</p>
+              <div class="article-card item">
+                <img src="images/card-2.png" alt="Avatar" style="width:100%">
+                <div class="ac-container">
+                  <h4>What benefits does your cards offer?</h4>
+                  <p>Helping you to get started with unox</p>
+                  <p class="article-no"> 7 Article</p>
+                </div>
               </div>
-            </div>
-            <div class="article-card item">
-              <img src="images/card-3.png" alt="Avatar" style="width:100%">
-              <div class="ac-container">
-                <h4>What benefits does your cards offer?</h4>
-                <p>Helping you to get started with unox</p>
-                <p class="article-no"> 7 Article</p>
+              <div class="article-card item">
+                <img src="images/card-3.png" alt="Avatar" style="width:100%">
+                <div class="ac-container">
+                  <h4>What benefits does your cards offer?</h4>
+                  <p>Helping you to get started with unox</p>
+                  <p class="article-no"> 7 Article</p>
+                </div>
               </div>
-            </div>
-            <div class="article-card item">
-              <img src="images/card-4.png" alt="Avatar" style="width:100%">
-              <div class="ac-container">
-                <h4>What benefits does your cards offer?</h4>
-                <p>Helping you to get started with unox</p>
-                <p class="article-no"> 7 Article</p>
+              <div class="article-card item">
+                <img src="images/card-4.png" alt="Avatar" style="width:100%">
+                <div class="ac-container">
+                  <h4>What benefits does your cards offer?</h4>
+                  <p>Helping you to get started with unox</p>
+                  <p class="article-no"> 7 Article</p>
+                </div>
               </div>
             </div>
           </div>
@@ -416,7 +420,7 @@
               business card,<br> <b>ever!</b>
             </p>
             <p><b> Did we say our cards are recyclable up to 8x?</b></p>
-            <a href="">Get your card <ion-icon name="arrow-forward-outline"></ion-icon></a>
+            <a href="">Get your card <i class="fa-solid fa-arrow-right"></i></a>
           </div>
           <div class="rs-img">
             <img src="./images/recurring-img.png">
@@ -586,6 +590,15 @@
         }
       });
     });
+    window.addEventListener('scroll', () => {
+      const offset = window.scrollY;
+      if (offset > 500) {
+        document.querySelector('.nav-box').classList.add('fix-me');
+      }
+      else {
+        document.querySelector('.nav-box').classList.remove('fix-me');
+      }
+    })
   </script>
 </body>
 
