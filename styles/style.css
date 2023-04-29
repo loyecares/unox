@@ -426,6 +426,7 @@ nav .logo img {
   background: #7F4AF0;
   border-radius: 20px;
   padding: 60px 40px;
+  padding-bottom: 30px;
   transition: transform .5s;
 }
 
@@ -442,6 +443,20 @@ nav .logo img {
   border-radius: 28px;
   transition: transform .5s;
 }
+
+.tap-card .tc-link {
+  height: 40px;
+  overflow: hidden;
+  /* margin-bottom: 40px; */
+}
+
+/* .tap-card:hover img {
+  margin-bottom: 25px;
+} */
+
+/* .tap-card:hover .tc-link {
+  margin-bottom: 33px;
+} */
 
 .company-logo-showcase {
   display: flex;
@@ -485,6 +500,7 @@ nav .logo img {
   color: #FFFFFF;
   transition: 1s;
   display: inline-block;
+  margin-bottom: 0px;
 }
 
 .tc-link a span {
@@ -917,17 +933,18 @@ nav .logo img {
 .rs-card {
   display: flex;
   gap: 45px;
-  /* width: 60%; */
-  /* height: 350px; */
   margin: auto;
   align-items: flex-end;
-  /* padding: 204px 0px 0px 60px; */
   padding: 104px 0px 0px 60px;
   background: #491860;
   position: relative;
   border-radius: 40px;
   color: #fff;
   overflow: hidden;
+}
+
+.rs-card .rs-card-link {
+  height: 70px;
 }
 
 .rs-text {
@@ -953,11 +970,17 @@ nav .logo img {
   color: #FFFFFF;
 }
 
+.first-paragraph {
+  margin-bottom: 0px;
+}
+
 .rs-text a {
   display: inline-block;
   margin-top: 32px;
+  margin-top: 0px;
   color: white;
   margin-bottom: 59px;
+  margin-bottom: 0px;
   font-size: 20px;
   font-size: 16px;
 }
@@ -1104,22 +1127,16 @@ footer {
   margin-top: 120px;
 }
 
-/* .tt-card-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 70px;
-} */
 .tt-card-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* justify-content: center; */
-  /* flex-direction: row; */
-  /* flex-wrap: wrap; */
   gap: 30px;
   margin-top: 70px;
+}
+
+.tc-img {
+  height: 10rem;
+  overflow: hidden;
 }
 
 .tc-img img {
@@ -1166,11 +1183,11 @@ footer {
   margin-top: 20px;
   font-family: "Plus Jakarta Sans";
   font-style: normal;
-  font-size: 14px;
   font-size: 16px;
   letter-spacing: -0.015em;
-  color: #FFFFFF;
   margin-bottom: 20px;
+  width: 75%;
+  color: #fff;
 }
 
 .tc-link a {
@@ -1418,15 +1435,17 @@ footer {
 }
 
 .track-img img {
-  width: 60%;
-  height: 100%;
   position: absolute;
-  top: 120px;
   transition: transform 1s;
-  right: -10px;
   overflow: hidden;
   object-fit: cover;
   object-position: center;
+  width: 55%;
+  right: 0px;
+  height: unset;
+  bottom: 0px;
+  top: unset;
+
 }
 
 .admin-card {
@@ -4819,9 +4838,9 @@ svg.get-unox-indicator {
   margin-left: -.5%;
 }
 
-svg.get-unox-indicator rect {
+svg.get-unox-indicator rect.rect-animate {
   transition: ease-in-out;
-  animation: dash 5s ease forwards infinite;
+  animation: dash 5s linear forwards infinite;
   stroke: rgba(0, 0, 0, 0.6);
 }
 
@@ -4946,6 +4965,10 @@ body,
   grid-row: 26 / 33;
   background: firebrick;
   margin-top: -4%;
+}
+
+.about-page .faq-section {
+  background: #F3F0F5;
 }
 
 /** COLUMN 2 **/
@@ -5099,16 +5122,14 @@ body,
   }
 
   .tc-link a {
-    margin-bottom: 8px;
+    margin-bottom: 0px;
     font-size: 20px;
   }
 
   .tap-card {
-    overflow: hidden;
     background: #7F4AF0;
-    border-radius: 20px;
     padding: 60px 40px;
-    transition: transform .5s;
+    padding-bottom: 30px;
   }
 
   .tc-img img {
@@ -5125,7 +5146,7 @@ body,
   }
 
   .track-img img {
-    width: 60%;
+    width: 55%;
     right: 0px;
     height: unset;
     bottom: 0px;
@@ -5163,11 +5184,6 @@ body,
 
   .admin-text {
     width: 70%;
-  }
-
-  /* faqs-page */
-  .about-page .faq-section {
-    background: #F3F0F5;
   }
 
   /* pricing */
