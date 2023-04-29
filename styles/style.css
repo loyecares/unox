@@ -3673,6 +3673,16 @@ nav img {
 /* teams */
 @media screen and (max-width: 720px) {
 
+  .nav-box {
+    width: 100%;
+  }
+
+  .nav-box nav {
+    margin: 0px auto !important;
+    display: flex;
+    width: 95% !important;
+  }
+
   .mobile-nav-spacing {
     padding-top: 22px;
   }
@@ -4583,7 +4593,7 @@ nav img {
     margin-bottom: 5px;
     font-weight: 700;
   }
-  
+
   .mobile-hero {
     padding-top: 140px;
   }
