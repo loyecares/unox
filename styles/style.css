@@ -2947,6 +2947,7 @@ footer {
   .rs-heading h3 {
     width: 100%;
     font-size: 32px;
+    margin-bottom: 33px;
   }
 
   .rs-img img {
@@ -3685,6 +3686,7 @@ nav img {
 
   .mobile-nav-spacing {
     padding-top: 22px;
+    padding-top: 0px;
   }
 
   .mobile-nav-spacing nav {
@@ -3828,6 +3830,11 @@ nav img {
 
   .faq-hero-context .fhc-text h3 {
     font-size: 38px;
+    margin-bottom: 23px;
+  }
+
+  .faq-hero .hero-wrapper {
+    padding-bottom: 80px;
   }
 
   .faq-hero-context .fhc-text .fhc-input,
@@ -3844,7 +3851,7 @@ nav img {
   }
 
   .faq-hero-context {
-    padding: 70px 20px;
+    padding: 0px 20px;
     padding-bottom: 60px;
   }
 
@@ -3867,6 +3874,11 @@ nav img {
     padding: 70px 20px;
   }
 
+
+  .faqs-page .faq-section {
+    padding-bottom: 100px;
+  }
+
   .faq-title h3 {
     font-size: 32px;
     margin-bottom: 32px;
@@ -3887,10 +3899,11 @@ nav img {
 
   .pricing-hero-context .phc-text {
     width: 100%;
+    padding-top: 0px;
   }
 
   .pricing-hero-context .phc-text h3 {
-    padding-top: 50px;
+    padding-top: 0px;
     font-size: 38px;
   }
 
@@ -4206,7 +4219,7 @@ nav img {
   }
 
   .contact-content {
-    margin-top: 50px;
+    margin-top: 0px;
   }
 
   .contact-content .contact-content-company {
@@ -4594,7 +4607,8 @@ nav img {
     font-weight: 700;
   }
 
-  .mobile-hero {
+  .mobile-hero,
+  .privacy-hero-wrapper {
     padding-top: 140px;
   }
 }
