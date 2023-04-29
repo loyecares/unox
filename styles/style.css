@@ -5240,6 +5240,25 @@ body,
   }
 }
 
+@media screen and (max-width: 1500px) {
+  .hero-img-left-2 {
+    top: 75%;
+  }
+
+  .hero-img-right-1 {
+    top: 10%;
+  }
+
+  .hero-img-left-1 {
+    top: 10%;
+    left: -145px;
+  }
+
+  .hero-img-right-2 {
+    top: 65%;
+  }
+}
+
 
 .team-hero,
 .about-hero,
