@@ -1792,7 +1792,7 @@ footer {
 .team-email-list input {
   position: relative;
   width: 516px;
-  height: 60px;
+  height: 80px;
   padding: 15px 30px;
   background: #FFFFFF;
   border: 1px solid rgba(39, 38, 37, 0.05);
@@ -1803,7 +1803,7 @@ footer {
   position: absolute;
   padding: 11px 16px;
   width: 200px;
-  height: 50px;
+  height: 70px;
   color: #EEF0F1;
   background: #020007;
   border-radius: 44px;
@@ -4184,6 +4184,11 @@ nav img {
 
   .privacy-content .pc-heading h1 {
     font-size: 35px;
+    margin-top: 0px;
+  }
+
+  .privacy-content {
+    margin-top: 0px;
   }
 
 
