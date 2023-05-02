@@ -2388,6 +2388,7 @@ footer {
 .ac-container h4 {
   font-size: 16px;
   margin-bottom: 10px;
+  color: #403246;
 }
 
 .ac-container p {
@@ -4629,6 +4630,84 @@ nav img {
   .privacy-hero-wrapper {
     padding-top: 140px;
   }
+
+  .unox-article {
+    padding: 0px 24px;
+  }
+
+  .unox-story-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .unox-story-block .unox-story-block-details {
+    margin-left: 0px;
+  }
+
+  .ahc-text h6 {
+    font-size: 16px;
+  }
+
+  .article-hero-card {
+    height: 130px;
+    padding: 24px 26px;
+  }
+
+  .ahc-img img {
+    right: 20px;
+    width: 35%;
+  }
+
+  .unox-article-wrapper {
+    margin-bottom: 42px;
+  }
+
+  .unox-article-hero {
+    margin-top: 0px;
+    padding-top: 200px;
+  }
+
+  .unox-article-hero .breadcrumb a {
+    display: flex;
+    align-items: center;
+    grid-gap: 13px;
+    color: #815CF3;
+  }
+
+  .article-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 13px;
+  }
+  .article-list a {
+    background: #fff;
+    border-radius: 40px;
+    padding: 43.5px 23px;
+    color: #815CF3;
+  }
+  .unox-story-block-details {
+    background: #fff;
+    padding: 32px 25px;
+    padding-bottom: 0px;
+    border-radius: 40px;
+    margin-bottom: 138px;
+  }
+
+  .unox-story-block .unox-story-block-details p {
+    font-size: 16px;
+  }
+  .unox-story-block .grey-bg {
+    height: 186px;
+  }
+  .unox-story-block-details h2 {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 21px;
+  }
+  .unox-story-block .unox-story-block-links {
+    border-right: unset;
+    display: none;
+  }
 }
 
 
@@ -5325,25 +5404,32 @@ body,
   .tc-heading h6 {
     font-size: 25px;
   }
+
   .tc-text p {
     font-size: 14px;
   }
+
   .tc-img img {
     margin-bottom: 0px;
   }
+
   .tc-img {
     height: 8rem;
   }
+
   .engagement-section.story-sect {
     padding: 160px 100px;
   }
+
   .join-heading {
     width: 75%;
   }
+
   .admin-text p,
   .admin-text {
     width: 100%;
   }
+
   .get-unox {
     padding: 180px 100px;
   }
@@ -5365,4 +5451,45 @@ body,
   .uc-content {
     margin-top: 0px;
   }
+}
+
+.bg-white-mobile-cover {
+  display: flex;
+  grid-gap: 13px;
+  padding: 26px 23px 28px;
+  margin-bottom: 16px;
+  border-radius: 15px;
+}
+
+.myunox-features-mobile .bg-white {
+  border-radius: 15px;
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.1);
+}
+
+.myunox-features-mobile .bg-white h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.max-me {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tueh {
+  height: 10rem;
+}
+
+.tueh-1 {
+  background: red;
+}
+
+.tueh-2 {
+  background: blue;
+}
+
+.tueh-3 {
+  background: purple;
 }

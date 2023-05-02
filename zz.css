@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 4vw;
+}
+
+h2 {
+    font-size: 3vw;
+}
+
+#hero {
+    width: 100%;
+    min-height: 100vh;
+    background: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+span {
+    color: #fff;
+    font-size: 1vw;
+}
+
+#pinned-anim {
+    background: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+#fin {
+    height: 100vh;
+    background: #000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+}
+
+.col:first-of-type {
+    width: 33%;
+}
+
+.col:last-of-type {
+    width: 58%;
+    position: relative;
+    height: 100%;
+    display: flex;
+}
+
+.relative-clone {
+    position: relative;
+    visibility: hidden;
+}
+
+.deco {
+    width: 30%;
+    padding-top: 30%;
+    background: #000;
+}
+
+.txt {
+    width: 65%
+}
+
+.article {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 0;
+}
+
+.article:nth-of-type(2) {
+    top: 0;
+}
+
+.article:nth-of-type(3) {
+    top: 0;
+}
+
+.article:nth-of-type(4) {
+    top: 0;
+}
+
+.articles {
+    position: relative;
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+}

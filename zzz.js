@@ -32,5 +32,5 @@ tl1.from('.box', {
     duration: 1.5,
     stagger: 1,
     yPercent: 500,
-    opacity: 0
+    opacity: 1
 })
