@@ -892,104 +892,69 @@
           trigger: ".myunox-features",
           pin: ".myunox-page",
           start: "top top",
-          // end: () => `bottom bottom`,
-          end: `bottom`,
+          // end: "() => `+=1000px`",
+          // end: "() => `bottom bottom`",
+          end: () => `+=100%`,
           pin: true,
           // pinSpacing: true,
           scrub: 1,
           invalidateOnRefresh: true,
-          // markers: true
+          markers: true
         },
       });
 
-      tl2.fromTo(
-        ".bg2",
-        {
-          y: 0
-        },
-        {
-          y: '-18vh',
-        });
-      tl2.fromTo(
-        ".bg3",
-        {
-          y: 0
-        },
-        {
-          y: '-36vh',
-        });
-      tl2.fromTo(
-        ".bg4",
-        {
-          y: 0
-        },
-        {
-          y: '-54vh',
-        });
-      tl2.fromTo(
-        ".bg5",
-        {
-          y: 0
-        },
-        {
-          y: '-72vh',
-        });
-      tl2.fromTo(
-        ".bg6",
-        {
-          y: 0
-        },
-        {
-          y: '-90vh',
-        });
-      tl2.fromTo(
-        ".bg7",
-        {
-          y: 0
-        },
-        {
-          y: '-108vh',
-        });
-      tl2.fromTo(
-        ".bg8",
-        {
-          y: 0
-        },
-        {
-          y: '-126vh',
-        });
-      tl2.fromTo(
-        ".bg9",
-        {
-          y: 0
-        },
-        {
-          y: '-144vh',
-        });
-      tl2.fromTo(
-        ".bg10",
-        {
-          y: 0
-        },
-        {
-          y: '-162vh',
-        });
-      tl2.fromTo(
-        ".bg11",
-        {
-          y: 0
-        },
-        {
-          y: '-180vh',
-        });
-      tl2.fromTo(
-        ".bg12",
-        {
-          y: 0
-        },
-        {
-          y: '-198vh',
-        });
+      tl2.to(".bg2", {
+        y: '-1vh',
+        marginTop: '-140px'
+      });
+      tl2.to(".bg3", {
+        y: '-2vh',
+        marginTop: '-140px'
+      });
+      tl2.to(".bg4", {
+        y: '-3vh',
+        marginTop: '-140px'
+      });
+      tl2.to(".bg5", {
+        y: '-4vh',
+        marginTop: '-140px'
+      });
+      tl2.to(".bg6", {
+        y: '-5vh',
+        marginTop: '-140px'
+      });
+      tl2.to(".bg7", {
+        y: '-6vh',
+        marginTop: '-140px'
+      });
+      tl2.to(".bg8", {
+        y: '-7vh',
+        marginTop: '-140px'
+      });
+      tl2.to(".bg9", {
+        y: '-8vh',
+        marginTop: '-140px'
+      });
+      tl2.to(".bg10", {
+        y: '-9vh',
+        marginTop: '-140px'
+      });
+      tl2.to(".bg11", {
+        y: '-10vh',
+        marginTop: '-140px'
+      });
+      tl2.to(".bg12", {
+        y: '-11vh',
+        marginTop: '-140px'
+      });
+      tl2.to(".myunox-features", {
+        // y: '-11vh',
+        height: '10px'
+      });
+      tl2.to(".pin-spacer", {
+        // y: '-11vh',
+        height: '1500px'
+      });
     </script>
 </body>
 

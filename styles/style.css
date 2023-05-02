@@ -1087,6 +1087,7 @@ footer {
 /*myunox page*/
 .myunox {
   padding: 0px 160px 100px 160px;
+  padding: 0px;
   padding-bottom: 0px;
   background-color: #F5F6F7;
   width: 100%;
@@ -4276,6 +4277,7 @@ nav img {
   /* .myunox */
   .myunox {
     padding: 0px 20px;
+    padding: 0px;
   }
 
   .myunox-hero .myunox-hero-content {

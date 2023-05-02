@@ -35,15 +35,15 @@ span {
 
 #pinned-anim {
     background: #fff;
-    min-height: 100vh;
+    /* min-height: 30vh; */
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3rem 0;
+    padding: 0rem 0;
 }
 
 #fin {
-    height: 100vh;
+    height: 60vh;
     background: #000;
     width: 100%;
     display: flex;
@@ -57,6 +57,7 @@ span {
     align-items: center;
     justify-content: space-between;
     height: 100%;
+    background: purple;
 }
 
 .col {
@@ -116,4 +117,10 @@ span {
     display: flex;
     align-items: center;
     visibility: hidden;
+}
+
+.box {
+    height: 200px;
+    background: red;
+    width: 200px;
 }
