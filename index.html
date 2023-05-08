@@ -953,10 +953,17 @@
         let joinButton = document.querySelector(`.owl-theme .join-${arrValue}`);
         let targetElement = document.querySelector(`.owl-theme .join-${arrValue} p`);
         joinButton.addEventListener('mouseover', () => {
-          TweenMax.to(targetElement, 0.8, { y: -100, duration: 3, ease: Bounce.easeOut });
+          TweenMax.to(targetElement, 0.8, {
+            y: -100, 
+            duration: 3,
+            ease: Bounce.easeOut
+          });
         })
         joinButton.addEventListener('mouseout', () => {
-          TweenMax.to(targetElement, 0.8, { y: 10, duration: 3 });
+          TweenMax.to(targetElement, 0.8, {
+            y: 10,
+            duration: 3
+          });
         })
       }
 
