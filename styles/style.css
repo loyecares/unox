@@ -27,6 +27,10 @@ body {
   /* overflow: hidden; */
 }
 
+.owl-dots {
+  display: none !important;
+}
+
 a {
   text-decoration: none !important;
 }
