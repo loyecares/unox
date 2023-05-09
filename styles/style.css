@@ -1720,6 +1720,7 @@ footer {
   letter-spacing: -0.01em;
   color: #020007;
   line-height: 70px;
+  margin-bottom: 0px;
 }
 
 .team-text p {
@@ -1730,8 +1731,8 @@ footer {
   line-height: 28px;
   font-size: 18px;
   color: #020007;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-top: 52px;
+  margin-bottom: 0px;
 }
 
 .team-images {
@@ -1740,11 +1741,11 @@ footer {
 
 .team-images .ti-content {
   width: 50%;
-  padding-top: 40px;
+  padding-top: 76px;
 }
 
 .team-images .ti-content .ti-text {
-  margin-top: 125px;
+  margin-top: 250px;
 }
 
 .team-images .ti-content .ti-text h3 {
@@ -1754,14 +1755,13 @@ footer {
   font-size: 50px;
   letter-spacing: -0.015em;
   color: #2F293D;
-  width: 90%;
-  margin-bottom: 30px;
+  width: 100%;
+  margin-bottom: 40px;
 }
 
 .team-images .ti-content .ti-text p {
   font-size: 20px;
-  margin-bottom: 50px;
-  /* padding-bottom: 113px; */
+  margin-bottom: 60px;
   line-height: 1.6;
 }
 
@@ -1771,7 +1771,7 @@ footer {
 }
 
 .team-images .ti-image .unox-card {
-  width: 70%;
+  width: 80%;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1779,7 +1779,7 @@ footer {
 
 .team-images .ti-image .unox-phone {
   position: absolute;
-  width: 60%;
+  width: 70%;
   margin: 0px auto;
   display: block;
   right: 30px;
@@ -1792,7 +1792,7 @@ footer {
   position: relative;
   width: 516px;
   height: 60px;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
 }
 
 .team-email-list input {
@@ -2355,7 +2355,7 @@ footer {
 }
 
 .article-card:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 32px rgba(0, 0, 0, 0.06);
 }
 
 .faq-hero .owl-item {
@@ -2366,7 +2366,7 @@ footer {
 .faq-hero .owl-item:hover {
   transition: 0.5s ease-in-out;
   border-radius: 24px;
-  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 32px rgba(0, 0, 0, 0.06);
 }
 
 .article-card img {
@@ -4688,12 +4688,14 @@ nav img {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 13px;
   }
+
   .article-list a {
     background: #fff;
     border-radius: 40px;
     padding: 43.5px 23px;
     color: #815CF3;
   }
+
   .unox-story-block-details {
     background: #fff;
     padding: 32px 25px;
@@ -4705,14 +4707,17 @@ nav img {
   .unox-story-block .unox-story-block-details p {
     font-size: 16px;
   }
+
   .unox-story-block .grey-bg {
     height: 186px;
   }
+
   .unox-story-block-details h2 {
     font-size: 18px;
     margin-top: 0px;
     margin-bottom: 21px;
   }
+
   .unox-story-block .unox-story-block-links {
     border-right: unset;
     display: none;
@@ -5177,6 +5182,14 @@ body,
   }
 } */
 
+
+.team-hero,
+.about-hero,
+.pricing-hero,
+.faq-hero {
+  padding-top: 130px;
+}
+
 @media screen and (min-width: 1500px) {
 
   .alt-fix-cover .hero-context,
@@ -5379,6 +5392,21 @@ body,
     width: 100%;
     margin-bottom: 0px;
   }
+
+  .team-images .ti-content .ti-text p {
+    margin-bottom: 100px;
+  }
+
+  .team-images .ti-image .unox-phone {
+    right: 35px;
+  }
+
+  .team-hero,
+  .about-hero,
+  .pricing-hero,
+  .faq-hero {
+    padding-top: 170px;
+  }
 }
 
 @media screen and (max-width: 1500px) {
@@ -5398,14 +5426,6 @@ body,
   .hero-img-right-2 {
     top: 65%;
   }
-}
-
-
-.team-hero,
-.about-hero,
-.pricing-hero,
-.faq-hero {
-  padding-top: 130px;
 }
 
 
