@@ -8,4 +8,33 @@
     .myunox-features .center-text h2 {
         width: 85%;
     }
+
+    .hero-width .image-iphone-box img {
+        width: 40%;
+        margin: 0px auto;
+    }
+
+    .centralize-content img {
+        width: 45%;
+    }
+
+    .centralize-content h2 {
+        font-size: 60px;
+        width: 70%;
+        margin-bottom: 80px;
+    }
+
+    .email-list {
+        margin-bottom: 160px;
+    }
+
+    .text p {
+        font-size: 30px;
+        margin-bottom: 160px;
+    }
+
+    .text h1 {
+        font-size: 100px;
+        line-height: 1.4;
+    }
 }
