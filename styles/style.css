@@ -5460,26 +5460,6 @@ body,
   }
 }
 
-@media screen and (max-width: 1500px) {
-  .hero-img-left-2 {
-    top: 75%;
-  }
-
-  .hero-img-right-1 {
-    top: 10%;
-  }
-
-  .hero-img-left-1 {
-    top: 10%;
-    left: -145px;
-  }
-
-  .hero-img-right-2 {
-    top: 65%;
-  }
-}
-
-
 @media (min-width: 750px) and (max-width: 1100px) {
   .tc-heading h6 {
     font-size: 25px;
@@ -5572,4 +5552,56 @@ body,
 
 .tueh-3 {
   background: purple;
+}
+
+@media (min-width: 900px) and (max-width: 1500px) {
+  .hero-section {
+    height: 100vh;
+    max-height: 100vh;
+    padding-top: 0px;
+    max-width: unset;
+  }
+
+  .hero-sect-cover .style-mobile {
+    margin-top: -5rem;
+  }
+
+  .hero-sect-cover .style-mobile .unox-guide-show-me {
+    padding: 0px 70px;
+  }
+
+  .hero-section .hero-context {
+    padding-top: 100px;
+    max-width: unset;
+  }
+
+  .hero-img-left-2 {
+    top: 90%;
+    left: 0px;
+  }
+
+  .hero-img-right-1 {
+    top: 5%;
+    right: 0px;
+  }
+
+  .hero-img-left-1 {
+    top: 5%;
+    left: 0px;
+  }
+
+  .hero-img-right-2 {
+    top: 85%;
+    right: 0px;
+  }
+
+  .hero-img-right-2 img {
+    width: 100%;
+  }
+
+  .text h1 {
+    font-size: 70px;
+    width: 50%;
+    line-height: 1.2;
+  }
 }
