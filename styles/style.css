@@ -1169,6 +1169,11 @@ footer {
 
 .myunox-tools {
   margin-top: 120px;
+  margin: 120px 180px 0px;
+}
+
+.myunox-features {
+  margin: 0px 180px;
 }
 
 .tt-card-wrapper {
@@ -2685,6 +2690,10 @@ footer {
   padding: unset;
   border-radius: unset;
   margin-bottom: 0px;
+  text-align: unset;
+  margin: unset;
+  max-height: unset;
+  width: unset;
 }
 
 .founder-author p.founder-role {
@@ -2746,6 +2755,8 @@ footer {
   .text h1 {
     font-size: 48px;
     line-height: 61.2px;
+    width: 100%;
+    padding-top: 140px;
   }
 
   .text p {
@@ -3149,6 +3160,14 @@ footer {
 
   footer .email-list {
     margin-bottom: 83px;
+  }
+  .myunox-tools {
+    margin-top: 120px;
+    margin: 120px 20px 0px;
+  }
+  
+  .myunox-features {
+    margin: 0px 20px;
   }
 }
 
@@ -4434,6 +4453,7 @@ nav img {
 
   .myunox-tools .unox-tap-card {
     height: max-content;
+    padding-left: 20px;
   }
 
   .tc-link a {
@@ -4493,6 +4513,7 @@ nav img {
     display: block;
     max-height: 450px;
     overflow: hidden;
+    padding-left: 0px;
   }
 
   .myunox-tools .admin-card img {
@@ -5552,6 +5573,22 @@ body,
 
 .tueh-3 {
   background: purple;
+}
+
+.pin-spacer,
+.alt-fix-cover {
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow: hidden;
+}
+
+.pin-spacer::-webkit-scrollbar,
+.alt-fix-cover::-webkit-scrollbar {
+  display: none !important;
+  width: 0px !important;
+  overflow: hidden;
+  background: red;
 }
 
 @media (min-width: 900px) and (max-width: 1500px) {

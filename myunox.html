@@ -283,7 +283,7 @@
           </div>
         </div>
       </div>
-      <div class="myunox-features">
+      <div class="myunox-features desktop-only">
         <div class="max-sec-width-cover">
           <div class="center-text">
             <h2>All the features you'll ever need, <span>and more!</span></h2>
@@ -375,6 +375,15 @@
                 <p>Add a block of links everywhere, it’s unlimited!</p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="myunox-features mobile-only">
+        <div class="max-sec-width-cover">
+          <div class="center-text">
+            <h2>All the features you'll ever need, <span>and more!</span></h2>
+            <p>Give your team the tools they need to network smarter and faster. The
+              all-in-one business card for.</p>
           </div>
           <div class="mobile-only">
             <div class="myunox-features-mobile">
@@ -823,7 +832,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./js/owl.js"></script>
     <script src="./js/common.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
       integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
@@ -861,10 +871,15 @@
 
       /* end of stagger link */
       $(document).ready(function () {
-        $('.owl-carousel').owlCarousel({
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
           loop: true,
           margin: 27,
           autoplay: true,
+          slideTransition: 'linear',
+          autoplayTimeout: 0,
+          autoplaySpeed: 2000,
+          autoplayHoverPause: false,
           nav: false,
           stagePadding: 40,
           responsive: {
@@ -874,7 +889,7 @@
             1000: {
               items: 4
             },
-            1300: {
+            1800: {
               items: 5
             },
             2000: {
@@ -882,6 +897,9 @@
             },
             3000: {
               items: 7
+            },
+            5000: {
+              items: 8
             }
           }
         });
@@ -889,7 +907,7 @@
 
       const tl2 = gsap.timeline({
         scrollTrigger: {
-          trigger: ".myunox-features",
+          trigger: ".myunox-features.mobile-only",
           pin: ".myunox-page",
           start: "top top",
           // end: "() => `+=1000px`",
@@ -899,7 +917,7 @@
           // pinSpacing: true,
           scrub: 1,
           invalidateOnRefresh: true,
-          markers: true
+          // markers: true
         },
       });
 
