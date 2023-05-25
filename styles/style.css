@@ -5591,7 +5591,20 @@ body,
   background: red;
 }
 
+.style-mobile {
+  margin: 0px auto;
+  display: block;
+  width: 1308px;
+  width: 100%;
+}
+
+.hero-sect-cover .style-mobile .unox-guide-show-me {
+  padding-left: 120px !important;
+  padding-right: 100px !important;
+}
+
 @media (min-width: 900px) and (max-width: 1500px) {
+  
   .hero-section {
     height: 100vh;
     max-height: 100vh;
