@@ -5594,8 +5594,8 @@ body,
 .style-mobile {
   margin: 0px auto;
   display: block;
-  width: 1308px;
   width: 100%;
+  max-width: 1408px;
 }
 
 .hero-sect-cover .style-mobile .unox-guide-show-me {

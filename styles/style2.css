@@ -27,9 +27,11 @@
         height: 90vh;
         max-height: 90vh;
     }
+
     .text p {
         width: 60%;
     }
+
     .hero-width .image-iphone-box img {
         width: 50%;
         margin: 0px auto;
@@ -38,10 +40,16 @@
     .centralize-content img {
         width: 60%;
     }
+
     .centralize-content h2 {
         font-size: 80px;
         width: 100%;
         margin-bottom: 80px;
+    }
+
+    .hero-sect-cover .style-mobile .unox-guide-show-me {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
     }
 }
 
@@ -55,6 +63,7 @@
         width: 40%;
         margin: 0px auto;
     }
+
     .text h1 {
         font-size: 100px;
     }
