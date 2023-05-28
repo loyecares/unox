@@ -1225,7 +1225,7 @@
 
       // 
 
-      if (window.innerWidth > 737) {
+      if ((window.innerWidth > 737) && (window.innerWidth <= 1500)) {
         const tl1 = gsap.timeline({
           scrollTrigger: {
             trigger: '.alt-fix-cover .desktop-hero-display',
@@ -1242,22 +1242,93 @@
           y: -1000,
         }, 0)
         tl1.to('.desktop-only .centralize-content', {
-          // y: '-600%',
-          // y: '-165vh',
           bottom: "unset",
-          top: 0,
+          top: 10,
           opacity: 1,
         }, 0);
         tl1.to(document.querySelector('.desktop-only .style-mobile'), {
           bottom: "unset",
-          // top: 0,
           opacity: 1,
-          // position: 'relative',
+          position: 'absolute',
+          top: '130%'
+        }, 0);
+        tl1.to(document.querySelectorAll('.desktop-only .image-iphone-box'), {
+          top: '75%',
+          opacity: 1,
+        }, 0)
+        tl1.to(".desktop-only .left-hero-img", {
+          x: -600,
+        }, 0)
+        tl1.to(".desktop-only .right-hero-img", {
+          x: 600,
+        }, 0)
+      }
+
+      if ((window.innerWidth >= 2500) && (window.innerWidth <= 3400)) {
+        const tl1 = gsap.timeline({
+          scrollTrigger: {
+            trigger: '.alt-fix-cover .desktop-hero-display',
+            pin: '.alt-fix-cover',
+            scrub: 1,
+            start: "top top",
+            end: "+=2000",
+            toggleAction: "restart none none none"
+          }
+        });
+
+        tl1.to('.desktop-only .hero-width-text', {
+          y: -1000,
+        }, 0)
+        tl1.to('.desktop-only .centralize-content', {
+          bottom: "unset",
+          top: 10,
+          opacity: 1,
+        }, 0);
+        tl1.to(document.querySelector('.desktop-only .style-mobile'), {
+          bottom: "unset",
+          opacity: 1,
+          position: 'absolute',
+          top: '20%'
+        }, 0);
+        tl1.to(document.querySelectorAll('.desktop-only .image-iphone-box'), {
+          top: '75%',
+          opacity: 1,
+        }, 0)
+        tl1.to(".desktop-only .left-hero-img", {
+          x: -600,
+        }, 0)
+        tl1.to(".desktop-only .right-hero-img", {
+          x: 600,
+        }, 0)
+      }
+
+      if ((window.innerWidth >= 1500) && (window.innerWidth <= 2400)) {
+        const tl1 = gsap.timeline({
+          scrollTrigger: {
+            trigger: '.alt-fix-cover .desktop-hero-display',
+            pin: '.alt-fix-cover',
+            scrub: 1,
+            start: "top top",
+            end: "+=2000",
+            toggleAction: "restart none none none"
+          }
+        });
+
+        tl1.to('.desktop-only .hero-width-text', {
+          y: -1000,
+        }, 0)
+        tl1.to('.desktop-only .centralize-content', {
+          bottom: "unset",
+          top: 10,
+          opacity: 1,
+        }, 0);
+        tl1.to(document.querySelector('.desktop-only .style-mobile'), {
+          bottom: "unset",
+          opacity: 1,
           position: 'absolute',
           top: '15%'
         }, 0);
         tl1.to(document.querySelectorAll('.desktop-only .image-iphone-box'), {
-          // y: '-250px',
           top: '75%',
           opacity: 1,
         }, 0)
@@ -1284,8 +1355,27 @@
           bottom: "unset",
           opacity: 1,
           position: 'absolute',
-          top: '20%'
+          top: '22%'
         }, 0);
+
+        tl1.to('.desktop-only .hero-width-text', {
+          y: -1000,
+        }, 0)
+        tl1.to('.desktop-only .centralize-content', {
+          bottom: "unset",
+          top: 10,
+          opacity: 1,
+        }, 0);
+        tl1.to(document.querySelectorAll('.desktop-only .image-iphone-box'), {
+          top: '75%',
+          opacity: 1,
+        }, 0)
+        tl1.to(".desktop-only .left-hero-img", {
+          x: -600,
+        }, 0)
+        tl1.to(".desktop-only .right-hero-img", {
+          x: 600,
+        }, 0)
       }
     </script>
   </body>
