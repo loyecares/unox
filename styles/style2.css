@@ -24,8 +24,8 @@
     }
 
     .hero-section {
-        height: 90vh;
-        max-height: 90vh;
+        height: 100vh;
+        max-height: 100vh;
     }
 
     .text p {
@@ -38,7 +38,7 @@
     }
 
     .centralize-content img {
-        width: 60%;
+        width: 55%;
     }
 
     .centralize-content h2 {
@@ -55,8 +55,10 @@
 
 @media screen and (min-width: 5000px) {
     .hero-section {
-        height: 90rem;
-        max-height: 90rem;
+        /* height: 90rem;
+        max-height: 90rem; */
+        height: 100rem;
+        max-height: 100rem;
     }
 
     .hero-width .image-iphone-box img {

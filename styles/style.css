@@ -51,8 +51,8 @@ a {
   background-color: #EEF0F1;
   width: 100%;
   overflow: hidden;
-  height: 80vh;
-  max-height: 80vh;
+  height: 100vh;
+  max-height: 100vh;
   padding-top: 150px;
 
   max-width: 1408px;
@@ -3307,7 +3307,7 @@ footer {
 }
 
 .centralize-content h2 {
-  width: 70%;
+  width: 60%;
   display: block;
   margin: 0% auto;
   font-size: 45px;
@@ -5274,6 +5274,14 @@ body,
     top: 15%;
     left: -2%;
     z-index: 100;
+  }
+
+  .centralize-content img {
+    width: 45%;
+  }
+
+  .hero-width .image-iphone-box img {
+    width: 35%;
   }
 
   .hero-img-right-1.right-hero-img {
