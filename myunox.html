@@ -912,11 +912,13 @@
           start: "top top",
           // end: "() => `+=1000px`",
           // end: "() => `bottom bottom`",
-          end: () => `+=100%`,
-          pin: true,
-          // pinSpacing: true,
+          // end: () => `+=100%`,
+          end: () => `+=2000`,
+          // pin: true,
+          pinSpacing: false,
           scrub: 1,
-          invalidateOnRefresh: true,
+          toggleAction: "restart none none none",
+          // invalidateOnRefresh: true,
           // markers: true
         },
       });
@@ -965,14 +967,14 @@
         y: '-11vh',
         marginTop: '-140px'
       });
-      tl2.to(".myunox-features", {
-        // y: '-11vh',
-        height: '10px'
-      });
-      tl2.to(".pin-spacer", {
-        // y: '-11vh',
-        height: '1500px'
-      });
+      // tl2.to(".myunox-features", {
+      //   // y: '-11vh',
+      //   height: '10px'
+      // });
+      // tl2.to(".pin-spacer", {
+      //   // y: '-11vh',
+      //   height: '1500px'
+      // });
     </script>
 </body>
 
