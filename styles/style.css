@@ -2378,6 +2378,7 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 20px 0px;
+  padding-top: 0px;
   gap: 30px;
 }
 
@@ -2786,6 +2787,7 @@ footer {
 
   .join-heading h3 {
     font-size: 32px;
+    margin-bottom: 0px;
   }
 
   .owl-item .join-image img,
@@ -3162,11 +3164,12 @@ footer {
   footer .email-list {
     margin-bottom: 83px;
   }
+
   .myunox-tools {
     margin-top: 120px;
     margin: 120px 20px 0px;
   }
-  
+
   .myunox-features {
     margin: 0px 20px;
   }
@@ -4508,6 +4511,8 @@ nav img {
 
   .myunox-features .center-text {
     width: 100%;
+    margin-top: 90px;
+    margin-bottom: 33px;
   }
 
   .myunox-tools .admin-card {
@@ -4570,18 +4575,29 @@ nav img {
   .theme-showcase .theme-wrapper p {
     width: 100%;
     font-size: 18px;
+    margin-bottom: 23px;
   }
 
   .resources-showcase {
     padding: 70px 20px;
   }
 
+  .myunox-page .resources-showcase {
+    padding-bottom: 0px !important;
+  }
+
+  .myunox-page .recycle-section {
+    background: #F5F6F7;
+  }
+
   .myunox-features .center-text h2 {
     font-size: 32px;
+    margin-bottom: 32px;
   }
 
   .myunox-features .center-text p {
     width: 100%;
+    font-size: 18px;
   }
 
   .resources-showcase .resources-center-text {
@@ -4786,6 +4802,26 @@ nav img {
   .unox-story-block .unox-story-block-links {
     border-right: unset;
     display: none;
+  }
+
+  .myunox-page .myunox-hero .myunox-hero-content p {
+    font-size: 18px;
+    line-height: 24.57px;
+  }
+
+  .myunox-page .myunox .myunox-hero {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .myunox-page .myunox-tools {
+    margin: 80px inherit;
+  }
+  .myunox-features .center-text h2 {
+    width: 100%;
+  }
+  .myunox-page .join-section {
+    margin-top: 0px;
   }
 }
 
@@ -5613,7 +5649,7 @@ body,
 }
 
 @media (min-width: 900px) and (max-width: 1500px) {
-  
+
   .hero-section {
     height: 100vh;
     max-height: 100vh;
